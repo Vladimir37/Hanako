@@ -1,1 +1,1 @@
-This is folder for additional sripts and styles.
+This is folder for additional scripts and styles.
