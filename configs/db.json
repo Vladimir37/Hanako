@@ -1,3 +1,7 @@
 {
-
+  "login": "root",
+  "pass": "node_db",
+  "database": "hanako",
+  "dialect": "mysql",
+  "port": 3306
 }

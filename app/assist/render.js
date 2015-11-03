@@ -1,3 +1,3 @@
-/**
- * Created by vladimir on 03.11.15.
- */
+function render_thread (req, res, next) {
+    //
+};

@@ -1,6 +1,7 @@
 {
   "b": {
     "name": "Первый",
+    "default_username": "Anonimus",
     "image_permit": true,
     "trip_permit": true,
     "trip_required": false,
@@ -10,6 +11,7 @@
   },
   "a": {
     "name": "Второй",
+    "default_username": "Anonimus",
     "image_permit": true,
     "trip_permit": true,
     "trip_required": false,
