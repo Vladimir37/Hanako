@@ -8,7 +8,7 @@ var admin = require('./routing/admin')
 var app = express();
 //render templates
 app.set('view engine', 'jade');
-app.set('views', path.join(__dirname +  '/../client/views'));
+app.set('views', __dirname +  '/../client/views');
 
 //threads and main
 app.use('/', threads);
