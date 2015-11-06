@@ -1,6 +1,7 @@
 var express =  require('express');
 var path = require('path');
 
+var captcha = require('./assist/captcha');
 var errors = require('./routing/errors');
 var threads = require('./routing/threads');
 var admin = require('./routing/admin')
@@ -15,6 +16,9 @@ app.use('/', threads);
 
 //admin's panel
 //app.use('/admin', admin);
+
+//captcha
+app.use('/test', captcha.render);
 
 //public source
 app.use('/src', express.static(__dirname + '/../client/source'));
