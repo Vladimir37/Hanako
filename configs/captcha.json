@@ -3,9 +3,9 @@
     "width": 250,
     "height": 100,
     "background": "rgb(255,255,255)",
-    "color": "rgb(0,0,0)",
+    "color": "rgb(45,78,11)",
     "noise": true,
-    "lineWidth": 2,
+    "lineWidth": 6,
     "noiseColor": "rgb(0,0,0)",
     "complexity": 3
 }

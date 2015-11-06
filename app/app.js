@@ -1,10 +1,10 @@
 var express =  require('express');
 var path = require('path');
 
-var captcha = require('./assist/captcha');
+var testing = require('./routing/testing');
 var errors = require('./routing/errors');
 var threads = require('./routing/threads');
-var admin = require('./routing/admin')
+var admin = require('./routing/admin');
 
 var app = express();
 //render templates
@@ -18,7 +18,7 @@ app.use('/', threads);
 //app.use('/admin', admin);
 
 //captcha
-app.use('/test', captcha.render);
+app.use('/testing', testing);
 
 //public source
 app.use('/src', express.static(__dirname + '/../client/source'));
