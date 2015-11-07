@@ -7,6 +7,7 @@ var threads = require('./routing/threads');
 var admin = require('./routing/admin');
 
 var app = express();
+
 //render templates
 app.set('view engine', 'jade');
 app.set('views', __dirname +  '/../client/views');
@@ -15,7 +16,7 @@ app.set('views', __dirname +  '/../client/views');
 app.use('/', threads);
 
 //admin's panel
-//app.use('/admin', admin);
+app.use('/admin', admin);
 
 //captcha
 app.use('/testing', testing);

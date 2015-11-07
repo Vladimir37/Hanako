@@ -1,0 +1,4 @@
+{
+    "secret": "admin_secret_key",
+    "iterations": 137
+}

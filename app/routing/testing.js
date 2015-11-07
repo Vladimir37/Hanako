@@ -3,8 +3,11 @@ var captcha = require('../assist/captcha');
 
 var router = express.Router();
 
+//render
 router.get('/', captcha.render);
-
-//router.post('/');
+//checking
+router.post('/', captcha.check_r);
+//new captcha
+router.post('/new', captcha.new);
 
 module.exports = router;

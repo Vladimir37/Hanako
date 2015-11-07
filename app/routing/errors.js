@@ -1,3 +1,10 @@
+//403 generate
+function forbidden(req, res, next) {
+    var err = new Error('Forbidden');
+    err.status = 403;
+    next(err);
+};
+
 //404 generate
 function not_found(req, res, next) {
     var err = new Error('Not Found');
@@ -19,6 +26,7 @@ function render_error(err, req, res, next) {
     res.render('errors/e' + err.status);
 };
 
+exports.e403 = forbidden;
 exports.e404 = not_found;
 exports.e500 = server_error;
 exports.render = render_error;

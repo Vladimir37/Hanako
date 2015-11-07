@@ -5,14 +5,15 @@ var boards = require('../data/boards');
 
 var sequelize = new Sequelize(db_config.database, db_config.login, db_config.pass, {
     dialect: db_config.dialect,
-    port: db_config.port
+    port: db_config.port,
+    logging: false
 });
 
 //testing connect
 sequelize.authenticate().then(function() {
-    console.log('Подключение установлено!');
+    console.log('Connect to DB created!');
 }, function(err) {
-    console.log('Ошибка подключения: ' + err);
+    console.log('Connection error: ' + err);
 });
 
 //models
@@ -22,7 +23,6 @@ tables.boards = {};
 
 //boards' models
 for(name in boards) {
-    console.log(name);
     tables.boards[name] = sequelize.define(name + '_posts', {
         id: {
             type: Sequelize.INTEGER,
@@ -130,3 +130,5 @@ function sync(list) {
 };
 
 sync(tables);
+
+module.exports = tables;
