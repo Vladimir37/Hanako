@@ -1,6 +1,6 @@
 var db = require('./database');
 var errors = require('../routing/errors');
-var admin_decrypt = require('./admin_decrypt');
+var admin_crypt = require('./admin_crypt');
 
 //checking for moderator and him/her status
 function checking(need_status) {
@@ -8,7 +8,7 @@ function checking(need_status) {
         //search moderator's cookie
         if (req.cookies.hanako_admin) {
             //decrypt
-            var name = admin_decrypt(req.cookies.hanako_admin);
+            var name = admin_crypt.decrypt(req.cookies.hanako_admin);
             //request to DB
             db.admins.findOne({where: {
                 name: name,
