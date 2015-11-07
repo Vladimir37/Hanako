@@ -1,5 +1,6 @@
 var express =  require('express');
-var path = require('path');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
 
 var testing = require('./routing/testing');
 var errors = require('./routing/errors');
@@ -11,6 +12,10 @@ var app = express();
 //render templates
 app.set('view engine', 'jade');
 app.set('views', __dirname +  '/../client/views');
+
+//POST request and cookies
+app.use(cookieParser());
+app.use(bodyParser());
 
 //threads and main
 app.use('/', threads);

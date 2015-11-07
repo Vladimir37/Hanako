@@ -19,6 +19,13 @@ function server_error(req, res, next) {
     next(err);
 };
 
+//449 generate
+function captcha_error(req, res, next) {
+    var err = new Error('Captcha Error');
+    err.status = 449;
+    next(err);
+};
+
 //render error
 function render_error(err, req, res, next) {
     console.log(err);
@@ -28,5 +35,6 @@ function render_error(err, req, res, next) {
 
 exports.e403 = forbidden;
 exports.e404 = not_found;
+exports.e449 = captcha_error;
 exports.e500 = server_error;
 exports.render = render_error;

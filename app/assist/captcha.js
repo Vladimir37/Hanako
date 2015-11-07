@@ -18,8 +18,7 @@ function c_options(text) {
 function key_generate() {
     var options = c_options();
     var key = random(options.size);
-    var encrypt_key = crypt_generate().encrypt(key);
-    return encrypt_key;
+    return crypt_generate().encrypt(key);
 };
 
 //encrypt/decrypt object generate
@@ -77,13 +76,20 @@ function captcha_checking_f(key_encrypted, value) {
     return captcha_test(key_encrypted, value);
 };
 
-//new captcha
+//new captcha (router for AJAX)
 function new_captcha(req, res) {
     var key = key_generate();
     res.end(key);
 };
 
+//new captcha (function)
+function new_captcha_return(req, res) {
+    var key = key_generate();
+    return key;
+};
+
 exports.render = captcha_render;
 exports.check_r = captcha_checking_r;
 exports.check_f = captcha_checking_f;
-exports.new = new_captcha;
+exports.new_ajax = new_captcha;
+exports.new = new_captcha_return;
