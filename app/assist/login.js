@@ -20,7 +20,7 @@ function login(req, res, next) {
                 //pass decryption
                 var need_pass = admin_crypt.decrypt(admin.pass);
                 if (need_pass == pass) {
-                    var cookie_name = admin_crypt.encrypt(name);
+                    var cookie_name = admin_crypt.encrypt(name + '_' + req.ip);
                     res.cookie('hanako_admin', cookie_name);
                     res.redirect('/admin/panel');
                 }

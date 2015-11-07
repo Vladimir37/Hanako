@@ -9,21 +9,29 @@ function checking(need_status) {
         if (req.cookies.hanako_admin) {
             //decrypt
             var name = admin_crypt.decrypt(req.cookies.hanako_admin);
+            var name_arr;
+            //separation name and IP
+            try {
+                name_arr = name.split('_');
+            }
+            catch(err) {
+                errors.e403(req, res, next);
+            }
             //request to DB
             db.admins.findOne({where: {
-                name: name,
+                name: name_arr[0],
                 active: 1
             }}).then(function(moderator) {
-                if(moderator) {
+                if(moderator && name_arr[1] == req.ip) {
                     res.modStatus = moderator.status;
                     next();
                 }
                 else {
-                    errors.e505(req, res, next);
+                    errors.e500(req, res, next);
                 }
             }, function(err) {
                 console.log(err);
-                errors.e505(req, res, next);
+                errors.e500(req, res, next);
             });
         }
         else {
