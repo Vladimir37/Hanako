@@ -120,6 +120,9 @@ tables.bans = sequelize.define('_bans', {
     }
 });
 
+//tables binding
+tables.reports.belongsTo(tables.admins, {foreignKey: 'respondent'});
+
 //synchronization tables
 function sync(list) {
     for(table in list) {

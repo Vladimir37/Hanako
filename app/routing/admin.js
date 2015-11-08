@@ -3,6 +3,7 @@ var express = require('express');
 var status = require('../assist/status');
 var login = require('../assist/login');
 var render = require('../assist/render');
+var control = require('../assist/control');
 
 var router = express.Router();
 
@@ -26,6 +27,6 @@ router.get('/admins', status(3));
 //login
 router.post('/login', login);
 //reports handling
-router
+router.post('/reports', status(0), control.report);
 
 module.exports = router;

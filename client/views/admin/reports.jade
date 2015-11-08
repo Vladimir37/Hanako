@@ -20,10 +20,11 @@ block content
                 article.r_in.r_date=report.createdAt
                 - if(active == 1)
                     form(method="post")
+                        input(type="hidden" name="id" value=report.id)
                         input(type="text" name="resolution" placeholder="Resolution")
                         br
                         input(type="submit" value="Submit")
                 - else
                     article.r_in.r_resolution=report.resolution
                     article.r_in.r_date_end=report.updatedAt
-                    article.r_in.r_admin=report.admin.name
+                    article.r_in.r_admin=report._admin.name

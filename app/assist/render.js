@@ -25,7 +25,8 @@ function reports(req, res, next) {
         where: {
             active: active
         },
-        order: [['createdAt', 'DESC']]
+        order: [['createdAt', 'DESC']],
+        include: [{model: db.admins}]
     }).then(function(reports) {
         var variables = {
             reports: reports,
@@ -37,6 +38,11 @@ function reports(req, res, next) {
         console.log(err);
         errors.e500(req, res, next);
     });
+};
+
+//render spam menu
+function spam(req, res, next) {
+    //
 };
 
 exports.jade = render_jade;
