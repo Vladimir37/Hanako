@@ -14,7 +14,7 @@ router.get('/panel', status(0), render.jade('admin/panel'));
 //reports list
 router.get('/reports', status(0), render.reports);
 //spam menu
-router.get('/spam', status(1));
+router.get('/spam', status(1), render.spam);
 //bans menu
 router.get('/bans', status(2));
 //boards menu

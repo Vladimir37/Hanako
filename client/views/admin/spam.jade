@@ -1,0 +1,12 @@
+extends ../basis/layout
+
+block content
+    h1 Spam-list
+    - each board, i in spam
+        section.s_board
+            h3=i
+            - each word, j in board
+                div=word
+                    form(method="post")
+                        input(type="hidden" name="word" value=word)
+                        input(type="image" src="/src/img/main/cross.png")

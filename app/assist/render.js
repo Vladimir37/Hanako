@@ -1,7 +1,9 @@
 var url = require('url');
+var fs = require('fs');
 
 var db = require('./database');
 var captcha = require('./captcha');
+var fo = require('./file_operation');
 var errors = require('../routing/errors');
 
 //render jade file
@@ -42,8 +44,14 @@ function reports(req, res, next) {
 
 //render spam menu
 function spam(req, res, next) {
-    //
+    fo.read('app/data/spam.json').then(function(spam_list) {
+        res.render('admin/spam', {spam: spam_list});
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
 };
 
 exports.jade = render_jade;
 exports.reports = reports;
+exports.spam = spam;
