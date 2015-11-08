@@ -28,5 +28,7 @@ router.get('/admins', status(3));
 router.post('/login', login);
 //reports handling
 router.post('/reports', status(0), control.report);
+//add and delete spam words
+router.post('/spam', status(1), control.spam);
 
 module.exports = router;
