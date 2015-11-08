@@ -1,0 +1,29 @@
+extends ../basis/layout
+
+block content
+    h1 Reports
+    - if(active == 1)
+        h2 Unsolved
+        a(href="/admin/reports?active=not") To solved
+    - else
+        h2 Solved
+        a(href="/admin/reports") To unsolved
+    - if(count == 0)
+        h3 No reports
+    - else
+        h3 Total reports: #{count}
+        - each report, i in reports
+            article.report
+                article.r_in.r_num=report.id
+                article.r_in.r_board=report.board
+                article.r_in.r_text=report.text
+                article.r_in.r_date=report.createdAt
+                - if(active == 1)
+                    form(method="post")
+                        input(type="text" name="resolution" placeholder="Resolution")
+                        br
+                        input(type="submit" value="Submit")
+                - else
+                    article.r_in.r_resolution=report.resolution
+                    article.r_in.r_date_end=report.updatedAt
+                    article.r_in.r_admin=report.admin.name

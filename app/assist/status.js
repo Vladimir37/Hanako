@@ -22,7 +22,8 @@ function checking(need_status) {
                 name: name_arr[0],
                 active: 1
             }}).then(function(moderator) {
-                if(moderator && name_arr[1] == req.ip) {
+                if(moderator && name_arr[1] == req.ip && need_status <= moderator.status) {
+                    res.modId = moderator.id;
                     res.modStatus = moderator.status;
                     next();
                 }

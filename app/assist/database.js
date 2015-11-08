@@ -92,6 +92,10 @@ tables.reports = sequelize.define('_reports', {
         type: Sequelize.INTEGER,
         allowNull: true
     },
+    resolution: {
+        type: Sequelize.TEXT,
+        allowNull: true
+    },
     active: {
         type: Sequelize.INTEGER,
         defaultValue: 1
@@ -106,7 +110,10 @@ tables.bans = sequelize.define('_bans', {
     },
     boards: Sequelize.TEXT,
     reason: Sequelize.TEXT,
-    time: Sequelize.INTEGER,
+    time: {
+        type: Sequelize.INTEGER,
+        allowNull: true
+    },
     active: {
         type: Sequelize.INTEGER,
         defaultValue: 1

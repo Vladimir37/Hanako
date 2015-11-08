@@ -1,1 +1,13 @@
-block content
+doctype
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        title MedTalks
+        script(src="/src/data/js/jquery.js")
+        script(src="/src/data/js/main.js")
+        link(rel="stylesheet/less" href="/src/data/less/main.less")
+        script(src="/src/data/js/less.js")
+        //- Подключение миксинов
+        include mixins
+    body
+        block content
