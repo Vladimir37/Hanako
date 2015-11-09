@@ -70,7 +70,21 @@ function ban(req, res, next) {
     });
 };
 
+//boards menu
+function boards(req, res, next) {
+    fo.read('app/data/boards.json').then(function(boards) {
+        res.render('admin/boards', {
+            boards: boards,
+            count: Object.keys(boards).length
+        });
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
 exports.jade = render_jade;
 exports.reports = reports;
 exports.spam = spam;
 exports.ban = ban;
+exports.boards = boards;

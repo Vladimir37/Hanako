@@ -18,7 +18,7 @@ router.get('/spam', status(1), render.spam);
 //bans menu
 router.get('/bans', status(2), render.ban);
 //boards menu
-router.get('/boards', status(3));
+router.get('/boards', status(3), render.boards);
 //creating and deleting admins
 router.get('/admins', status(3));
 
