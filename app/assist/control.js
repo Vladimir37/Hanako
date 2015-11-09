@@ -2,6 +2,9 @@ var db = require('./database');
 var errors = require('../routing/errors')
 var fo = require('./file_operation');
 
+//RegExp
+var re = new RegExp('^[\.\:0-9A-Z]+$');
+
 //reports handling
 function report(req, res, next) {
     var admin_id = res.modId;
@@ -48,5 +51,68 @@ function spam(req, res, next) {
     });
 };
 
+//ban and unban
+function ban(req, res, next) {
+    var type = req.body.type;
+    var respondent = res.modId;
+    var time = req.body.time;
+    var reason = req.body.reason;
+    var board = req.body.board || null;
+    switch(type) {
+        case "1":
+            //ban to IP
+            var ip = req.body.ip;
+            db.bans.create({
+                board: board,
+                reason: reason,
+                respondent: respondent,
+                time: time
+            }).then(function() {
+                res.redirect('/admin/bans');
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+            break;
+        case "2":
+            //ban to post's ID
+            var post_id = req.body.post_id;
+            db[board + '_posts'].findById(post_id).then(function(post) {
+                if(result) {
+                    db.bans.create({
+                        board: board,
+                        reason: reason,
+                        respondent: respondent,
+                        time: time
+                    });
+                    res.redirect('/admin/bans');
+                }
+                else {
+                    errors.e500(req, res, next);
+                }
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+            break;
+        case "3":
+            //unban to ID
+            var unban_id = req.body.num;
+            db.bans.destroy({where: {
+                id: unban_id
+            }}).then(function() {
+                res.redirect('/admin/bans');
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+            break;
+        default:
+            errors.e500(req, res, next);
+            break;
+    };
+};
+
 exports.report = report;
 exports.spam = spam;
+exports.ban = ban;

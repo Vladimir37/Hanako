@@ -1,0 +1,41 @@
+extends ../basis/layout
+
+block content
+    h1 Bans menu
+    form(method="post")
+        input(type="hidden" name="type" value="1")
+        input(type="text" name="ip" pattern='^[\.\:0-9A-Z]+$' placeholder="IP" required)
+        input(type="text" name="reason" placeholder="Reason" required)
+        input(type="text" name="time" pattern='^[0-9]+$' placeholder="Ban days" required)
+        select(name="board")
+            option(value='') All
+            - each board, i in boards
+                option(value=i)=i
+        br
+        input(type="submit" value="Ban")
+    - if(count == 0)
+        h3 No bans!
+    - else
+        h3 Total banned: #{count}
+        table
+            tr
+                th ID
+                th Boards
+                th Respondent
+                th Reason
+                th Time
+                th Date
+                th
+            - each ban, i in bans
+                tr
+                    td=ban.id
+                    td=ban.board
+                    td=ban._admin.name
+                    td=ban.reason
+                    td=ban.time + " days"
+                    td=ban.createdAt
+                    td
+                        form(method="post")
+                            input(type="hidden" name="type" value="3")
+                            input(type="hidden" name="num" value=ban.id)
+                            input(type="submit" value="Unban")

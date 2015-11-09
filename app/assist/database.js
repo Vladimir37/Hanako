@@ -108,20 +108,18 @@ tables.bans = sequelize.define('_bans', {
         primaryKey: true,
         autoIncrement: true
     },
-    boards: Sequelize.TEXT,
+    board: Sequelize.TEXT,
     reason: Sequelize.TEXT,
+    respondent: Sequelize.INTEGER,
     time: {
         type: Sequelize.INTEGER,
         allowNull: true
-    },
-    active: {
-        type: Sequelize.INTEGER,
-        defaultValue: 1
     }
 });
 
 //tables binding
 tables.reports.belongsTo(tables.admins, {foreignKey: 'respondent'});
+tables.bans.belongsTo(tables.admins, {foreignKey: 'respondent'});
 
 //synchronization tables
 function sync(list) {

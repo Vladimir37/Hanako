@@ -27,7 +27,7 @@ function reports(req, res, next) {
         where: {
             active: active
         },
-        order: [['createdAt', 'DESC']],
+        order: [['id', 'DESC']],
         include: [{model: db.admins}]
     }).then(function(reports) {
         var variables = {
@@ -52,6 +52,25 @@ function spam(req, res, next) {
     });
 };
 
+//render ban menu
+function ban(req, res, next) {
+    var variables = {};
+    db.bans.findAll({
+        order: [['id', 'DESC']],
+        include: [{model: db.admins}]
+    }).then(function(bans) {
+        variables.bans = bans;
+        variables.count = bans.length;
+        return fo.read('app/data/boards.json');
+    }).then(function(boards) {
+        variables.boards = boards;
+        res.render('admin/bans', variables);
+    }).catch(function() {
+        errors.e500(req, res, next);
+    });
+};
+
 exports.jade = render_jade;
 exports.reports = reports;
 exports.spam = spam;
+exports.ban = ban;

@@ -16,7 +16,7 @@ router.get('/reports', status(0), render.reports);
 //spam menu
 router.get('/spam', status(1), render.spam);
 //bans menu
-router.get('/bans', status(2));
+router.get('/bans', status(2), render.ban);
 //boards menu
 router.get('/boards', status(3));
 //creating and deleting admins
@@ -30,5 +30,7 @@ router.post('/login', login);
 router.post('/reports', status(0), control.report);
 //add and delete spam words
 router.post('/spam', status(1), control.spam);
+//ban and unban
+router.post('/bans', status(2), control.ban);
 
 module.exports = router;
