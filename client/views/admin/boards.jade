@@ -5,18 +5,17 @@ block content
     h3 Add board
     section.a_add_board
         form(method="post")
-            input(type="hidden" name="type" value="1")
             input(type="text" name="name" pattern="^[a-z]+$" placeholder="Name" required)
             br
             input(type="text" name="public_name" placeholder="Public name" required)
             input(type="text" name="username" placeholder="Default username" required)
             br
             label Permit image
-                input(type="checkbox" name="image" checked)
+                input(type="checkbox" value="true" name="image" checked)
             label Permit tripcode
-                input(type="checkbox" name="tripcode" checked)
+                input(type="checkbox" value="true" name="tripcode" checked)
             label Require tripcode
-                input(type="checkbox" name="tripcode_require")
+                input(type="checkbox" value="true" name="tripcode_require")
             br
             input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value="500" required)
             input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value="10" required)
@@ -34,16 +33,16 @@ block content
                 h4=i
                 aricle.a_board_form
                     form(method="post")
-                        input(type="hidden" name="type" value="2")
+                        input(type="hidden" name="name" value=i)
                         input(type="text" name="public_name" placeholder="Public name" value=board.name required)
                         input(type="text" name="username" placeholder="Default username" value=board.default_username required)
                         br
                         label Permit image
-                        input(type="checkbox" name="image" checked=board.image_permit)
+                            input(type="checkbox" value="true" name="image" checked=board.image_permit)
                         label Permit tripcode
-                           input(type="checkbox" name="tripcode" checked=board.trip_permit)
+                           input(type="checkbox" value="true" name="tripcode" checked=board.trip_permit)
                         label Require tripcode
-                            input(type="checkbox" name="tripcode_require" checked=board.trip_required)
+                            input(type="checkbox" value="true" name="tripcode_require" checked=board.trip_required)
                         br
                         input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value=board.bumplimit required)
                         input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value=board.pages required)

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917b7282-3c98-40c9-9c36-3d9ad3e27400" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/admin/boards.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/admin.js" afterPath="$PROJECT_DIR$/app/routing/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/render.js" afterPath="$PROJECT_DIR$/app/assist/render.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/boards.jade" afterPath="$PROJECT_DIR$/client/views/admin/boards.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data/boards.json" afterPath="$PROJECT_DIR$/app/data/boards.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/control.js" afterPath="$PROJECT_DIR$/app/assist/control.js" />
     </list>
     <ignored path="Hanako.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,17 +40,7 @@
         <entry file="file://$PROJECT_DIR$/app/routing/admin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="control.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assist/control.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -60,17 +50,27 @@
         <entry file="file://$PROJECT_DIR$/app/assist/render.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boards.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="control.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assist/control.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.04347826">
+              <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boards.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/data/boards.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20879121">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="23" />
+            <state vertical-scroll-proportion="-33.92857">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -79,8 +79,8 @@
       <file leaf-file-name="boards.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/admin/boards.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.310345">
-              <caret line="50" column="132" selection-start-line="50" selection-start-column="132" selection-end-line="50" selection-end-column="132" />
+            <state vertical-scroll-proportion="-10.551724">
+              <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -143,13 +143,13 @@
         <option value="$PROJECT_DIR$/app/assist/file_operation.js" />
         <option value="$PROJECT_DIR$/app/assist/status.js" />
         <option value="$PROJECT_DIR$/app/assist/database.js" />
-        <option value="$PROJECT_DIR$/app/assist/control.js" />
         <option value="$PROJECT_DIR$/client/views/admin/bans.jade" />
-        <option value="$PROJECT_DIR$/app/routing/admin.js" />
         <option value="$PROJECT_DIR$/client/views/basis/layout.jade" />
-        <option value="$PROJECT_DIR$/client/views/admin/boards.jade" />
         <option value="$PROJECT_DIR$/app/assist/render.js" />
+        <option value="$PROJECT_DIR$/app/routing/admin.js" />
         <option value="$PROJECT_DIR$/app/data/boards.json" />
+        <option value="$PROJECT_DIR$/client/views/admin/boards.jade" />
+        <option value="$PROJECT_DIR$/app/assist/control.js" />
       </list>
     </option>
   </component>
@@ -448,7 +448,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24876674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1952079" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -796,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assist/control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/admin/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12751678">
@@ -824,14 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46651787">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routing/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -862,8 +846,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/admin/boards.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.310345">
-          <caret line="50" column="132" selection-start-line="50" selection-start-column="132" selection-end-line="50" selection-end-column="132" />
+        <state vertical-scroll-proportion="-10.551724">
+          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/boards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.92857">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routing/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -871,15 +871,15 @@
     <entry file="file://$PROJECT_DIR$/app/assist/render.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/boards.json">
+    <entry file="file://$PROJECT_DIR$/app/assist/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20879121">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.04347826">
+          <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
           <folding />
         </state>
       </provider>

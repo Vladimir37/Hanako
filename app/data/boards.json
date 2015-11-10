@@ -1,22 +1,52 @@
 {
-  "b": {
-    "name": "Первый",
-    "default_username": "Anonimus",
-    "image_permit": true,
-    "trip_permit": true,
-    "trip_required": false,
-    "bumplimit": 500,
-    "pages": 10,
-    "thread_in_page": 10
-  },
-  "a": {
-    "name": "Второй",
-    "default_username": "Anonimus",
-    "image_permit": true,
-    "trip_permit": true,
-    "trip_required": false,
-    "bumplimit": 500,
-    "pages": 10,
-    "thread_in_page": 10
-  }
+    "b": {
+        "name": "Первый",
+        "default_username": "Anonimus",
+        "image_permit": true,
+        "trip_permit": true,
+        "trip_required": true,
+        "bumplimit": "700",
+        "pages": "10",
+        "thread_in_page": "10"
+    },
+    "a": {
+        "name": "Второй",
+        "default_username": "Anonimus",
+        "image_permit": false,
+        "trip_permit": false,
+        "trip_required": false,
+        "bumplimit": "550",
+        "pages": "10",
+        "thread_in_page": "10"
+    },
+    "c": {
+        "name": "Cetard",
+        "default_username": "Anon",
+        "image_permit": false,
+        "trip_permit": false,
+        "trip_required": false,
+        "bumplimit": "500",
+        "pages": "10",
+        "thread_in_page": "10"
+    },
+    "u": {
+        "name": "Первый",
+        "default_username": "Anonimus",
+        "image_permit": false,
+        "trip_permit": true,
+        "trip_required": false,
+        "bumplimit": "700",
+        "pages": "10",
+        "thread_in_page": "10"
+    },
+    "d": {
+        "name": "Detard",
+        "default_username": "Ano",
+        "image_permit": false,
+        "trip_permit": "true",
+        "trip_required": "true",
+        "bumplimit": "300",
+        "pages": "10",
+        "thread_in_page": "10"
+    }
 }

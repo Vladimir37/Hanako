@@ -32,5 +32,7 @@ router.post('/reports', status(0), control.report);
 router.post('/spam', status(1), control.spam);
 //ban and unban
 router.post('/bans', status(2), control.ban);
+//adding and updating boards
+router.post('/boards', status(3), control.boards);
 
 module.exports = router;

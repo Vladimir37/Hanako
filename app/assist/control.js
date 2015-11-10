@@ -3,7 +3,7 @@ var errors = require('../routing/errors')
 var fo = require('./file_operation');
 
 //RegExp
-var re = new RegExp('^[\.\:0-9A-Z]+$');
+var re_num = new RegExp('^[0-9]+$');
 
 //reports handling
 function report(req, res, next) {
@@ -113,6 +113,39 @@ function ban(req, res, next) {
     };
 };
 
+//operation with boards for admins
+function boards(req, res, next) {
+    var type = req.body.type;
+    var board_name = req.body.name;
+    var bumplimit = req.body.bump;
+    var pages = req.body.pages;
+    var threads = req.body.threads;
+    //board's data
+    var board_data = {};
+    board_data.name = req.body.public_name;
+    board_data.default_username = req.body.username;
+    board_data.image_permit = Boolean(req.body.image);
+    board_data.trip_permit = Boolean(req.body.tripcode);
+    board_data.trip_required = Boolean(req.body.tripcode_require);
+    board_data.bumplimit = req.body.bump;
+    board_data.pages = req.body.pages;
+    board_data.thread_in_page = req.body.threads;
+    //incorrect data type
+    if (!(re_num.test(bumplimit) && re_num.test(pages) && re_num.test(threads))) {
+        errors.e500(req, res, next);
+        return null;
+    }
+    fo.read('app/data/boards.json').then(function(boards) {
+        boards[board_name] = board_data;
+        fo.write('app/data/boards.json', boards);
+        res.redirect('/admin/boards');
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
 exports.report = report;
 exports.spam = spam;
 exports.ban = ban;
+exports.boards = boards;
