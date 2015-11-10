@@ -1,3 +1,9 @@
-//
-   Created by vladimir on 10.11.15.
+extends ../basis/layout
 
+block content
+    h1 Main
+    //- All boards
+    - each board, i in boards
+        - if(!board.hidden)
+            article.i_board
+                a(href="/" + i)=board.name

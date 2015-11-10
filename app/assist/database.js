@@ -44,8 +44,8 @@ for(name in boards) {
             allowNull: true
         },
         sage: {
-            type: Sequelize.TEXT,
-            allowNull: true
+            type: Sequelize.INTEGER,
+            defaultValue: 1
         },
         ip: Sequelize.TEXT,
         trip: {

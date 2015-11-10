@@ -5,6 +5,7 @@ var fo = require('./file_operation');
 
 //RegExp
 var re_num = new RegExp('^[0-9]+$');
+var re_board = new RegExp('^[a-z0-9]+$');
 
 //reports handling
 function report(req, res, next) {
@@ -116,7 +117,6 @@ function ban(req, res, next) {
 
 //operation with boards for admins
 function boards(req, res, next) {
-    var type = req.body.type;
     var board_name = req.body.name;
     var bumplimit = req.body.bump;
     var pages = req.body.pages;
@@ -131,8 +131,9 @@ function boards(req, res, next) {
     board_data.bumplimit = req.body.bump;
     board_data.pages = req.body.pages;
     board_data.thread_in_page = req.body.threads;
+    board_data.hidden = Boolean(req.body.hidden);
     //incorrect data type
-    if (!(re_num.test(bumplimit) && re_num.test(pages) && re_num.test(threads))) {
+    if (!(re_num.test(bumplimit) && re_num.test(pages) && re_num.test(threads && re_board.test(board_name)))) {
         errors.e500(req, res, next);
         return null;
     }

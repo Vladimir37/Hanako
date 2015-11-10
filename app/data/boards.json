@@ -7,7 +7,8 @@
         "trip_required": true,
         "bumplimit": "700",
         "pages": "10",
-        "thread_in_page": "10"
+        "thread_in_page": "10",
+        "hidden": false
     },
     "a": {
         "name": "Второй",
@@ -17,7 +18,8 @@
         "trip_required": false,
         "bumplimit": "550",
         "pages": "10",
-        "thread_in_page": "10"
+        "thread_in_page": "10",
+        "hidden": false
     },
     "c": {
         "name": "Cetard",
@@ -27,7 +29,8 @@
         "trip_required": false,
         "bumplimit": "500",
         "pages": "10",
-        "thread_in_page": "10"
+        "thread_in_page": "10",
+        "hidden": false
     },
     "u": {
         "name": "Первый",
@@ -37,7 +40,8 @@
         "trip_required": false,
         "bumplimit": "700",
         "pages": "10",
-        "thread_in_page": "10"
+        "thread_in_page": "10",
+        "hidden": false
     },
     "d": {
         "name": "Detard",
@@ -47,7 +51,8 @@
         "trip_required": "true",
         "bumplimit": "300",
         "pages": "10",
-        "thread_in_page": "10"
+        "thread_in_page": "10",
+        "hidden": false
     },
     "f": {
         "name": "Fetard",
@@ -57,6 +62,18 @@
         "trip_required": true,
         "bumplimit": "100",
         "pages": "5",
-        "thread_in_page": "2"
+        "thread_in_page": "2",
+        "hidden": false
+    },
+    "we": {
+        "name": "WER",
+        "default_username": "Ano",
+        "image_permit": true,
+        "trip_permit": true,
+        "trip_required": false,
+        "bumplimit": "500",
+        "pages": "10",
+        "thread_in_page": "10",
+        "hidden": true
     }
 }

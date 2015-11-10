@@ -16,6 +16,8 @@ block content
                 input(type="checkbox" value="true" name="tripcode" checked)
             label Require tripcode
                 input(type="checkbox" value="true" name="tripcode_require")
+            label Hidden
+                input(type="checkbox" value="true" name="hidden")
             br
             input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value="500" required)
             input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value="10" required)
@@ -43,6 +45,8 @@ block content
                            input(type="checkbox" value="true" name="tripcode" checked=board.trip_permit)
                         label Require tripcode
                             input(type="checkbox" value="true" name="tripcode_require" checked=board.trip_required)
+                        label Hidden
+                            input(type="checkbox" value="true" name="hidden" checked=board.hidden)
                         br
                         input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value=board.bumplimit required)
                         input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value=board.pages required)

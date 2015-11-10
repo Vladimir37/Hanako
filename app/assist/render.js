@@ -97,7 +97,52 @@ function admin(req, res, next) {
     }).then(function(boards) {
         variables.boards = boards;
         res.render('admin/admins', variables);
-    }).catch( function(err) {
+    }).catch(function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
+//index render
+function index(req, res, next) {
+    fo.read('app/data/boards.json').then(function(boards) {
+        res.render('main/index', {boards: boards});
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
+//render dashboard
+function dashboard(req, res, next, board, board_data, page) {
+    page = page || 0;
+    //db.boards[board].findAll({
+    //    where: {
+    //        thread: null
+    //    },
+    //    limit: board_data.thread_in_page,
+    //    offset: board_data.thread_in_page * page
+    //}).then(function(threads) {
+    //    console.log(threads);
+    //    res.end('END');
+    //}).catch(function(err) {
+    //    console.log(err);
+    //    errors.e500(req, res, next);
+    //});
+    db.boards[board].aggregate('thread', 'DISTINCT', {
+        where: {
+            thread: {
+                $ne: null
+            },
+            sage: 0
+        },
+        offset: board_data.thread_in_page * page,
+        limit: board_data.thread_in_page,
+        plain: false
+    }).then(function(threads) {
+        console.log(threads);
+        res.end('END');
+    }).catch(function(err) {
         console.log(err);
         errors.e500(req, res, next);
     });
@@ -109,3 +154,5 @@ exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
 exports.admin = admin;
+exports.index = index;
+exports.dashboard = dashboard;
