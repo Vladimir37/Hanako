@@ -20,7 +20,7 @@ block content
                 br
                 p Boards:
                 label All board
-                    input(type="checkbox" name="all_board")
+                    input(type="checkbox" name="all_boards")
                 br
                 select(name="boards" multiple)
                     - each board, i in boards
@@ -39,7 +39,7 @@ block content
                     tr
                         td=admin.id
                         td=admin.name
-                        td=admin.boards
+                        td=admin.boards || "All"
                         td=admin.status
                         td
                             form(method="post")

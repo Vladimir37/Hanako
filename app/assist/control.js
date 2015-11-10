@@ -1,5 +1,6 @@
 var db = require('./database');
-var errors = require('../routing/errors')
+var errors = require('../routing/errors');
+var crypt = require('./admin_crypt');
 var fo = require('./file_operation');
 
 //RegExp
@@ -149,7 +150,63 @@ function boards(req, res, next) {
     });
 };
 
+//operation with admins
+function admin(req, res, next) {
+    if(req.body.id) {
+        db.admins.update({
+            active: 0
+        }, {
+            where: {
+                id: req.body.id
+            }
+        }).then(function() {
+            res.redirect('/admin/admins');
+        }, function(err) {
+            console.log(err);
+            errors.e500(req, res, next);
+        });
+    }
+    else {
+        var name = req.body.name;
+        var pass = req.body.pass;
+        var status = req.body.status;
+        var all_boards = req.body.all_boards;
+        var boards = req.body.boards;
+        db.admins.findAll({
+            where: {
+                name: name
+            }
+        }).then(function(result) {
+            if(result.length) {
+                res.redirect('/admin/admins#incorrect');
+            }
+            else {
+                var pass_enc = crypt.encrypt(pass);
+                var need_board;
+                if(all_boards) {
+                    need_board = null;
+                }
+                else {
+                    need_board = JSON.stringify(boards) || null;
+                }
+                return db.admins.create({
+                    name: name,
+                    pass: pass_enc,
+                    status: status,
+                    boards: need_board
+                });
+            }
+        }).then(function() {
+            res.redirect('/admin/admins');
+        }).catch(function(err) {
+            console.log(err);
+            errors.e500(req, res, next);
+        });
+    }
+};
+
 exports.report = report;
 exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
+exports.admin = admin;

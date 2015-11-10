@@ -34,5 +34,7 @@ router.post('/spam', status(1), control.spam);
 router.post('/bans', status(2), control.ban);
 //adding and updating boards
 router.post('/boards', status(3), control.boards);
+//operation with admins
+router.post('/admins', status(3), control.admin);
 
 module.exports = router;
