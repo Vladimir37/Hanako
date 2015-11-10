@@ -48,5 +48,15 @@
         "bumplimit": "300",
         "pages": "10",
         "thread_in_page": "10"
+    },
+    "f": {
+        "name": "Fetard",
+        "default_username": "Ano",
+        "image_permit": false,
+        "trip_permit": true,
+        "trip_required": true,
+        "bumplimit": "100",
+        "pages": "5",
+        "thread_in_page": "2"
     }
 }

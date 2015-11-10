@@ -138,8 +138,12 @@ function boards(req, res, next) {
     fo.read('app/data/boards.json').then(function(boards) {
         boards[board_name] = board_data;
         fo.write('app/data/boards.json', boards);
+        return fo.read('app/data/spam.json');
+    }).then(function(spam_list) {
+        spam_list[board_name] = [];
+        fo.write('app/data/spam.json', spam_list);
         res.redirect('/admin/boards');
-    }, function(err) {
+    }).catch(function(err) {
         console.log(err);
         errors.e500(req, res, next);
     });
