@@ -30,7 +30,8 @@ function captcha_error(req, res, next) {
 function render_error(err, req, res, next) {
     console.log(err);
     res.status(err.status || 500);
-    res.render('errors/e' + err.status);
+    var err_num = err.status || 500;
+    res.render('errors/e' + err_num);
 };
 
 exports.e403 = forbidden;

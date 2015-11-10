@@ -83,8 +83,29 @@ function boards(req, res, next) {
     });
 };
 
+//admin menu
+function admin(req, res, next) {
+    var variables;
+    db.admins.findAll({where: {
+        active: 1
+    }}).then(function(admins) {
+        variables = {
+            admins: admins,
+            count: admins.length
+        };
+        return fo.read('app/data/boards.json');
+    }).then(function(boards) {
+        variables.boards = boards;
+        res.render('admin/admins', variables);
+    }).catch( function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
 exports.jade = render_jade;
 exports.reports = reports;
 exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
+exports.admin = admin;

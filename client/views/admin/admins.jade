@@ -1,0 +1,47 @@
+extends ../basis/layout
+
+block content
+    h1 Admins menu
+    h2 Total admins: #{count}
+    section.admin_list
+        h3 Add admin
+        article.add_form
+            form(method="post")
+                input(type="text" name="name" placeholder="Name/login" required)
+                br
+                input(type="text" name="pass" placeholder="Password" required)
+                br
+                p Status:
+                select(name="status")
+                    option(value=0) 0
+                    option(value=1) 1
+                    option(value=2) 2
+                    option(value=3) 3
+                br
+                p Boards:
+                label All board
+                    input(type="checkbox" name="all_board")
+                br
+                select(name="boards" multiple)
+                    - each board, i in boards
+                        option(value=i)=i
+                br
+                input(type="submit" value="Create")
+        section.admin_list
+            table
+                tr
+                    th ID
+                    th Name
+                    th Boards
+                    th Status
+                    th
+                - each admin, j in admins
+                    tr
+                        td=admin.id
+                        td=admin.name
+                        td=admin.boards
+                        td=admin.status
+                        td
+                            form(method="post")
+                                input(type="hidden" name="id" value=admin.id)
+                                input(type="submit" value="Block")
