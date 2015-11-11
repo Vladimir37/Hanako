@@ -5,6 +5,7 @@ var db = require('./database');
 var captcha = require('./captcha');
 var fo = require('./file_operation');
 var errors = require('../routing/errors');
+var structure = require('./structure');
 
 //render jade file
 function render_jade(name) {
@@ -116,19 +117,6 @@ function index(req, res, next) {
 //render dashboard
 function dashboard(req, res, next, board, board_data, page) {
     page = page || 0;
-    //db.boards[board].findAll({
-    //    where: {
-    //        thread: null
-    //    },
-    //    limit: board_data.thread_in_page,
-    //    offset: board_data.thread_in_page * page
-    //}).then(function(threads) {
-    //    console.log(threads);
-    //    res.end('END');
-    //}).catch(function(err) {
-    //    console.log(err);
-    //    errors.e500(req, res, next);
-    //});
     db.boards[board].aggregate('thread', 'DISTINCT', {
         where: {
             thread: {
@@ -139,8 +127,13 @@ function dashboard(req, res, next, board, board_data, page) {
         offset: board_data.thread_in_page * page,
         limit: board_data.thread_in_page,
         plain: false
-    }).then(function(threads) {
-        console.log(threads);
+    }).then(function(threads_num_arr) {
+        var threads_num = structure.distinct(threads_num_arr);
+        console.log(threads_num);
+        return structure.preview(threads_num, board);
+    }).then(function(all_posts) {
+        console.log(all_posts.length);
+        console.log(all_posts[0].length);
         res.end('END');
     }).catch(function(err) {
         console.log(err);
