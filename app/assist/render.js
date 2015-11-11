@@ -130,11 +130,17 @@ function dashboard(req, res, next, board, board_data, page) {
     }).then(function(threads_num_arr) {
         var threads_num = structure.distinct(threads_num_arr);
         console.log(threads_num);
-        return structure.preview(threads_num, board);
-    }).then(function(all_posts) {
-        console.log(all_posts.length);
-        console.log(all_posts[0].length);
-        res.end('END');
+        return Promise.all([structure.preview(threads_num, board), structure.count(threads_num, board)]);
+    }).then(function(all_posts_arr) {
+        var variables = {
+            posts: all_posts_arr[0],
+            count: all_posts_arr[1],
+            board: {
+                addr: board,
+                data: board_data
+            }
+        };
+        res.render('main/dashboard', variables);
     }).catch(function(err) {
         console.log(err);
         errors.e500(req, res, next);
