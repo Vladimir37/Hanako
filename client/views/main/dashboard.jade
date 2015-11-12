@@ -5,19 +5,8 @@ block content
     section.dashboard
         - each thread, i in posts
             section.thread(style="margin-bottom: 20px")
-                article.op_post
-                    article.post_data
-                        span.name=thread[1].name
-                    - if(thread[1].image)
-                        figure.post_image
-                    article.post_text=thread[1].text
+                mixin op_post(thread[1])
                 article.count_post=count[i] + ' posts'
                 - for(var j = thread[0].length - 1; j >= 0; j--) {
-                    - var post = thread[0][j]
-                    article.post
-                        article.post_data
-                            span.name=post.name
-                        - if(post.image)
-                            figure.post_image
-                        article.post_text=post.text
+                    mixin post(thread[0][j])
                 - }

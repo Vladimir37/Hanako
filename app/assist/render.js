@@ -130,7 +130,6 @@ function dashboard(req, res, next, board, board_data, page) {
         plain: false
     }).then(function(threads_num_arr) {
         var threads_num = structure.distinct(threads_num_arr);
-        console.log(threads_num);
         return Promise.all([structure.preview(threads_num, board), structure.count(threads_num, board)]);
     }).then(function(all_posts_arr) {
         var variables = {
@@ -148,6 +147,29 @@ function dashboard(req, res, next, board, board_data, page) {
     });
 };
 
+function thread(req, res, next) {
+    var board = req.params.name;
+    var thread_num = req.params.num;
+    db.boards[board].findAll({
+        where: {
+            $or: {
+                id: thread_num,
+                thread: thread_num
+            }
+        }
+    }).then(function(thread) {
+        if(thread.length) {
+            res.render('main/thread');
+        }
+        else {
+            errors.e404(req, res, next);
+        }
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
+
 exports.jade = render_jade;
 exports.reports = reports;
 exports.spam = spam;
@@ -156,3 +178,4 @@ exports.boards = boards;
 exports.admin = admin;
 exports.index = index;
 exports.dashboard = dashboard;
+exports.thread = thread;

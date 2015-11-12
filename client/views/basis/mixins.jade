@@ -1,0 +1,17 @@
+// post
+mixin post(post)
+    article.post
+        article.post_data
+            span.name=post.name
+        - if(post.image)
+            figure.post_image
+        article.post_text=post.text
+
+// OP post
+mixin op_post(post)
+    article.op_post
+        article.post_data
+            span.name=post.name
+        - if(post.image)
+            figure.post_image
+        article.post_text=post.text

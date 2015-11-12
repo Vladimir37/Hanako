@@ -2,6 +2,9 @@ var render = require('./render');
 var fo = require('./file_operation');
 var errors = require('../routing/errors');
 
+//RegExp
+var re_num = new RegExp('^[0-9]+$');
+
 //dashboard
 function dashboard(req, res, next) {
     fo.read('app/data/boards.json').then(function(boards) {
@@ -33,4 +36,21 @@ function dashboard(req, res, next) {
     });
 };
 
+function thread(req, res, next) {
+    fo.read('app/data/boards.json').then(function(boards) {
+        var board_name = req.params.name;
+        var thread_num = req.params.num;
+        if(
+            boards[board_name]
+            && re_num.test(thread_num)
+        ) {
+            render.thread(req, res, next);
+        }
+        else {
+            errors.e404(req, res, next);
+        }
+    });
+};
+
 exports.dashboard = dashboard;
+exports.thread = thread;

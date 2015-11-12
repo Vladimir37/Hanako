@@ -14,9 +14,7 @@ router.get('/', render.index);
 router.get('/:name', pages.dashboard);
 
 //thread
-router.get('/:name/trd/:num', function(req, res, next) {
-    //
-});
+router.get('/:name/trd/:num', pages.thread);
 
 //board page > 0
 router.get('/:name/:num', pages.dashboard);
