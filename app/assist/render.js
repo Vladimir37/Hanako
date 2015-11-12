@@ -147,7 +147,7 @@ function dashboard(req, res, next, board, board_data, page) {
     });
 };
 
-function thread(req, res, next) {
+function thread(req, res, next, boards_data) {
     var board = req.params.name;
     var thread_num = req.params.num;
     db.boards[board].findAll({
@@ -158,8 +158,14 @@ function thread(req, res, next) {
             }
         }
     }).then(function(thread) {
-        if(thread.length) {
-            res.render('main/thread');
+        if(thread.length && structure.checking(thread)) {
+            var op_post = thread[0];
+            var posts = thread.slice(1);
+            res.render('main/thread', {
+                posts: posts,
+                op_post: op_post,
+                boards_data: boards_data
+            });
         }
         else {
             errors.e404(req, res, next);

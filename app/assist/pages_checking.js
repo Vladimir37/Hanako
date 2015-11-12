@@ -13,7 +13,7 @@ function dashboard(req, res, next) {
         if(page_num) {
             if(
                 boards[board_name]
-                && boards[board_name].pages > page_num
+                && +boards[board_name].pages > page_num
                 && page_num >= 0
             ) {
                 render.dashboard(req, res, next, board_name, boards[board_name], page_num);
@@ -44,7 +44,7 @@ function thread(req, res, next) {
             boards[board_name]
             && re_num.test(thread_num)
         ) {
-            render.thread(req, res, next);
+            render.thread(req, res, next, [board_name, boards[board_name].name]);
         }
         else {
             errors.e404(req, res, next);

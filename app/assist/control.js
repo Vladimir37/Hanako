@@ -206,8 +206,16 @@ function admin(req, res, next) {
     }
 };
 
+//creating post and thread
+function posting(text) {
+    return function(req, res, next) {
+        res.end(text);
+    }
+};
+
 exports.report = report;
 exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
 exports.admin = admin;
+exports.posting = posting;

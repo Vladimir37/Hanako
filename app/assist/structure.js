@@ -44,6 +44,11 @@ function count(arr, board) {
     return Promise.all(promise_count);
 };
 
+function thread_checking(arr) {
+    return Boolean(!arr[0].thread);
+};
+
 exports.distinct = distinct_arr;
 exports.preview = preview;
 exports.count = count;
+exports.checking = thread_checking;

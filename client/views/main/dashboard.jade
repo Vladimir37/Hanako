@@ -2,6 +2,7 @@ extends ../basis/layout
 
 block content
     h1 /#{board.addr}/ — #{board.data.name}
+    mixin posting_form()
     section.dashboard
         - each thread, i in posts
             section.thread(style="margin-bottom: 20px")
@@ -10,3 +11,4 @@ block content
                 - for(var j = thread[0].length - 1; j >= 0; j--) {
                     mixin post(thread[0][j])
                 - }
+    mixin posting_form()
