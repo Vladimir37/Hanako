@@ -11,16 +11,20 @@ function distinct_arr(arr) {
 //posts for threads in page
 function preview(arr, board) {
     var promise_arr = arr.map(function(item) {
-        return db.boards[board].findAll({
+        var db_requests = [];
+        db_requests[0] = db.boards[board].findAll({
             where: {
-                $or: {
-                    thread: item,
-                    id: item
-                }
+                    thread: item
             },
             limit: 3,
             order: [['id', 'DESC']]
         });
+        db_requests[1] = db.boards[board].findOne({
+            where: {
+                id: item
+            }
+        });
+        return Promise.all(db_requests);
     });
     return Promise.all(promise_arr);
 };

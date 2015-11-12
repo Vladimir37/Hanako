@@ -126,6 +126,7 @@ function dashboard(req, res, next, board, board_data, page) {
         },
         offset: board_data.thread_in_page * page,
         limit: board_data.thread_in_page,
+        order: [['id', 'DESC']],
         plain: false
     }).then(function(threads_num_arr) {
         var threads_num = structure.distinct(threads_num_arr);
