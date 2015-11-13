@@ -218,30 +218,28 @@ function posting(req, res, next) {
     //captcha
     var c_key = req.body.c_key;
     var c_value = req.body.c_value;
-    //main data
-    var name = req.body.name || boards[board].default_username;
-    var title = req.body.title || '';
-    var text = req.body.text;
-    var sage = req.body.sage || 0;
-    //processing
-    var name_trip = processing.trip(name);
-    title = title.substr(0, 40);
     //captcha check
     if(!captcha.check_f(c_key, c_value)) {
         res.end('1');
         return;
     };
-    var boards_data;
+    var boards_data, name, title, text, sage, name_trip;
     //loading data
     fo.read('app/data/boards.json').then(function(boards) {
         boards_data = boards;
+        //main data
+        name = req.body.name || boards[board].default_username;
+        title = (req.body.title || '').substr(0, 40);
+        text = req.body.text;
+        sage = req.body.sage || 0;
+        //processing
+        name_trip = processing.trip(name);
         //checking spam
         return processing.spam(text, board);
     }).then(function() {
         //checking ban
         return processing.ban(ip, board);
     }).then(function() {
-        console.log('START');
         var post_data = {
             title: title,
             name: name_trip.name,
@@ -254,7 +252,7 @@ function posting(req, res, next) {
         };
         return db.boards[board].create(post_data);
     }).then(function(result) {
-        res.end('END');
+        res.end('0');
     }).catch(function(err) {
         console.log(err);
         res.end(err);

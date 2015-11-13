@@ -6,6 +6,8 @@ block content
     section.dashboard
         - each thread, i in posts
             section.thread(style="margin-bottom: 20px")
+                a(href="/" + board.addr + '/trd/' + thread[1].id)
+                    article.open Open thread
                 mixin op_post(thread[1])
                 article.count_post=count[i] + ' posts'
                 - for(var j = thread[0].length - 1; j >= 0; j--) {

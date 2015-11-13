@@ -130,7 +130,7 @@ function sync(list) {
         }
         else {
             list[table].sync().then(function(result) {
-                console.log('Table ' + result.name + ' successfully synchronized');
+                //console.log('Table ' + result.name + ' successfully synchronized');
             }, function(err) {
                 console.log('Error: ' + err);
             });
