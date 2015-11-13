@@ -1,6 +1,7 @@
 var db = require('./database');
 var errors = require('../routing/errors');
 var crypt = require('./admin_crypt');
+var processing = require('./post_processing');
 var fo = require('./file_operation');
 
 //RegExp
@@ -207,10 +208,26 @@ function admin(req, res, next) {
 };
 
 //creating post and thread
-function posting(text) {
-    return function(req, res, next) {
-        res.end(text);
-    }
+function posting(req, res, next) {
+    var board = req.params.name;
+    fo.read('app/data/boards.json').then(function(boards) {
+        //post to thread
+        if (req.params.num) {
+            var thread_num = req.params.num;
+            var name = req.body.name || boards[board].default_username;
+            var title = req.body.title || '';
+            var text = req.body.text;
+            var sage = req.body.sage || 0;
+            //processing
+            var name_trip = processing.trip(name);
+            title = title.substr(0, 40);
+
+        }
+        //new thread
+        else {
+            //
+        }
+    });
 };
 
 exports.report = report;

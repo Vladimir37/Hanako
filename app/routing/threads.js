@@ -18,8 +18,8 @@ router.get('/:name/:num', pages.dashboard);
 //POST request
 
 //post to thread
-router.post('/:name/trd/:num', control.posting('post'));
+router.post('/:name/trd/:num', control.posting);
 //creating thread
-router.post('/:name/*', control.posting('thread'));
+router.post('/:name/*', control.posting);
 
 module.exports = router;
