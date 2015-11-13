@@ -67,6 +67,7 @@ function ban(req, res, next) {
             //ban to IP
             var ip = req.body.ip;
             db.bans.create({
+                ip: ip,
                 board: board,
                 reason: reason,
                 respondent: respondent,
@@ -82,8 +83,9 @@ function ban(req, res, next) {
             //ban to post's ID
             var post_id = req.body.post_id;
             db[board + '_posts'].findById(post_id).then(function(post) {
-                if(result) {
+                if(post) {
                     db.bans.create({
+                        ip: post.ip,
                         board: board,
                         reason: reason,
                         respondent: respondent,
