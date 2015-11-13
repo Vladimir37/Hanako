@@ -8,6 +8,6 @@ router.get('/', captcha.render);
 //checking
 router.post('/', captcha.check_r);
 //new captcha
-router.post('/new', captcha.new);
+router.post('/new', captcha.new_ajax);
 
 module.exports = router;

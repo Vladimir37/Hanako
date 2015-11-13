@@ -28,13 +28,13 @@ function spam(text, board) {
         fo.read('app/data/spam.json').then(function(spamlist) {
             //all
             for(var i = 0; i < spamlist.all.length; i++) {
-                if(text.indexOf(spamlist.all[i]) == -1) {
+                if(text.indexOf(spamlist.all[i]) != -1) {
                     reject('2');
                 }
             };
             //board
             for(var j = 0; j < spamlist[board].length; j++) {
-                if(text.indexOf(spamlist[board][j]) == -1) {
+                if(text.indexOf(spamlist[board][j]) != -1) {
                     reject('2');
                 }
             };
@@ -51,6 +51,7 @@ function ban(ip, board) {
     return new Promise(function(resolve, reject) {
         db.bans.findOne({
             where: {
+                ip: ip,
                 board: {
                     $in: ['All', board]
                 }
@@ -69,6 +70,11 @@ function ban(ip, board) {
     });
 };
 
+function image(req) {
+    //
+};
+
 exports.trip = trip;
 exports.spam = spam;
 exports.ban = ban;
+exports.image = image;

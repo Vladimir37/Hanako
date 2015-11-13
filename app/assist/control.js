@@ -214,6 +214,7 @@ function admin(req, res, next) {
 function posting(req, res, next) {
     var board = req.params.name;
     var ip = req.ip;
+    var thread = req.params.num || null;
     //captcha
     var c_key = req.body.c_key;
     var c_value = req.body.c_value;
@@ -230,18 +231,33 @@ function posting(req, res, next) {
         res.end('1');
         return;
     };
-    processing.spam(text).then(function() {
-        //
-    });
+    var boards_data;
+    //loading data
     fo.read('app/data/boards.json').then(function(boards) {
-        //post to thread
-        if (req.params.num) {
-            var thread_num = req.params.num;
-        }
-        //new thread
-        else {
-            //
-        }
+        boards_data = boards;
+        //checking spam
+        return processing.spam(text, board);
+    }).then(function() {
+        //checking ban
+        return processing.ban(ip, board);
+    }).then(function() {
+        console.log('START');
+        var post_data = {
+            title: title,
+            name: name_trip.name,
+            trip: name_trip.trip,
+            text: text,
+            thread: thread,
+            ip: req.ip,
+            sage: sage,
+            admin: req.modID || null
+        };
+        return db.boards[board].create(post_data);
+    }).then(function(result) {
+        res.end('END');
+    }).catch(function(err) {
+        console.log(err);
+        res.end(err);
     });
 };
 

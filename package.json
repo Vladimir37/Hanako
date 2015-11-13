@@ -1,6 +1,6 @@
 {
   "name": "Hanako",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "start": "node hanako.js"
@@ -9,6 +9,7 @@
     "body-parser": "*",
     "cookie-parser": "*",
     "express": "*",
+    "formidable": "*",
     "jade": "*",
     "serve-favicon": "*",
     "mysql": "*",

@@ -7,9 +7,6 @@ block content
         br
         input(type="password" name="pass" placeholder="Password" required)
         br
-        img(src="/testing?key=" + c_key required)
-        input(type="hidden" name="c_key" value=c_key)
-        br
-        input(type="text" name="c_value" placeholder="Captcha" required)
+        mixin captcha()
         br
         input(type="submit" value="Submit")
