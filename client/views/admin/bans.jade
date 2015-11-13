@@ -8,7 +8,7 @@ block content
         input(type="text" name="reason" placeholder="Reason" required)
         input(type="text" name="time" pattern='^[0-9]+$' placeholder="Ban days" required)
         select(name="board")
-            option(value='') All
+            option(value='All') All
             - each board, i in boards
                 option(value=i)=i
         br
@@ -20,6 +20,7 @@ block content
         table
             tr
                 th ID
+                th IP
                 th Boards
                 th Respondent
                 th Reason
@@ -29,6 +30,7 @@ block content
             - each ban, i in bans
                 tr
                     td=ban.id
+                    td=ban.ip
                     td=ban.board
                     td=ban._admin.name
                     td=ban.reason

@@ -17,9 +17,6 @@ app.set('views', __dirname +  '/../client/views');
 app.use(cookieParser());
 app.use(bodyParser());
 
-//threads and main
-app.use('/', threads);
-
 //admin's panel
 app.use('/admin', admin);
 
@@ -28,6 +25,9 @@ app.use('/testing', testing);
 
 //public source
 app.use('/src', express.static(__dirname + '/../client/source'));
+
+//threads and main
+app.use('/', threads);
 
 //Errors
 app.use(errors.e404);

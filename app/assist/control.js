@@ -2,6 +2,7 @@ var db = require('./database');
 var errors = require('../routing/errors');
 var crypt = require('./admin_crypt');
 var processing = require('./post_processing');
+var captcha = require('./captcha');
 var fo = require('./file_operation');
 
 //RegExp
@@ -210,18 +211,30 @@ function admin(req, res, next) {
 //creating post and thread
 function posting(req, res, next) {
     var board = req.params.name;
+    var ip = req.ip;
+    //captcha
+    var c_key = req.body.c_key;
+    var c_value = req.body.c_value;
+    //main data
+    var name = req.body.name || boards[board].default_username;
+    var title = req.body.title || '';
+    var text = req.body.text;
+    var sage = req.body.sage || 0;
+    //processing
+    var name_trip = processing.trip(name);
+    title = title.substr(0, 40);
+    //captcha check
+    if(!captcha.check_f(c_key, c_value)) {
+        res.end('1');
+        return;
+    };
+    processing.spam(text).then(function() {
+        //
+    });
     fo.read('app/data/boards.json').then(function(boards) {
         //post to thread
         if (req.params.num) {
             var thread_num = req.params.num;
-            var name = req.body.name || boards[board].default_username;
-            var title = req.body.title || '';
-            var text = req.body.text;
-            var sage = req.body.sage || 0;
-            //processing
-            var name_trip = processing.trip(name);
-            title = title.substr(0, 40);
-
         }
         //new thread
         else {

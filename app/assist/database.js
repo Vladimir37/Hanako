@@ -108,6 +108,7 @@ tables.bans = sequelize.define('_bans', {
         primaryKey: true,
         autoIncrement: true
     },
+    ip: Sequelize.TEXT,
     board: Sequelize.TEXT,
     reason: Sequelize.TEXT,
     respondent: Sequelize.INTEGER,

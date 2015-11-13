@@ -1,3 +1,11 @@
+//captcha
+mixin captcha()
+    article.captcha
+        img(alt="captcha")
+        input(type="hidden" name="c_key" value="Not")
+        br
+        input(type="text" name="c_value" placeholder="Captcha" required)
+
 // post
 mixin post(post)
     article.post
@@ -29,4 +37,5 @@ mixin posting_form()
             label Sage
                 input(type="checkbox" name="sage" value="1")
             br
+            mixin captcha()
             input(type="submit" value="Submit")
