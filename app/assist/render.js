@@ -1,11 +1,11 @@
 var url = require('url');
-var fs = require('fs');
 
 var db = require('./database');
 var captcha = require('./captcha');
 var fo = require('./file_operation');
 var errors = require('../routing/errors');
 var structure = require('./structure');
+var stack = require('./stack');
 
 //render jade file
 function render_jade(name) {
@@ -117,34 +117,15 @@ function index(req, res, next) {
 //render dashboard
 function dashboard(req, res, next, board, board_data, page) {
     page = page || 0;
-    db.boards[board].aggregate('thread', 'DISTINCT', {
-        where: {
-            thread: {
-                $ne: null
-            },
-            sage: 0
-        },
-        offset: board_data.thread_in_page * page,
-        limit: board_data.thread_in_page,
-        order: [['id', 'DESC']],
-        plain: false
-    }).then(function(threads_num_arr) {
-        var threads_num = structure.distinct(threads_num_arr);
-        return Promise.all([structure.preview(threads_num, board), structure.count(threads_num, board)]);
-    }).then(function(all_posts_arr) {
-        var variables = {
-            posts: all_posts_arr[0],
-            count: all_posts_arr[1],
-            board: {
-                addr: board,
-                data: board_data
-            }
-        };
-        res.render('main/dashboard', variables);
-    }).catch(function(err) {
-        console.log(err);
-        errors.e500(req, res, next);
-    });
+    var variables = {
+        posts: all_posts_arr[0],
+        count: all_posts_arr[1],
+        board: {
+            addr: board,
+            data: board_data
+        }
+    };
+    res.render('main/dashboard', variables);
 };
 
 function thread(req, res, next, boards_data) {

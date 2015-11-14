@@ -1,4 +1,6 @@
+var errors = require('../routing/errors');
 var db = require('./database');
+var fo = require('./file_operation');
 
 //distinct objects to array
 function distinct_arr(arr) {
@@ -44,11 +46,43 @@ function count(arr, board) {
     return Promise.all(promise_count);
 };
 
+function only_op(arr, board) {
+    return new Promise(function(resolve, reject) {
+        fo.read('app/data/boards.json').then(function (boards) {
+            var threads_col = boards[board].thread_in_page;
+            db.boards[board].findAll({
+                where: {
+                    thread: null,
+                    id: {
+                        $lt: arr[0],
+                        $gt: arr[0] - threads_col
+                    }
+                }
+            }).then(function (result) {
+                resolve(format(result));
+            }, function (err) {
+                console.log(err);
+                reject("6");
+            });
+        }, function (err) {
+            console.log(err);
+            reject("6");
+        });
+    });
+};
+
 function thread_checking(arr) {
     return Boolean(!arr[0].thread);
+};
+
+function sorting_posts(arr_posts, arr_ops) {
+    var all_arr = arr_posts.concat(arr_ops);
+    return all_arr.sort().reverse();
 };
 
 exports.distinct = distinct_arr;
 exports.preview = preview;
 exports.count = count;
 exports.checking = thread_checking;
+exports.only_op = only_op;
+exports.sorting = sorting_posts;
