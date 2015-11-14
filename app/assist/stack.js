@@ -26,7 +26,6 @@ fo.read('app/data/boards.json').then(function(boards) {
             where: {
                 thread: null
             },
-            limit: boards[board_name].pages * boards[board_name].thread_in_page,
             order: [['id', 'DESC']]
         }).then(function(threads) {
             boards_stack[board_name] = thread_num(threads);
@@ -63,7 +62,7 @@ function bump(board, thread) {
 
 //creating new thread
 function new_thread(board, thread) {
-    boards_stack[board].unsift(thread);
+    boards_stack[board].unsihft(thread);
     var max_value = boards_data[board].pages * boards_data[board].thread_in_page - 1;
     if(boards_stack[board].length > max_value) {
         var drowned = boards_stack[board].slice(max_value);

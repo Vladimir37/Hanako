@@ -3,6 +3,8 @@ var errors = require('../routing/errors');
 var crypt = require('./admin_crypt');
 var processing = require('./post_processing');
 var captcha = require('./captcha');
+var stack = require('./stack');
+var fs = require('fs');
 var fo = require('./file_operation');
 
 //RegExp
@@ -252,6 +254,15 @@ function posting(req, res, next) {
         };
         return db.boards[board].create(post_data);
     }).then(function(result) {
+        //create thread
+        if(!thread) {
+            fs.mkdir('client/source/img/trd/' + board + '/' + result.id);
+            stack.new(board, +result.id);
+        }
+        //create post
+        else if(!sage){
+            stack.bump(board, +thread);
+        }
         res.end('0');
     }).catch(function(err) {
         console.log(err);
