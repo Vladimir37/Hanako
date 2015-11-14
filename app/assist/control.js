@@ -260,7 +260,7 @@ function posting(req, res, next) {
             stack.new(board, +result.id);
         }
         //create post
-        else if(!sage){
+        else if(!sage && thread){
             stack.bump(board, +thread);
         }
         res.end('0');

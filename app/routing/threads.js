@@ -21,5 +21,6 @@ router.get('/:name/:num', pages.dashboard);
 router.post('/:name/trd/:num', control.posting);
 //creating thread
 router.post('/:name/*', control.posting);
+router.post('/:name/', control.posting);
 
 module.exports = router;

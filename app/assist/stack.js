@@ -62,7 +62,7 @@ function bump(board, thread) {
 
 //creating new thread
 function new_thread(board, thread) {
-    boards_stack[board].unsihft(thread);
+    boards_stack[board].unshift(thread);
     var max_value = boards_data[board].pages * boards_data[board].thread_in_page - 1;
     if(boards_stack[board].length > max_value) {
         var drowned = boards_stack[board].slice(max_value);
