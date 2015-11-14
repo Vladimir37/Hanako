@@ -18,6 +18,7 @@
     "easy-encryption": "*",
     "random-token": "*",
     "node-captcha": "*",
-    "tripcode": "*"
+    "tripcode": "*",
+    "rimraf": "*"
   }
 }
