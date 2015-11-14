@@ -117,28 +117,11 @@ function index(req, res, next) {
 //render dashboard
 function dashboard(req, res, next, board, board_data, page) {
     page = page || 0;
-    var threads_num;
-    var op_post;
-    db.boards[board].aggregate('thread', 'DISTINCT', {
-        where: {
-            thread: {
-                $ne: null
-            },
-            sage: 0
-        },
-        offset: board_data.thread_in_page * page,
-        limit: board_data.thread_in_page,
-        order: [['id', 'DESC']],
-        plain: false
-    }).then(function(threads_num_arr) {
-        threads_num = structure.distinct(threads_num_arr);
-        return structure.only_op(threads_num, board);
-    }).then(function(only_op) {
-        op_post = only_op;
-        return Promise.all([structure.preview(threads_num, board), structure.count(threads_num, board)]);
-    }).then(function(all_posts_arr) {
-        all_posts_arr[0] = all_posts_arr[0].concat(op_post);
-        //console.log(op_post);
+    var need_pages =
+    Promise.all([
+        structure.preview(stack.thread(board, page), board),
+        structure.count(stack.thread(board, page), board)
+    ]).then(function(all_posts_arr) {
         var variables = {
             posts: all_posts_arr[0],
             count: all_posts_arr[1],
