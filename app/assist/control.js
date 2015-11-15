@@ -237,7 +237,9 @@ function posting(req, res, next) {
         var ip = req.ip;
         var thread = req.params.num || null;
         var image = files.image;
-        console.log(image);
+        if(image.size == 0) {
+            fs.unlink(image.path);
+        }
         //captcha
         var c_key = fields.c_key;
         var c_value = fields.c_value;
@@ -247,7 +249,7 @@ function posting(req, res, next) {
             return;
         }
         ;
-        var boards_data, name, title, text, sage, name_trip;
+        var boards_data, name, title, text, sage, name_trip, img;
         //loading data
         fo.read('app/data/boards.json').then(function (boards) {
             boards_data = boards;
@@ -273,13 +275,15 @@ function posting(req, res, next) {
             }
         }).then(function () {
             //image processing
-            if(image) {
-                return processing.image(image);
+            if(image.size) {
+                return processing.image(image, board);
             }
             else {
                 return Promise.resolve();
             }
-        }).then(function () {
+        }).then(function(image_ext) {
+            img = image_ext;
+            console.log(img);
             var post_data = {
                 title: title,
                 name: name_trip.name,
@@ -302,6 +306,18 @@ function posting(req, res, next) {
                 stack.bump(board, +thread);
             }
             res.end('0');
+            console.log(img);
+            if(img) {
+                fs.rename(
+                    image.path,
+                    'client/source/img/trd/' + board + '/' + result[0].thread + '/' + result[0].id + '.' + img
+                );
+                db.boards[board].update({
+                    image: img
+                }, {where: {
+                    id: result[0].id
+                }})
+            }
         }).catch(function (err) {
             console.log(err);
             res.end(err);

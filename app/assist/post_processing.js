@@ -1,5 +1,6 @@
 var tripcode = require('tripcode');
 var mime = require('mime');
+var fs = require('fs');
 
 var db = require('./database');
 var fo = require('./file_operation');
@@ -93,8 +94,21 @@ function lock(board, num) {
 function image(image, board) {
     return new Promise(function(resolve, reject) {
         fo.read('app/data/boards.json').then(function (boards) {
+            console.log('TUDA 1');
             var board_data = boards[board];
-
+            if(image.size > +board_data.size * 1024 * 1024) {
+                fs.unlink(image.path);
+                reject(7);
+            }
+            else if(image.type.slice(0, 6) != 'image/') {
+                fs.unlink(image.path);
+                reject(8);
+            }
+            else {
+                console.log(image.type);
+                console.log(mime.extension(image.type));
+                resolve(mime.extension(image.type));
+            }
         }, function(err) {
             console.log(err);
             reject(6);
