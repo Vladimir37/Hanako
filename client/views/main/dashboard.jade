@@ -14,3 +14,8 @@ block content
                     mixin post(thread[0][j])
                 - }
     mixin posting_form()
+    article.dash_pages
+        - for(var i = 0; i < board.data.pages; i++) {
+            a(href="/" + board.addr + '/' + i)
+                nav=i
+        - }

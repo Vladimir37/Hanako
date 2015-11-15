@@ -61,7 +61,7 @@
         "trip_permit": true,
         "trip_required": true,
         "bumplimit": "100",
-        "pages": "5",
+        "pages": "2",
         "thread_in_page": "2",
         "hidden": false
     },

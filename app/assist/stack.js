@@ -63,7 +63,7 @@ function bump(board, thread) {
 //creating new thread
 function new_thread(board, thread) {
     boards_stack[board].unshift(thread);
-    var max_value = boards_data[board].pages * boards_data[board].thread_in_page - 1;
+    var max_value = boards_data[board].pages * boards_data[board].thread_in_page;
     if(boards_stack[board].length > max_value) {
         var drowned = boards_stack[board].slice(max_value);
         drowned.forEach(function(item) {
@@ -75,8 +75,8 @@ function new_thread(board, thread) {
 //need threads
 function thread(board, page) {
     var threads_in_page = boards_data[board].thread_in_page;
-    var first_thread = boards_data[board].thread_in_page * page;
-    var last_thread = first_thread + boards_data[board].thread_in_page;
+    var first_thread = threads_in_page * page;
+    var last_thread = first_thread + threads_in_page;
     return boards_stack[board].slice(first_thread, last_thread);
 };
 
