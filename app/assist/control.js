@@ -212,7 +212,7 @@ function admin(req, res, next) {
     }
 };
 
-//creating post and thread
+//creating post or thread
 function posting(req, res, next) {
     var board = req.params.name;
     var ip = req.ip;
@@ -260,15 +260,15 @@ function posting(req, res, next) {
             sage: sage,
             admin: req.modID || null
         };
-        return db.boards[board].create(post_data);
+        return Promise.all([db.boards[board].create(post_data), processing.count(board, thread)]);
     }).then(function(result) {
         //create thread
         if(!thread) {
-            fs.mkdir('client/source/img/trd/' + board + '/' + result.id);
-            stack.new(board, +result.id);
+            fs.mkdir('client/source/img/trd/' + board + '/' + result[0].id);
+            stack.new(board, +result[0].id);
         }
         //create post
-        else if(!sage && thread){
+        else if(!sage && thread && result[1] < boards_data[board].bumplimit){
             stack.bump(board, +thread);
         }
         res.end('0');

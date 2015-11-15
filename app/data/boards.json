@@ -71,7 +71,7 @@
         "image_permit": true,
         "trip_permit": true,
         "trip_required": false,
-        "bumplimit": "500",
+        "bumplimit": "4",
         "pages": "10",
         "thread_in_page": "10",
         "hidden": true

@@ -93,8 +93,32 @@ function image(req) {
     //
 };
 
+function posts_count(board, thread) {
+    return new Promise(function(resolve, reject) {
+        if(thread == null) {
+            resolve(0);
+        }
+        else {
+            db.boards[board].count({
+                where: {
+                    $or: {
+                        id: thread,
+                        thread: thread
+                    }
+                }
+            }).then(function (count) {
+                resolve(count);
+            }, function (err) {
+                console.log(err);
+                reject('6')
+            });
+        }
+    });
+};
+
 exports.trip = trip;
 exports.spam = spam;
 exports.ban = ban;
 exports.lock = lock;
 exports.image = image;
+exports.count = posts_count;
