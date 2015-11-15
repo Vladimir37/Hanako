@@ -70,6 +70,25 @@ function ban(ip, board) {
     });
 };
 
+function lock(board, num) {
+    return new Promise(function(resolve, reject) {
+        db.boards[board].findOne({where: {
+            id: num,
+            close: 0
+        }}).then(function(thread) {
+            if(thread) {
+                resolve()
+            }
+            else {
+                reject('4');
+            }
+        })
+    }, function(err) {
+        console.log(err);
+        reject('6');
+    });
+};
+
 function image(req) {
     //
 };
@@ -77,4 +96,5 @@ function image(req) {
 exports.trip = trip;
 exports.spam = spam;
 exports.ban = ban;
+exports.lock = lock;
 exports.image = image;

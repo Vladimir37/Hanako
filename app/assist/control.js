@@ -242,6 +242,14 @@ function posting(req, res, next) {
         //checking ban
         return processing.ban(ip, board);
     }).then(function() {
+        //checking lock thread
+        if(thread) {
+            return processing.lock(board, thread)
+        }
+        else {
+            return Promise.resolve();
+        }
+    }).then(function() {
         var post_data = {
             title: title,
             name: name_trip.name,

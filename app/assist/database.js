@@ -55,7 +55,11 @@ for(name in boards) {
         admin: {
             type: Sequelize.INTEGER,
             allowNull: true
-        }
+        },
+        close: {
+            type: Sequelize.INTEGER,
+            defaultValue: 0
+        },
     });
 };
 
