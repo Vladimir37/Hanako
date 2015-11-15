@@ -27,7 +27,7 @@ mixin op_post(post)
 // form post/thread
 mixin posting_form()
     article.posting_form
-        form(method="post")
+        form(method="post" enctype="multipart/form-data")
             input(type="text" name="title" placeholder="Title")
             br
             input(type="text" name="name" placeholder="Name")
@@ -36,6 +36,8 @@ mixin posting_form()
             br
             label Sage
                 input(type="checkbox" name="sage" value="1")
+            br
+            input(type="file" name="image")
             br
             mixin captcha()
             input(type="submit" value="Submit")

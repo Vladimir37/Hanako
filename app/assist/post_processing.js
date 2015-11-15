@@ -1,4 +1,5 @@
 var tripcode = require('tripcode');
+var mime = require('mime');
 
 var db = require('./database');
 var fo = require('./file_operation');
@@ -89,8 +90,16 @@ function lock(board, num) {
     });
 };
 
-function image(req) {
-    //
+function image(image, board) {
+    return new Promise(function(resolve, reject) {
+        fo.read('app/data/boards.json').then(function (boards) {
+            var board_data = boards[board];
+
+        }, function(err) {
+            console.log(err);
+            reject(6);
+        });
+    });
 };
 
 function posts_count(board, thread) {

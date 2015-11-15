@@ -19,6 +19,7 @@
     "random-token": "*",
     "node-captcha": "*",
     "tripcode": "*",
-    "rimraf": "*"
+    "rimraf": "*",
+    "mime": "*"
   }
 }

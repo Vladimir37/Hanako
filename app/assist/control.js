@@ -1,10 +1,12 @@
+var formidable = require('formidable');
+var fs = require('fs');
+
 var db = require('./database');
 var errors = require('../routing/errors');
 var crypt = require('./admin_crypt');
 var processing = require('./post_processing');
 var captcha = require('./captcha');
 var stack = require('./stack');
-var fs = require('fs');
 var fo = require('./file_operation');
 
 //RegExp
@@ -137,9 +139,15 @@ function boards(req, res, next) {
     board_data.bumplimit = req.body.bump;
     board_data.pages = req.body.pages;
     board_data.thread_in_page = req.body.threads;
+    board_data.size = req.body.max_size;
     board_data.hidden = Boolean(req.body.hidden);
     //incorrect data type
-    if (!(re_num.test(bumplimit) && re_num.test(pages) && re_num.test(threads && re_board.test(board_name)))) {
+    if (!(
+        re_num.test(bumplimit)
+        && re_num.test(req.body.pages)
+        && re_num.test(req.body.bump)
+        && re_num.test(req.body.max_size)
+        && re_board.test(board_name))) {
         errors.e500(req, res, next);
         return null;
     }
@@ -214,67 +222,90 @@ function admin(req, res, next) {
 
 //creating post or thread
 function posting(req, res, next) {
-    var board = req.params.name;
-    var ip = req.ip;
-    var thread = req.params.num || null;
-    //captcha
-    var c_key = req.body.c_key;
-    var c_value = req.body.c_value;
-    //captcha check
-    if(!captcha.check_f(c_key, c_value)) {
-        res.end('1');
-        return;
-    };
-    var boards_data, name, title, text, sage, name_trip;
-    //loading data
-    fo.read('app/data/boards.json').then(function(boards) {
-        boards_data = boards;
-        //main data
-        name = req.body.name || boards[board].default_username;
-        title = (req.body.title || '').substr(0, 40);
-        text = req.body.text;
-        sage = req.body.sage || 0;
-        //processing
-        name_trip = processing.trip(name);
-        //checking spam
-        return processing.spam(text, board);
-    }).then(function() {
-        //checking ban
-        return processing.ban(ip, board);
-    }).then(function() {
-        //checking lock thread
-        if(thread) {
-            return processing.lock(board, thread)
+    var form = new formidable.IncomingForm({
+        uploadDir: "tmp",
+        encoding: 'utf-8',
+        maxFieldsSize: 2 * 1024 * 1024
+    });
+    form.parse(req, function(err, fields, files) {
+        if(err) {
+            console.log(err);
+            res.end(6);
+            return;
         }
-        else {
-            return Promise.resolve();
+        var board = req.params.name;
+        var ip = req.ip;
+        var thread = req.params.num || null;
+        var image = files.image;
+        console.log(image);
+        //captcha
+        var c_key = fields.c_key;
+        var c_value = fields.c_value;
+        //captcha check
+        if (!captcha.check_f(c_key, c_value)) {
+            res.end('1');
+            return;
         }
-    }).then(function() {
-        var post_data = {
-            title: title,
-            name: name_trip.name,
-            trip: name_trip.trip,
-            text: text,
-            thread: thread,
-            ip: req.ip,
-            sage: sage,
-            admin: req.modID || null
-        };
-        return Promise.all([db.boards[board].create(post_data), processing.count(board, thread)]);
-    }).then(function(result) {
-        //create thread
-        if(!thread) {
-            fs.mkdir('client/source/img/trd/' + board + '/' + result[0].id);
-            stack.new(board, +result[0].id);
-        }
-        //create post
-        else if(!sage && thread && result[1] < boards_data[board].bumplimit){
-            stack.bump(board, +thread);
-        }
-        res.end('0');
-    }).catch(function(err) {
-        console.log(err);
-        res.end(err);
+        ;
+        var boards_data, name, title, text, sage, name_trip;
+        //loading data
+        fo.read('app/data/boards.json').then(function (boards) {
+            boards_data = boards;
+            //main data
+            name = fields.name || boards[board].default_username;
+            title = (fields.title || '').substr(0, 40);
+            text = fields.text;
+            sage = fields.sage || 0;
+            //processing
+            name_trip = processing.trip(name);
+            //checking spam
+            return processing.spam(text, board);
+        }).then(function () {
+            //checking ban
+            return processing.ban(ip, board);
+        }).then(function () {
+            //checking lock thread
+            if (thread) {
+                return processing.lock(board, thread)
+            }
+            else {
+                return Promise.resolve();
+            }
+        }).then(function () {
+            //image processing
+            if(image) {
+                return processing.image(image);
+            }
+            else {
+                return Promise.resolve();
+            }
+        }).then(function () {
+            var post_data = {
+                title: title,
+                name: name_trip.name,
+                trip: name_trip.trip,
+                text: text,
+                thread: thread,
+                ip: req.ip,
+                sage: sage,
+                admin: req.modID || null
+            };
+            return Promise.all([db.boards[board].create(post_data), processing.count(board, thread)]);
+        }).then(function (result) {
+            //create thread
+            if (!thread) {
+                fs.mkdir('client/source/img/trd/' + board + '/' + result[0].id);
+                stack.new(board, +result[0].id);
+            }
+            //create post
+            else if (!sage && thread && result[1] < boards_data[board].bumplimit) {
+                stack.bump(board, +thread);
+            }
+            res.end('0');
+        }).catch(function (err) {
+            console.log(err);
+            res.end(err);
+        });
     });
 };
 
