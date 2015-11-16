@@ -283,7 +283,6 @@ function posting(req, res, next) {
             }
         }).then(function(image_ext) {
             img = image_ext;
-            console.log(img);
             var post_data = {
                 title: title,
                 name: name_trip.name,
@@ -320,7 +319,7 @@ function posting(req, res, next) {
             }
         }).catch(function (err) {
             console.log(err);
-            res.end(err);
+            res.end(err.toString());
         });
     });
 };
