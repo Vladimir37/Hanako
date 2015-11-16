@@ -4,7 +4,7 @@ block content
     h1 /#{boards_data[0]}/ — #{boards_data[1]}
     mixin posting_form()
     section.thread
-        mixin op_post(op_post)
+        mixin op_post(op_post, boards_data[0])
         - each post, i in posts
-            mixin post(post)
+            mixin post(post, boards_data[0])
     mixin posting_form()

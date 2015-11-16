@@ -7,21 +7,23 @@ mixin captcha()
         input(type="text" name="c_value" placeholder="Captcha" required)
 
 // post
-mixin post(post)
+mixin post(post, board)
     article.post
         article.post_data
             span.name=post.name
         - if(post.image)
             figure.post_image
+                img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text=post.text
 
 // OP post
-mixin op_post(post)
+mixin op_post(post, board)
     article.op_post
         article.post_data
             span.name=post.name
         - if(post.image)
             figure.post_image
+                img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text=post.text
 
 // form post/thread

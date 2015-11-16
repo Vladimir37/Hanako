@@ -1,6 +1,7 @@
 var express =  require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var ta = require('thumb-express');
 
 var testing = require('./routing/testing');
 var errors = require('./routing/errors');
@@ -23,6 +24,8 @@ app.use('/admin', admin);
 //captcha
 app.use('/testing', testing);
 
+//small images
+app.use('/small', ta.init(__dirname + '/../client/source/img/trd'));
 //public source
 app.use('/src', express.static(__dirname + '/../client/source'));
 

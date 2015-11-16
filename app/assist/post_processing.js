@@ -94,7 +94,6 @@ function lock(board, num) {
 function image(image, board) {
     return new Promise(function(resolve, reject) {
         fo.read('app/data/boards.json').then(function (boards) {
-            console.log('TUDA 1');
             var board_data = boards[board];
             if(image.size > +board_data.size * 1024 * 1024) {
                 fs.unlink(image.path);
@@ -105,8 +104,6 @@ function image(image, board) {
                 reject(8);
             }
             else {
-                console.log(image.type);
-                console.log(mime.extension(image.type));
                 resolve(mime.extension(image.type));
             }
         }, function(err) {

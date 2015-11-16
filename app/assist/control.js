@@ -306,11 +306,11 @@ function posting(req, res, next) {
                 stack.bump(board, +thread);
             }
             res.end('0');
-            console.log(img);
+            var need_thread = result[0].thread || result[0].id;
             if(img) {
                 fs.rename(
                     image.path,
-                    'client/source/img/trd/' + board + '/' + result[0].thread + '/' + result[0].id + '.' + img
+                    'client/source/img/trd/' + board + '/' + need_thread + '/' + result[0].id + '.' + img
                 );
                 db.boards[board].update({
                     image: img
