@@ -60,6 +60,10 @@ for(name in boards) {
             type: Sequelize.INTEGER,
             defaultValue: 0
         },
+        attached: {
+            type: Sequelize.INTEGER,
+            defaultValue: 0
+        }
     });
 };
 
