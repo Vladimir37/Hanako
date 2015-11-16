@@ -152,12 +152,17 @@ function boards(req, res, next) {
         return null;
     }
     fo.read('app/data/boards.json').then(function(boards) {
+        if(!boards[board_name]) {
+            fs.mkdir('client/source/img/trd/' + board_name);
+        }
         boards[board_name] = board_data;
         fo.write('app/data/boards.json', boards);
         return fo.read('app/data/spam.json');
     }).then(function(spam_list) {
-        spam_list[board_name] = [];
-        fo.write('app/data/spam.json', spam_list);
+        if(!spam_list[board_name]) {
+            spam_list[board_name] = [];
+            fo.write('app/data/spam.json', spam_list);
+        }
         res.redirect('/admin/boards');
     }).catch(function(err) {
         console.log(err);

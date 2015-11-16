@@ -8,7 +8,7 @@
         "bumplimit": "700",
         "pages": "10",
         "thread_in_page": "10",
-        "size": "5",
+        "size": "2",
         "hidden": false
     },
     "a": {
@@ -20,11 +20,11 @@
         "bumplimit": "550",
         "pages": "10",
         "thread_in_page": "10",
-        "size": 2,
+        "size": "3",
         "hidden": false
     },
     "c": {
-        "name": "Cetard",
+        "name": "Cetardus",
         "default_username": "Anon",
         "image_permit": false,
         "trip_permit": false,
@@ -32,7 +32,7 @@
         "bumplimit": "500",
         "pages": "10",
         "thread_in_page": "10",
-        "size": 2,
+        "size": "2",
         "hidden": false
     },
     "u": {
@@ -93,6 +93,18 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": "7",
+        "hidden": false
+    },
+    "g": {
+        "name": "Green",
+        "default_username": "Ano",
+        "image_permit": true,
+        "trip_permit": true,
+        "trip_required": false,
+        "bumplimit": "500",
+        "pages": "10",
+        "thread_in_page": "10",
+        "size": "2",
         "hidden": false
     }
 }
