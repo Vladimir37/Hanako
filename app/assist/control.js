@@ -7,6 +7,7 @@ var crypt = require('./admin_crypt');
 var processing = require('./post_processing');
 var captcha = require('./captcha');
 var stack = require('./stack');
+var checking = require('./checking_board');
 var fo = require('./file_operation');
 
 //RegExp
@@ -332,9 +333,85 @@ function posting(req, res, next) {
 //admin actions with threads
 function actions(req, res, next) {
     var type = req.body.type;
+    var thread = req.body.thread;
+    var board = req.body.board;
     var status = res.modStatus;
     var mod_id = res.modId;
-}
+    db.admins.findById(mod_id).then(function(admin) {
+        //if not admin
+        if(!admin) {
+            errors.e403(req, res, next);
+            return;
+        }
+        //attach/detach thread
+        if(type == 1 && status >= 2 && checking(admin.boards, board)) {
+            stack.attachment(board, thread);
+            res.redirect('/' + board);
+        }
+        //close/open thread
+        else if(type == 2 && status >= 2 && checking(admin.boards, board)) {
+            db.boards[board].findOne({where: {
+                id: thread,
+                thread: null
+            }}).then(function(selected_thread) {
+                if(!selected_thread) {
+                    errors.e500(req, res, next);
+                    return;
+                }
+                var need_status;
+                selected_thread.close == 0 ? need_status = 1 : need_status = 2;
+                db.boards[board].update({close: need_status}, {where: {
+                    id: thread
+                }});
+                res.redirect('/' + board);
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+        }
+        //deleting thread
+        else if(type == 3 && status >= 2 && checking(admin.boards, board)) {
+            stack.deleting(board, thread);
+            res.redirect('/' + board);
+        }
+        //deleting post
+        else if(type == 4 && status >= 2 && checking(admin.boards, board)) {
+            db.boards[board].destroy({where: {
+                id: thread,
+                thread: {
+                    $ne: null
+                }
+            }});
+            res.redirect('/' + board);
+        }
+        //ban author
+        else if(type == 5 && status >= 2 && checking(admin.boards, board)) {
+            var time = req.body.time || 7;
+            var reason = req.body.reason;
+            db.boards[board].findById(thread).then(function(post) {
+                if(!post) {
+                    errors.e500(req, res, next);
+                    return;
+                }
+                var ban_data = {
+                    ip: post.ip,
+                    board: board,
+                    reason: reason,
+                    respondent: mod_id,
+                    time: time
+                };
+                db.bans.create(ban_data);
+                res.redirect('/' + board);
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+        }
+    }, function(err) {
+        console.log(err);
+        errors.e500(req, res, next);
+    });
+};
 
 exports.report = report;
 exports.spam = spam;
