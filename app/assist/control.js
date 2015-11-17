@@ -296,7 +296,7 @@ function posting(req, res, next) {
                 thread: thread,
                 ip: req.ip,
                 sage: sage,
-                admin: req.modID || null
+                admin: res.modId || null
             };
             return Promise.all([db.boards[board].create(post_data), processing.count(board, thread)]);
         }).then(function (result) {
@@ -329,9 +329,17 @@ function posting(req, res, next) {
     });
 };
 
+//admin actions with threads
+function actions(req, res, next) {
+    var type = req.body.type;
+    var status = res.modStatus;
+    var mod_id = res.modId;
+}
+
 exports.report = report;
 exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
 exports.admin = admin;
 exports.posting = posting;
+exports.actions = actions;

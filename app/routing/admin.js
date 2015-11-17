@@ -36,5 +36,7 @@ router.post('/bans', status(2), control.ban);
 router.post('/boards', status(3), control.boards);
 //operation with admins
 router.post('/admins', status(3), control.admin);
+//actions with threads
+router.post('/action', status(0), control.actions);
 
 module.exports = router;
