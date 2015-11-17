@@ -2,7 +2,7 @@ var db = require('./database');
 var errors = require('../routing/errors');
 var admin_crypt = require('./admin_crypt');
 
-//checking for moderator and him/her status
+//checking for moderator and him/her status for admin's pages
 function checking(need_status) {
     return function(req, res, next) {
         //search moderator's cookie

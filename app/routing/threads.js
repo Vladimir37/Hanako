@@ -3,8 +3,12 @@ var express = require('express');
 var render = require('../assist/render');
 var control = require('../assist/control');
 var pages = require('../assist/pages_checking');
+var status_common = require('../assist/status_common');
 
 var router = express.Router();
+
+//admin or user
+router.use(status_common);
 
 //index page
 router.get('/', render.index);
