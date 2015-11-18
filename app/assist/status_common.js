@@ -23,7 +23,8 @@ function status_common(req, res, next) {
             if(moderator && name_arr[1] == req.ip) {
                 res.locals.mod = {
                     id: moderator.id,
-                    status: moderator.status
+                    status: moderator.status,
+                    boards: JSON.parse(moderator.boards)
                 };
                 next();
             }
