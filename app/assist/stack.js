@@ -116,6 +116,7 @@ function attachment(board, thread) {
     }
 };
 
+exports.thread_num = thread_num;
 exports.bump = bump;
 exports.deleting = deleting;
 exports.new = new_thread;

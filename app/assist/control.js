@@ -375,7 +375,7 @@ function actions(req, res, next) {
             res.redirect('/' + board);
         }
         //deleting post
-        else if(type == 4 && status >= 2 && checking(admin.boards, board)) {
+        else if(type == 4 && status >= 1 && checking(admin.boards, board)) {
             db.boards[board].destroy({where: {
                 id: thread,
                 thread: {
@@ -403,6 +403,55 @@ function actions(req, res, next) {
                 db.bans.create(ban_data);
                 res.redirect('/' + board);
             }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+        }
+        //Deleting all author's posts (not thread)
+        else if(type == 6 && status >= 2 && checking(admin.boards, board)) {
+            db.boards[board].findById(thread).then(function(post) {
+                if(!post) {
+                    errors.e500(req, res, next);
+                    return;
+                }
+                db.boards[board].destroy({where: {
+                    ip: post.ip,
+                    thread: {
+                        $ne: null
+                    }
+                }});
+                res.redirect('/' + board);
+            }, function(err) {
+                console.log(err);
+                errors.e500(req, res, next);
+            });
+        }
+        //Deleting all author's posts and thread
+        else if(type == 7 && status >= 2 && checking(admin.boards, board)) {
+            var need_post;
+            db.boards[board].findById(thread).then(function(post) {
+                if(!post) {
+                    errors.e500(req, res, next);
+                    return;
+                }
+                need_post = post;
+                return db.boards[board].findAll({where: {
+                    ip: post.ip,
+                    thread: null
+                }});
+            }).then(function(threads) {
+                var deleting_threads = stack.thread_num(threads);
+                deleting_threads.forEach(function(item) {
+                    stack.deleting(board, item);
+                });
+                db.boards[board].destroy({where: {
+                    ip: need_post.ip,
+                    thread: {
+                        $ne: null
+                    }
+                }});
+                res.redirect('/' + board);
+            }).catch(function(err) {
                 console.log(err);
                 errors.e500(req, res, next);
             });
