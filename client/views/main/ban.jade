@@ -1,0 +1,15 @@
+extends ../basis/layout
+
+block content
+    h1 Ban
+    section.bans
+        - if(!bans.length)
+            h2 You are not banned
+        - else
+            - each ban, i in bans
+                article.ban_main
+                    article.ban_board Board: #{ban.board || "All boards"}
+                    article.ban_reason Reason: #{ban.reason}
+                    - var expires_date = new Date(ban.createdAt);
+                    - expires_date.setDate(expires_date.getDate() + ban.time)
+                    article.ban_time Expires: #{expires_date.toDateString()}
