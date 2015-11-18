@@ -7,8 +7,35 @@ mixin captcha()
         input(type="text" name="c_value" placeholder="Captcha" required)
 
 // post
-mixin post(post, board)
+mixin post(post, board, mod)
     article.post
+        - if(mod)
+            article.admin_action
+                - if(mod.status >=1)
+                    form(action="/admin/action" method="post")
+                        input(type="hidden" name="type" value=4)
+                        input(type="hidden" name="board" value=board)
+                        input(type="hidden" name="thread" value=post.id)
+                        input(type="submit" value="Delete post")
+                    br
+                - if(mod.status >=2)
+                    form(action="/admin/action" method="post")
+                        input(type="hidden" name="type" value=5)
+                        input(type="hidden" name="board" value=board)
+                        input(type="hidden" name="thread" value=post.id)
+                        input(type="submit" value="Ban author")
+                    br
+                    form(action="/admin/action" method="post")
+                        input(type="hidden" name="type" value=6)
+                        input(type="hidden" name="board" value=board)
+                        input(type="hidden" name="thread" value=post.id)
+                        input(type="submit" value="Delete posts of the author")
+                    br
+                    form(action="/admin/action" method="post")
+                        input(type="hidden" name="type" value=7)
+                        input(type="hidden" name="board" value=board)
+                        input(type="hidden" name="thread" value=post.id)
+                        input(type="submit" value="Delete posts and threads of the author")
         article.post_data
             span.name=post.name
         - if(post.image)
@@ -17,8 +44,46 @@ mixin post(post, board)
         article.post_text=post.text
 
 // OP post
-mixin op_post(post, board)
+mixin op_post(post, board, mod)
     article.op_post
+        - if(mod)
+            article.admin_action
+            - if(mod.status >=2)
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=1)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Attach/detach thread")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=2)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Close/open thread")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=3)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Delete thread")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=5)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Ban author")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=6)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Delete posts of the author")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=7)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Delete posts and threads of the author")
         article.post_data
             span.name=post.name
         - if(post.image)

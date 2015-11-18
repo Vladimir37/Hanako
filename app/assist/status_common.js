@@ -21,8 +21,10 @@ function status_common(req, res, next) {
             active: 1
         }}).then(function(moderator) {
             if(moderator && name_arr[1] == req.ip) {
-                res.locals.modId = moderator.id;
-                res.locals.modStatus = moderator.status;
+                res.locals.mod = {
+                    id: moderator.id,
+                    status: moderator.status
+                };
                 next();
             }
             else {

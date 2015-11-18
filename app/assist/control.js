@@ -456,6 +456,10 @@ function actions(req, res, next) {
                 errors.e500(req, res, next);
             });
         }
+        //incorrect type or incorrect rights
+        else {
+            errors.e403(req, res, next);
+        }
     }, function(err) {
         console.log(err);
         errors.e500(req, res, next);
