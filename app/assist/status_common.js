@@ -26,6 +26,7 @@ function status_common(req, res, next) {
                     status: moderator.status,
                     boards: JSON.parse(moderator.boards)
                 };
+                res.modId = moderator.id;
                 next();
             }
             else {

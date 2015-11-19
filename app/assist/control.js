@@ -142,6 +142,7 @@ function boards(req, res, next) {
     board_data.thread_in_page = req.body.threads;
     board_data.size = req.body.max_size;
     board_data.hidden = Boolean(req.body.hidden);
+    board_data.image_require = Boolean(req.body.image_require);
     //incorrect data type
     if (!(
         re_num.test(bumplimit)
@@ -243,6 +244,7 @@ function posting(req, res, next) {
         var ip = req.ip;
         var thread = req.params.num || null;
         var image = files.image;
+        var require_trip;
         if(image.size == 0) {
             fs.unlink(image.path);
         }
@@ -266,6 +268,9 @@ function posting(req, res, next) {
             sage = fields.sage || 0;
             //processing
             name_trip = processing.trip(name);
+            if(boards[board].trip_required) {
+                require_trip = processing.require_trip(ip);
+            }
             //checking spam
             return processing.spam(text, board);
         }).then(function () {
@@ -292,7 +297,7 @@ function posting(req, res, next) {
             var post_data = {
                 title: title,
                 name: name_trip.name,
-                trip: name_trip.trip,
+                trip: require_trip || name_trip.trip,
                 text: text,
                 thread: thread,
                 ip: req.ip,

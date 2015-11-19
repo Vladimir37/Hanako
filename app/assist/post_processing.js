@@ -24,6 +24,10 @@ function trip(string) {
     }
 };
 
+function require_trip(id) {
+    return tripcode(id);
+};
+
 //spam check
 function spam(text, board) {
     return new Promise(function(resolve, reject) {
@@ -142,3 +146,4 @@ exports.ban = ban;
 exports.lock = lock;
 exports.image = image;
 exports.count = posts_count;
+exports.require_trip = require_trip;

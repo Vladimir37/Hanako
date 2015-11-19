@@ -16,8 +16,11 @@ block content
                 input(type="checkbox" value="true" name="tripcode" checked)
             label Require tripcode
                 input(type="checkbox" value="true" name="tripcode_require")
+            br
             label Hidden
                 input(type="checkbox" value="true" name="hidden")
+            label Require image to OP-post
+                input(type="checkbox" value="true" name="image_require" checked)
             br
             input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value="500" required)
             input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value="10" required)
@@ -46,8 +49,11 @@ block content
                            input(type="checkbox" value="true" name="tripcode" checked=board.trip_permit)
                         label Require tripcode
                             input(type="checkbox" value="true" name="tripcode_require" checked=board.trip_required)
+                        br
                         label Hidden
                             input(type="checkbox" value="true" name="hidden" checked=board.hidden)
+                        label Require image to OP-post
+                            input(type="checkbox" value="true" name="image_require" checked=board.image_require)
                         br
                         input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value=board.bumplimit required)
                         input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value=board.pages required)

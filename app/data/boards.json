@@ -9,31 +9,34 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": "2",
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "a": {
         "name": "Второй",
         "default_username": "Anonimus",
         "image_permit": false,
-        "trip_permit": false,
-        "trip_required": false,
+        "trip_permit": true,
+        "trip_required": true,
         "bumplimit": "550",
         "pages": "10",
         "thread_in_page": "10",
         "size": "3",
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "c": {
         "name": "Cetardus",
         "default_username": "Anon",
         "image_permit": false,
-        "trip_permit": false,
+        "trip_permit": true,
         "trip_required": false,
         "bumplimit": "500",
         "pages": "10",
         "thread_in_page": "10",
         "size": "2",
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "u": {
         "name": "Первый",
@@ -45,7 +48,8 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": 2,
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "d": {
         "name": "Detard",
@@ -57,7 +61,8 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": 2,
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "f": {
         "name": "Fetard",
@@ -69,7 +74,8 @@
         "pages": "2",
         "thread_in_page": "2",
         "size": 2,
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "we": {
         "name": "WER",
@@ -81,7 +87,8 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": 2,
-        "hidden": true
+        "hidden": true,
+        "image_require": true
     },
     "k": {
         "name": "kkk",
@@ -93,7 +100,8 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": "7",
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     },
     "g": {
         "name": "Green",
@@ -105,6 +113,7 @@
         "pages": "10",
         "thread_in_page": "10",
         "size": "2",
-        "hidden": false
+        "hidden": false,
+        "image_require": true
     }
 }

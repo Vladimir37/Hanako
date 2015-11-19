@@ -9,7 +9,7 @@ mixin captcha()
 // post
 mixin post(post, board, mod)
     article.post
-        - if(mod && mod.boards == null || mod.boards.indexOf(board) != -1)
+        - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
                 - if(mod.status >=1)
                     form(action="/admin/action" method="post")
@@ -46,7 +46,7 @@ mixin post(post, board, mod)
 // OP post
 mixin op_post(post, board, mod)
     article.op_post
-        - if(mod && mod.boards == null || mod.boards.indexOf(board) != -1)
+        - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
             - if(mod.status >=2)
                 form(action="/admin/action" method="post")
