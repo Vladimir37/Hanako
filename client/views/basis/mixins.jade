@@ -92,7 +92,7 @@ mixin op_post(post, board, mod)
         article.post_text=post.text
 
 // form post/thread
-mixin posting_form()
+mixin posting_form(image_permit)
     article.posting_form
         form(method="post" enctype="multipart/form-data")
             input(type="text" name="title" placeholder="Title")
@@ -104,7 +104,8 @@ mixin posting_form()
             label Sage
                 input(type="checkbox" name="sage" value="1")
             br
-            input(type="file" name="image")
-            br
+            - if(image_permit)
+                input(type="file" name="image")
+                br
             mixin captcha()
             input(type="submit" value="Submit")

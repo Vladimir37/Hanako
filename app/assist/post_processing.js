@@ -6,9 +6,9 @@ var db = require('./database');
 var fo = require('./file_operation');
 
 //tripcode and name
-function trip(string) {
+function trip(string, permit) {
     var start = string.indexOf('#');
-    if(start == -1) {
+    if(start == -1 || !permit) {
         return {
             name: string,
             trip: null

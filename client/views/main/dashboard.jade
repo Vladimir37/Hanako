@@ -2,7 +2,7 @@ extends ../basis/layout
 
 block content
     h1 /#{board.addr}/ — #{board.data.name}
-    mixin posting_form()
+    mixin posting_form(board.data.image_permit)
     section.dashboard
         - each thread, i in posts
             section.thread(style="margin-bottom: 20px")
@@ -13,7 +13,7 @@ block content
                 - for(var j = thread[0].length - 1; j >= 0; j--) {
                     mixin post(thread[0][j], board.addr, mod)
                 - }
-    mixin posting_form()
+    mixin posting_form(board.data.image_permit)
     article.dash_pages
         - for(var i = 0; i < board.data.pages; i++) {
             a(href="/" + board.addr + '/' + i)

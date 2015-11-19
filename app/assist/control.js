@@ -245,7 +245,7 @@ function posting(req, res, next) {
         var thread = req.params.num || null;
         var image = files.image;
         var require_trip;
-        if(image.size == 0) {
+        if(image && image.size == 0) {
             fs.unlink(image.path);
         }
         //captcha
@@ -267,7 +267,7 @@ function posting(req, res, next) {
             text = fields.text;
             sage = fields.sage || 0;
             //processing
-            name_trip = processing.trip(name);
+            name_trip = processing.trip(name, boards[board].trip_permit);
             if(boards[board].trip_required) {
                 require_trip = processing.require_trip(ip);
             }
@@ -286,7 +286,7 @@ function posting(req, res, next) {
             }
         }).then(function () {
             //image processing
-            if(image.size) {
+            if(image && image.size) {
                 return processing.image(image, board);
             }
             else {

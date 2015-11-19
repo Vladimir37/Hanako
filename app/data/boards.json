@@ -42,7 +42,7 @@
         "name": "Первый",
         "default_username": "Anonimus",
         "image_permit": false,
-        "trip_permit": true,
+        "trip_permit": false,
         "trip_required": false,
         "bumplimit": "700",
         "pages": "10",

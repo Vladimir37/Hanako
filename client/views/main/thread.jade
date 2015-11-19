@@ -2,9 +2,9 @@ extends ../basis/layout
 
 block content
     h1 /#{boards_data[0]}/ — #{boards_data[1]}
-    mixin posting_form()
+    mixin posting_form(boards_data[2])
     section.thread
         mixin op_post(op_post, boards_data[0], mod)
         - each post, i in posts
             mixin post(post, boards_data[0], mod)
-    mixin posting_form()
+    mixin posting_form(boards_data[2])

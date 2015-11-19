@@ -44,7 +44,7 @@ function thread(req, res, next) {
             boards[board_name]
             && re_num.test(thread_num)
         ) {
-            render.thread(req, res, next, [board_name, boards[board_name].name]);
+            render.thread(req, res, next, [board_name, boards[board_name].name, boards[board_name].image_permit]);
         }
         else {
             errors.e404(req, res, next);
