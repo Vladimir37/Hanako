@@ -15,7 +15,7 @@
     "a": {
         "name": "Второй",
         "default_username": "Anonimus",
-        "image_permit": false,
+        "image_permit": true,
         "trip_permit": true,
         "trip_required": true,
         "bumplimit": "550",
@@ -23,7 +23,7 @@
         "thread_in_page": "10",
         "size": "3",
         "hidden": false,
-        "image_require": true
+        "image_require": false
     },
     "c": {
         "name": "Cetardus",

@@ -101,18 +101,18 @@ function image(image, board) {
             var board_data = boards[board];
             if(image.size > +board_data.size * 1024 * 1024) {
                 fs.unlink(image.path);
-                reject(7);
+                reject('7');
             }
             else if(image.type.slice(0, 6) != 'image/') {
                 fs.unlink(image.path);
-                reject(8);
+                reject('8');
             }
             else {
                 resolve(mime.extension(image.type));
             }
         }, function(err) {
             console.log(err);
-            reject(6);
+            reject('6');
         });
     });
 };

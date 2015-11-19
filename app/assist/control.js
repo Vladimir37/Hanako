@@ -237,8 +237,8 @@ function posting(req, res, next) {
     form.parse(req, function(err, fields, files) {
         if(err) {
             console.log(err);
-            res.end(6);
-            return;
+            res.end('6');
+            return Promise.reject('6');
         }
         var board = req.params.name;
         var ip = req.ip;
@@ -254,7 +254,7 @@ function posting(req, res, next) {
         //captcha check
         if (!captcha.check_f(c_key, c_value)) {
             res.end('1');
-            return;
+            return Promise.reject('1');
         }
         ;
         var boards_data, name, title, text, sage, name_trip, img;
@@ -268,8 +268,14 @@ function posting(req, res, next) {
             sage = fields.sage || 0;
             //processing
             name_trip = processing.trip(name, boards[board].trip_permit);
+            //generating tripcode for special boards
             if(boards[board].trip_required) {
                 require_trip = processing.require_trip(ip);
+            }
+            //require image for special boards
+            if(boards[board].image_require && !Boolean(image.size)) {
+                res.end('9');
+                return Promise.reject('9');
             }
             //checking spam
             return processing.spam(text, board);
