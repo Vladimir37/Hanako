@@ -18,6 +18,12 @@ mixin post(post, board, mod)
                         input(type="hidden" name="thread" value=post.id)
                         input(type="submit" value="Delete post")
                     br
+                    form(action="/admin/action" method="post")
+                        input(type="hidden" name="type" value=8)
+                        input(type="hidden" name="board" value=board)
+                        input(type="hidden" name="thread" value=post.id)
+                        input(type="submit" value="Prevention")
+                    br
                 - if(mod.status >=2)
                     form(action="/admin/action" method="post")
                         input(type="hidden" name="type" value=5)
@@ -84,6 +90,12 @@ mixin op_post(post, board, mod)
                     input(type="hidden" name="board" value=board)
                     input(type="hidden" name="thread" value=post.id)
                     input(type="submit" value="Delete posts and threads of the author")
+                br
+                form(action="/admin/action" method="post")
+                    input(type="hidden" name="type" value=8)
+                    input(type="hidden" name="board" value=board)
+                    input(type="hidden" name="thread" value=post.id)
+                    input(type="submit" value="Prevention")
         article.post_data
             span.name=post.name
         - if(post.image)

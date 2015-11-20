@@ -8,6 +8,7 @@ var processing = require('./post_processing');
 var captcha = require('./captcha');
 var stack = require('./stack');
 var checking = require('./checking_board');
+var messages = require('../../configs/messages');
 var fo = require('./file_operation');
 
 //RegExp
@@ -412,6 +413,11 @@ function actions(req, res, next) {
                     time: time
                 };
                 db.bans.create(ban_data);
+                db.boards[board].update({
+                    text: post.text + '<br><span class="message">' + messages.ban + '</span>'
+                }, {where: {
+                    id: post.id
+                }});
                 res.redirect('/' + board);
             }, function(err) {
                 console.log(err);
@@ -466,6 +472,19 @@ function actions(req, res, next) {
                 console.log(err);
                 errors.e500(req, res, next);
             });
+        }
+        //Prevention author
+        else if(type == 8 && status >= 1 && checking(admin.boards, board)) {
+            db.boards[board].findById(thread).then(function(post) {
+                db.boards[board].update({
+                    text: post.text + '<br><span class="message">' + messages.prevention + '</span>'
+                }, {
+                    where: {
+                        id: thread
+                    }
+                });
+            });
+            res.redirect('/' + board);
         }
         //incorrect type or incorrect rights
         else {
