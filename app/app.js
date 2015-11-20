@@ -8,6 +8,7 @@ var errors = require('./routing/errors');
 var threads = require('./routing/threads');
 var admin = require('./routing/admin');
 var ban = require('./routing/ban');
+var report = require('./routing/report');
 
 var app = express();
 
@@ -24,6 +25,9 @@ app.use('/admin', admin);
 
 //checking ban
 app.use('/ban', ban);
+
+//acceptance reports
+app.use('/report', report);
 
 //captcha
 app.use('/testing', testing);

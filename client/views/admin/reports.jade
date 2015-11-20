@@ -12,19 +12,36 @@ block content
         h3 No reports
     - else
         h3 Total reports: #{count}
-        - each report, i in reports
-            article.report
-                article.r_in.r_num=report.id
-                article.r_in.r_board=report.board
-                article.r_in.r_text=report.text
-                article.r_in.r_date=report.createdAt
+        table.reports
+            tr
+                th ID
+                th IP
+                th Board
+                th Thread
+                th Text
+                th Created
                 - if(active == 1)
-                    form(method="post")
-                        input(type="hidden" name="id" value=report.id)
-                        input(type="text" name="resolution" placeholder="Resolution")
-                        br
-                        input(type="submit" value="Submit")
+                    th
                 - else
-                    article.r_in.r_resolution=report.resolution
-                    article.r_in.r_date_end=report.updatedAt
-                    article.r_in.r_admin=report._admin.name
+                    th Resolution
+                    th Respondent
+                    th Closed
+            - each report, i in reports
+                tr
+                    td.r_num=report.id
+                    td.r_ip=report.ip
+                    td.r_board=report.board
+                    td.r_thread=report.thread
+                    td.r_text=report.text
+                    td.r_date=report.createdAt
+                    - if(active == 1)
+                        td
+                            form(method="post")
+                                input(type="hidden" name="id" value=report.id)
+                                input(type="text" name="resolution" placeholder="Resolution")
+                                br
+                                input(type="submit" value="Submit")
+                    - else
+                        td.r_resolution=report.resolution
+                        td.r_admin=report._admin.name
+                        td.r_date=report.updatedAt

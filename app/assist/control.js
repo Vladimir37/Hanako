@@ -284,7 +284,7 @@ function posting(req, res, next) {
             return processing.ban(ip, board);
         }).then(function () {
             //checking lock thread
-            if (thread) {
+            if(thread) {
                 return processing.lock(board, thread)
             }
             else {

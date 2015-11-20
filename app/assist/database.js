@@ -96,6 +96,7 @@ tables.reports = sequelize.define('_reports', {
     text: Sequelize.TEXT,
     ip: Sequelize.TEXT,
     board: Sequelize.TEXT,
+    thread: Sequelize.TEXT,
     respondent: {
         type: Sequelize.INTEGER,
         allowNull: true
