@@ -140,6 +140,14 @@ function posts_count(board, thread) {
     });
 };
 
+function text_processing(text) {
+    var new_text = text.replace(/</g, '&lt;');
+    new_text = new_text.replace(/>/g, '&gt;');
+    new_text = new_text.replace(/\(/g, '&#040;');
+    new_text = new_text.replace(/\)/g, '&#041;');
+    return new_text;
+};
+
 exports.trip = trip;
 exports.spam = spam;
 exports.ban = ban;
@@ -147,3 +155,4 @@ exports.lock = lock;
 exports.image = image;
 exports.count = posts_count;
 exports.require_trip = require_trip;
+exports.text = text_processing;

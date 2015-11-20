@@ -41,7 +41,7 @@ mixin post(post, board, mod)
         - if(post.image)
             figure.post_image
                 img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
-        article.post_text=post.text
+        article.post_text!=post.text
 
 // OP post
 mixin op_post(post, board, mod)
@@ -89,7 +89,7 @@ mixin op_post(post, board, mod)
         - if(post.image)
             figure.post_image
                 img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
-        article.post_text=post.text
+        article.post_text!=post.text
 
 // form post/thread
 mixin posting_form(image_permit)

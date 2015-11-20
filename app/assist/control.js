@@ -264,7 +264,7 @@ function posting(req, res, next) {
             //main data
             name = fields.name || boards[board].default_username;
             title = (fields.title || '').substr(0, 40);
-            text = fields.text;
+            text = processing.text(fields.text);
             sage = fields.sage || 0;
             //processing
             name_trip = processing.trip(name, boards[board].trip_permit);
