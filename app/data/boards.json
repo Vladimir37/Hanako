@@ -10,7 +10,8 @@
         "thread_in_page": "10",
         "size": "2",
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": false
     },
     "a": {
         "name": "Второй",
@@ -23,7 +24,8 @@
         "thread_in_page": "10",
         "size": "3",
         "hidden": false,
-        "image_require": false
+        "image_require": false,
+        "roulette": true
     },
     "c": {
         "name": "Cetardus",
@@ -36,7 +38,8 @@
         "thread_in_page": "10",
         "size": "2",
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "u": {
         "name": "Первый",
@@ -49,7 +52,8 @@
         "thread_in_page": "10",
         "size": 2,
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "d": {
         "name": "Detard",
@@ -62,7 +66,8 @@
         "thread_in_page": "10",
         "size": 2,
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "f": {
         "name": "Fetard",
@@ -75,7 +80,8 @@
         "thread_in_page": "2",
         "size": 2,
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "we": {
         "name": "WER",
@@ -88,7 +94,8 @@
         "thread_in_page": "10",
         "size": 2,
         "hidden": true,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "k": {
         "name": "kkk",
@@ -101,7 +108,8 @@
         "thread_in_page": "10",
         "size": "7",
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     },
     "g": {
         "name": "Green",
@@ -114,6 +122,7 @@
         "thread_in_page": "10",
         "size": "2",
         "hidden": false,
-        "image_require": true
+        "image_require": true,
+        "roulette": true
     }
 }

@@ -144,6 +144,7 @@ function boards(req, res, next) {
     board_data.size = req.body.max_size;
     board_data.hidden = Boolean(req.body.hidden);
     board_data.image_require = Boolean(req.body.image_require);
+    board_data.roulette = Boolean(req.body.roulette);
     //incorrect data type
     if (!(
         re_num.test(bumplimit)
@@ -265,7 +266,7 @@ function posting(req, res, next) {
             //main data
             name = fields.name || boards[board].default_username;
             title = (fields.title || '').substr(0, 40);
-            text = processing.text(fields.text);
+            text = processing.text(fields.text, boards[board].roulette);
             sage = fields.sage || 0;
             //processing
             name_trip = processing.trip(name, boards[board].trip_permit);

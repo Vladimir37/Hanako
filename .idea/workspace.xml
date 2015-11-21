@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917b7282-3c98-40c9-9c36-3d9ad3e27400" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configs/messages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/boards.jade" afterPath="$PROJECT_DIR$/client/views/admin/boards.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data/boards.json" afterPath="$PROJECT_DIR$/app/data/boards.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/control.js" afterPath="$PROJECT_DIR$/app/assist/control.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/mixins.jade" afterPath="$PROJECT_DIR$/client/views/basis/mixins.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/post_processing.js" afterPath="$PROJECT_DIR$/app/assist/post_processing.js" />
     </list>
     <ignored path="Hanako.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,21 +46,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="control.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assist/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3580645">
-              <caret line="485" column="15" selection-start-line="485" selection-start-column="15" selection-end-line="485" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
+      <file leaf-file-name="post_processing.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assist/post_processing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.344828">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.55813956">
+              <caret line="184" column="2" selection-start-line="184" selection-start-column="2" selection-end-line="184" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boards.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/data/boards.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-84.82143">
+              <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boards.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/admin/boards.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.137931">
+              <caret line="61" column="72" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -120,13 +140,10 @@
         <option value="$PROJECT_DIR$/app/assist/stack.js" />
         <option value="$PROJECT_DIR$/app/routing/ban.js" />
         <option value="$PROJECT_DIR$/client/views/main/ban.jade" />
-        <option value="$PROJECT_DIR$/client/views/admin/boards.jade" />
         <option value="$PROJECT_DIR$/app/assist/status_common.js" />
         <option value="$PROJECT_DIR$/app/data/spam.json" />
         <option value="$PROJECT_DIR$/app/assist/pages_checking.js" />
         <option value="$PROJECT_DIR$/client/views/main/dashboard.jade" />
-        <option value="$PROJECT_DIR$/app/data/boards.json" />
-        <option value="$PROJECT_DIR$/app/assist/post_processing.js" />
         <option value="$PROJECT_DIR$/client/views/main/thread.jade" />
         <option value="$PROJECT_DIR$/app/assist/database.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -134,7 +151,10 @@
         <option value="$PROJECT_DIR$/client/views/admin/reports.jade" />
         <option value="$PROJECT_DIR$/configs/messages.json" />
         <option value="$PROJECT_DIR$/client/views/basis/mixins.jade" />
+        <option value="$PROJECT_DIR$/app/data/boards.json" />
+        <option value="$PROJECT_DIR$/client/views/admin/boards.jade" />
         <option value="$PROJECT_DIR$/app/assist/control.js" />
+        <option value="$PROJECT_DIR$/app/assist/post_processing.js" />
       </list>
     </option>
   </component>
@@ -222,69 +242,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="configs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,6 +333,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hanako" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hanako" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,9 +445,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1440" height="817" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.517094" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28490028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -729,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/admin/boards.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.793103">
-          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assist/pages_checking.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3977486">
@@ -752,26 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/boards.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/data/spam.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60854095">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assist/post_processing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="31" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,10 +827,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/admin/boards.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.137931">
+          <caret line="61" column="72" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assist/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3580645">
-          <caret line="485" column="15" selection-start-line="485" selection-start-column="15" selection-end-line="485" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/boards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-84.82143">
+          <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assist/post_processing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55813956">
+          <caret line="184" column="2" selection-start-line="184" selection-start-column="2" selection-end-line="184" selection-end-column="2" />
           <folding />
         </state>
       </provider>
