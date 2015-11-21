@@ -1,6 +1,7 @@
 var express =  require('express');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon');
 var te = require('thumb-express');
 
 var testing = require('./routing/testing');
@@ -19,6 +20,9 @@ app.set('views', __dirname +  '/../client/views');
 //POST request and cookies
 app.use(cookieParser());
 app.use(bodyParser());
+
+//favicon
+app.use(favicon('client/source/img/main/favicon.ico'));
 
 //admin's panel
 app.use('/admin', admin);
