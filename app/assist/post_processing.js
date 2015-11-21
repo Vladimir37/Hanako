@@ -159,8 +159,7 @@ function text_processing(text, roulette_permit) {
 
 function processing_roulette(text) {
     return text.replace(/([0-9]+)RL([0-9]+)/g, function(all, num1, num2) {
-        var roulette_exp = roulette([num1, num2]);
-        return roulette_exp;
+        return roulette([num1, num2]);
     });
 }
 

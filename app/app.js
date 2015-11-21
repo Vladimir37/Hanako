@@ -40,6 +40,9 @@ app.use('/src', express.static(__dirname + '/../client/source'));
 //threads and main
 app.use('/', threads);
 
+//user files
+app.use('/', express.static(__dirname + '/../client/views/other'));
+
 //Errors
 app.use(errors.e404);
 app.use(errors.render);

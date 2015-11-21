@@ -19,7 +19,7 @@ function dashboard(req, res, next) {
                 render.dashboard(req, res, next, board_name, boards[board_name], page_num);
             }
             else {
-                errors.e404(req, res, next);
+                next();
             }
         }
         else {
@@ -27,7 +27,7 @@ function dashboard(req, res, next) {
                 render.dashboard(req, res, next, board_name, boards[board_name]);
             }
             else {
-                errors.e404(req, res, next);
+                next();
             }
         }
     }, function(err) {

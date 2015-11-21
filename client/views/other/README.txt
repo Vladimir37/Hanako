@@ -1,0 +1,1 @@
+This directory for user files. The files will be accessible from the site root.

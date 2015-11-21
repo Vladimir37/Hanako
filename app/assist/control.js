@@ -275,7 +275,7 @@ function posting(req, res, next) {
                 require_trip = processing.require_trip(ip);
             }
             //require image for special boards
-            if(boards[board].image_require && !Boolean(image.size)) {
+            if(boards[board].image_require && !Boolean(image.size) && !thread) {
                 res.end('9');
                 return Promise.reject('9');
             }
