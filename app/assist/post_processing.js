@@ -150,16 +150,19 @@ function text_processing(text, roulette_permit) {
     .replace(/_(.+?)_/g, '<em class="crossed">$1</em>')
     .replace(/%%(.+?)%%/g, '<i class="spoiler">$1</i>');
     if(roulette_permit) {
-        new_text.replace(/([0-9]+)RL([0-9]+)/g, function(all, num1, num2) {
-            var roulette_exp = roulette([num1, num2]);
-            return roulette_exp;
-        });
-        return new_text;
+        return processing_roulette(new_text);
     }
     else {
         return new_text;
     }
 };
+
+function processing_roulette(text) {
+    return text.replace(/([0-9]+)RL([0-9]+)/g, function(all, num1, num2) {
+        var roulette_exp = roulette([num1, num2]);
+        return roulette_exp;
+    });
+}
 
 function roulette(num) {
     if(+num[0] <= 100 && +num[1] <= 10 && +num[0] > 0 && +num[1] > 0) {
