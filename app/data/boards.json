@@ -1,6 +1,7 @@
 {
     "b": {
         "name": "Первый",
+        "category": "Третья",
         "default_username": "Anonimus",
         "image_permit": true,
         "trip_permit": true,
@@ -15,6 +16,7 @@
     },
     "a": {
         "name": "Второй",
+        "category": "Главная",
         "default_username": "Anonimus",
         "image_permit": true,
         "trip_permit": true,
@@ -29,6 +31,7 @@
     },
     "c": {
         "name": "Cetardus",
+        "category": "Главная",
         "default_username": "Anon",
         "image_permit": false,
         "trip_permit": true,
@@ -43,6 +46,7 @@
     },
     "u": {
         "name": "Первый",
+        "category": "Главная",
         "default_username": "Anonimus",
         "image_permit": false,
         "trip_permit": false,
@@ -57,6 +61,7 @@
     },
     "d": {
         "name": "Detard",
+        "category": "Запасная",
         "default_username": "Ano",
         "image_permit": false,
         "trip_permit": "true",
@@ -71,6 +76,7 @@
     },
     "f": {
         "name": "Fetard",
+        "category": "Запасная",
         "default_username": "Ano",
         "image_permit": false,
         "trip_permit": true,
@@ -85,6 +91,7 @@
     },
     "we": {
         "name": "WER",
+        "category": "Запасная",
         "default_username": "Ano",
         "image_permit": true,
         "trip_permit": true,
@@ -99,6 +106,7 @@
     },
     "k": {
         "name": "kkk",
+        "category": "Запасная",
         "default_username": "Ano",
         "image_permit": true,
         "trip_permit": true,
@@ -113,6 +121,7 @@
     },
     "g": {
         "name": "Green",
+        "category": "Запасная",
         "default_username": "Ano",
         "image_permit": true,
         "trip_permit": true,

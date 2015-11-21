@@ -134,6 +134,7 @@ function boards(req, res, next) {
     //board's data
     var board_data = {};
     board_data.name = req.body.public_name;
+    board_data.category = req.body.category;
     board_data.default_username = req.body.username;
     board_data.image_permit = Boolean(req.body.image);
     board_data.trip_permit = Boolean(req.body.tripcode);

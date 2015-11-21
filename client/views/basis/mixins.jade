@@ -121,3 +121,11 @@ mixin posting_form(image_permit)
                 br
             mixin captcha()
             input(type="submit" value="Submit")
+
+// boards list with category
+mixin boards_list(boards)
+    section.boards_list_layout
+        - each category, i in boards
+            article.board_category=i + ': '
+                - each board, j in category
+                    a(href="/" + board[0] title=board[1])='/' + board[0] + '/ '

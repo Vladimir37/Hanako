@@ -6,6 +6,7 @@ block content
     section.a_add_board
         form(method="post")
             input(type="text" name="name" pattern="^[a-z]+$" placeholder="Name" required)
+            input(type="text" name="category" placeholder="Category" required)
             br
             input(type="text" name="public_name" placeholder="Public name" required)
             input(type="text" name="username" placeholder="Default username" required)
@@ -42,6 +43,8 @@ block content
                 aricle.a_board_form
                     form(method="post")
                         input(type="hidden" name="name" value=i)
+                        input(type="text" name="category" placeholder="Category" value=board.category required)
+                        br
                         input(type="text" name="public_name" placeholder="Public name" value=board.name required)
                         input(type="text" name="username" placeholder="Default username" value=board.default_username required)
                         br
