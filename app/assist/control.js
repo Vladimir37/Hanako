@@ -9,6 +9,7 @@ var captcha = require('./captcha');
 var stack = require('./stack');
 var checking = require('./checking_board');
 var messages = require('../../configs/messages');
+var app_config = require('../../configs/app');
 var fo = require('./file_operation');
 
 //RegExp
@@ -259,7 +260,14 @@ function posting(req, res, next) {
             res.end('1');
             return Promise.reject('1');
         }
-        ;
+        if(req.cookies['pause_post_' + board] && thread) {
+            res.end('10');
+            return Promise.reject('10');
+        }
+        if(req.cookies['pause_thread_' + board] && !thread) {
+            res.end('10');
+            return Promise.reject('10');
+        }
         var boards_data, name, title, text, sage, name_trip, img;
         //loading data
         fo.read('app/data/boards.json').then(function (boards) {
@@ -276,7 +284,7 @@ function posting(req, res, next) {
                 require_trip = processing.require_trip(ip);
             }
             //require image for special boards
-            if(boards[board].image_require && !Boolean(image.size) && !thread) {
+            if(boards[board].image_require && image && !Boolean(image.size) && !thread) {
                 res.end('9');
                 return Promise.reject('9');
             }
@@ -324,6 +332,17 @@ function posting(req, res, next) {
             else if (!sage && thread && result[1] < boards_data[board].bumplimit) {
                 stack.bump(board, +thread);
             }
+            //antispam cookie
+            var cookie_type, cookie_time;
+            if(thread) {
+                cookie_type = 'post';
+                cookie_time = app_config.seconds_post;
+            }
+            else {
+                cookie_type = 'thread';
+                cookie_time = app_config.seconds_thread;
+            }
+            res.cookie('pause_' + cookie_type + '_' + board, true, {maxAge: cookie_time * 1000});
             res.end('0');
             var need_thread = result[0].thread || result[0].id;
             if(img) {

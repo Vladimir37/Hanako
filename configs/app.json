@@ -1,3 +1,5 @@
 {
-  "port": 8080
+    "port": 8080,
+    "seconds_post": 5,
+    "seconds_thread": 360
 }

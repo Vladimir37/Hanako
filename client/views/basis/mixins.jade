@@ -129,3 +129,12 @@ mixin boards_list(boards)
             article.board_category=i + ': '
                 - each board, j in category
                     a(href="/" + board[0] title=board[1])='/' + board[0] + '/ '
+
+// boards list with category for index page
+mixin boards_list_index(boards)
+    section.boards_list_layout_index
+        - each category, i in boards
+            article.board_category=i + ': '
+                - each board, j in category
+                    article.board_index
+                        a(href="/" + board[0])=board[1]

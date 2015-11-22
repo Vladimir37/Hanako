@@ -104,16 +104,6 @@ function admin(req, res, next) {
     });
 };
 
-//index render
-function index(req, res, next) {
-    fo.read('app/data/boards.json').then(function(boards) {
-        res.render('main/index', {boards: boards});
-    }, function(err) {
-        console.log(err);
-        errors.e500(req, res, next);
-    });
-};
-
 //render dashboard
 function dashboard(req, res, next, board, board_data, page) {
     page = page || 0;
@@ -172,6 +162,5 @@ exports.spam = spam;
 exports.ban = ban;
 exports.boards = boards;
 exports.admin = admin;
-exports.index = index;
 exports.dashboard = dashboard;
 exports.thread = thread;

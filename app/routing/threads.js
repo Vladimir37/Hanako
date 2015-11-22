@@ -15,7 +15,7 @@ router.use(status_common);
 router.use(boards_list);
 
 //index page
-router.get('/', render.index);
+router.get('/', render.jade('main/index'));
 //board page 0
 router.get('/:name', pages.dashboard);
 //thread
