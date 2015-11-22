@@ -1,3 +1,36 @@
+@purple: #9C27B0;
+.frame {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid @purple;
+    border-radius: 5px;
+}
 body {
-  background: #FFFFD3;
+    background: #FFFFD3;
+}
+a {
+    color: @purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+    .posting_form {
+        .frame;
+    }
+    .form_report {
+        .frame;
+        width: 50%;
+        float: right;
+    }
+}
+.boards_list_layout {
+    padding: 20px;
+    .board_category {
+        //
+    }
 }
