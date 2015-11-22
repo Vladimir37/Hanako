@@ -11,6 +11,7 @@ mixin post(post, board, mod)
     article.post
         - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
+                article.post_num='Post ' + post.id
                 - if(mod.status >=1)
                     form(action="/admin/action" method="post")
                         input(type="hidden" name="type" value=4)
@@ -56,6 +57,7 @@ mixin op_post(post, board, mod)
     article.op_post
         - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
+                article.post_num='Post ' + post.id
                 - if(mod.status >=2)
                     form(action="/admin/action" method="post")
                         input(type="hidden" name="type" value=1)
@@ -107,6 +109,7 @@ mixin op_post(post, board, mod)
 
 // form post/thread
 mixin posting_form(image_permit)
+    article.posting_form_open Open posting form
     article.posting_form
         form(method="post" enctype="multipart/form-data")
             input(type="text" name="title" placeholder="Title")

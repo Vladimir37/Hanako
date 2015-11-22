@@ -22,4 +22,13 @@ $(document).ready(function() {
     $('img[alt="captcha"]').click(function() {
         captcha_reload();
     });
+    //admin menu
+    $('img#admin_list').click(function() {
+        $(this).parent().prev('.admin_action').slideToggle();
+    });
+    //close/open posting form
+    $('.posting_form_open').click(function() {
+        $(this).text() == 'Open posting form' ? $(this).text('Close posting form') : $(this).text('Open posting form');
+        $(this).next('.posting_form').slideToggle();
+    });
 });

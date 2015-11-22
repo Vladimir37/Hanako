@@ -1,4 +1,5 @@
 @purple: #9C27B0;
+@yellow: #FFFFD3;
 .frame {
     padding: 10px;
     margin: 5px;
@@ -7,7 +8,7 @@
     position: relative;
 }
 body {
-    background: #FFFFD3;
+    background: @yellow;
 }
 a {
     color: @purple;
@@ -22,7 +23,22 @@ h1 {
     margin: 0 auto;
     .posting_form {
         .frame;
-        margin: 20px 5px;
+        display: none;
+        &_open {
+            .frame;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition-duration: 0.2s;
+            &:hover {
+                background: @purple;
+                color: white;
+            }
+        }
     }
     .form_report {
         .frame;
@@ -37,7 +53,6 @@ h1 {
         #admin_list {
             float: right;
             cursor: pointer;
-            z-index: 100;
         }
         .admin_action {
             text-align: center;
@@ -46,6 +61,23 @@ h1 {
             top: 10px;
             right: 35px;
             display: none;
+            z-index: 1;
+            input[type="submit"], .post_num {
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid @yellow;
+                font-weight: bold;
+                color: white;
+                background: @purple;
+            }
+            input[type="submit"] {
+                cursor: pointer;
+            }
+            .post_num {
+                padding: 10px 0;
+                text-decoration: underline;
+            }
         }
         .post_data {
             margin-bottom: 20px;
