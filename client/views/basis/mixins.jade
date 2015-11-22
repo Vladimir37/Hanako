@@ -43,7 +43,11 @@ mixin post(post, board, mod)
                         input(type="hidden" name="thread" value=post.id)
                         input(type="submit" value="Delete posts and threads of the author")
         article.post_data
+            span.title=post.title
             span.name=post.name
+            span.trip=post.trip
+            span.date=post.createdAt.toUTCString().slice(0, -4)
+            span.id='#'+ post.id
         - if(post.image)
             figure.post_image
                 img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
@@ -97,7 +101,11 @@ mixin op_post(post, board, mod)
                     input(type="hidden" name="thread" value=post.id)
                     input(type="submit" value="Prevention")
         article.post_data
+            span.title=post.title
             span.name=post.name
+            span.trip=post.trip
+            span.date=post.createdAt.toUTCString().slice(0, -4)
+            span.id='#'+ post.id
         - if(post.image)
             figure.post_image
                 img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")

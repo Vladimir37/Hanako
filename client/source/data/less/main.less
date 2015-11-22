@@ -21,15 +21,67 @@ h1 {
     margin: 0 auto;
     .posting_form {
         .frame;
+        margin: 20px 5px;
     }
     .form_report {
         .frame;
-        width: 50%;
         float: right;
+    }
+    .post, .op_post {
+        .frame;
+        .post_data {
+            margin-bottom: 20px;
+            span {
+                padding-right: 5px;
+                font-size: 1.1em;
+                &.id, &.title {
+                    font-weight: bold;
+                    color: @purple;
+                }
+                &.name {
+                    font-style: italic;
+                }
+                &.trip {
+                    color: green;
+                }
+                &.date {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .post_text {
+            white-space: pre-wrap;
+            span {
+                &.message, &.roulette {
+                    line-height: 3em;
+                    color: @purple;
+                }
+                &.message {
+                    text-decoration: underline;
+                }
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .italic {
+                font-style: italic;
+            }
+            .crossed {
+                text-decoration: line-through;
+            }
+            .spoiler {
+                color: #b8b8b8;
+                background: #b8b8b8;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
     }
 }
 .boards_list_layout {
     padding: 20px;
+    clear: both;
     .board_category {
         //
     }
