@@ -142,13 +142,13 @@ function posts_count(board, thread) {
 
 function text_processing(text, roulette_permit) {
     var new_text = text.replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
     .replace(/\(/g, '&#040;')
     .replace(/\)/g, '&#041;')
     .replace(/\*\*(.+?)\*\*/g, '<b class="bold">$1</b>')
     .replace(/\*(.+?)\*/g, '<strong class="italic">$1</strong>')
     .replace(/_(.+?)_/g, '<em class="crossed">$1</em>')
-    .replace(/%%(.+?)%%/g, '<i class="spoiler">$1</i>');
+    .replace(/%%(.+?)%%/g, '<i class="spoiler">$1</i>')
+    .replace(/(^|\n)(>.+?)(\n|$)/gm, '$1<span class="quote">$2</span>$3');
     if(roulette_permit) {
         return processing_roulette(new_text);
     }

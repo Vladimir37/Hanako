@@ -4,6 +4,7 @@
     margin: 5px;
     border: 2px solid @purple;
     border-radius: 5px;
+    position: relative;
 }
 body {
     background: #FFFFD3;
@@ -29,6 +30,23 @@ h1 {
     }
     .post, .op_post {
         .frame;
+        .icon {
+            border: 1px solid @purple;
+            border-radius: 2px;
+        }
+        #admin_list {
+            float: right;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .admin_action {
+            text-align: center;
+            border: 1px solid @purple;
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            display: none;
+        }
         .post_data {
             margin-bottom: 20px;
             span {
@@ -58,6 +76,9 @@ h1 {
                 }
                 &.message {
                     text-decoration: underline;
+                }
+                &.quote {
+                    color: #45b24c;
                 }
             }
             .bold {
