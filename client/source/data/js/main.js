@@ -31,4 +31,33 @@ $(document).ready(function() {
         $(this).text() == 'Open posting form' ? $(this).text('Close posting form') : $(this).text('Open posting form');
         $(this).next('.posting_form').slideToggle();
     });
+    //posting - answer
+    $('a.id').click(function() {
+        $('textarea#post_area').val($('textarea#post_area').val() + '>>' + $(this).text().slice(1));
+        var quote_text;
+        //select quote text
+        if (window.getSelection) {
+            quote_text = window.getSelection().toString();
+        }
+        else if (document.selection && document.selection.type != "Control") {
+            quote_text = document.selection.createRange().text;
+        }
+        if(quote_text) {
+            $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
+        }
+        return false;
+    });
+    //sinchroniztion
+    $('textarea#post_area').change(function() {
+        $('textarea#post_area').val($(this).val());
+    });
+    $('input[name="title"]').change(function() {
+        $('input[name="title"]').val($(this).val());
+    });
+    $('input[name="name"]').change(function() {
+        $('input[name="name"]').val($(this).val());
+    });
+    $('input[name="sage"]').change(function() {
+        $('input[name="sage"]').prop('checked', $(this).prop('checked'));
+    });
 });

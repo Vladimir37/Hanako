@@ -392,7 +392,7 @@ function actions(req, res, next) {
                     return;
                 }
                 var need_status;
-                selected_thread.close == 0 ? need_status = 1 : need_status = 2;
+                selected_thread.close == 0 ? need_status = 1 : need_status = 0;
                 db.boards[board].update({close: need_status}, {where: {
                     id: thread
                 }});

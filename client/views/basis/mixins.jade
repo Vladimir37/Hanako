@@ -44,7 +44,9 @@ mixin post(post, board, mod)
             span.name=post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
-            span.id='#'+ post.id
+            a(href="#").id='#'+ post.id
+            - if(post.sage)
+                img(src="/src/img/main/t_sage.png" title="Sage").icon
             - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
@@ -99,7 +101,13 @@ mixin op_post(post, board, mod)
             span.name=post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
-            span.id='#'+ post.id
+            a(href="#").id='#'+ post.id
+            - if(post.sage)
+                img(src="/src/img/main/t_sage.png" title="Sage").icon
+            - if(post.attached)
+                img(src="/src/img/main/t_attach.png" title="Attached").icon
+            - if(post.close)
+                img(src="/src/img/main/t_lock.png" title="Closed").icon
             - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
@@ -116,7 +124,7 @@ mixin posting_form(image_permit)
             br
             input(type="text" name="name" placeholder="Name")
             br
-            textarea(name="text" placeholder="Post" required)
+            textarea(name="text" placeholder="Post" required)#post_area
             br
             label Sage
                 input(type="checkbox" name="sage" value="1")

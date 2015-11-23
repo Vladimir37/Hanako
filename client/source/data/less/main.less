@@ -48,11 +48,13 @@ h1 {
         .frame;
         .icon {
             border: 1px solid @purple;
-            border-radius: 2px;
+            border-radius: 4px;
+            margin-right: 5px;
         }
         #admin_list {
             float: right;
             cursor: pointer;
+            margin: 0;
         }
         .admin_action {
             text-align: center;
@@ -84,7 +86,7 @@ h1 {
             span {
                 padding-right: 5px;
                 font-size: 1.1em;
-                &.id, &.title {
+                &.title {
                     font-weight: bold;
                     color: @purple;
                 }
@@ -97,6 +99,13 @@ h1 {
                 &.date {
                     text-decoration: underline;
                 }
+            }
+            .id {
+                cursor: pointer;
+                font-weight: bold;
+                color: @purple;
+                padding-right: 5px;
+                font-size: 1.1em;
             }
         }
         .post_text {
