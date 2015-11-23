@@ -46,6 +46,7 @@ $(document).ready(function() {
             quote_text = quote_text.replace(/\n/g, '\n>');
             $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
         }
+        $('.floating_form').show();
         return false;
     });
     //sinchroniztion
@@ -66,5 +67,10 @@ $(document).ready(function() {
     $('.picture_open').click(function() {
         $('img#full_picture').attr('src', '/src/img/trd/' + $(this).data('addr'));
         return true;
+    });
+    //floating posting window
+    $('.floating_form').draggable({containment: 'window', handle: '.floating_form_panel'});
+    $('img#close_floating_form').click(function() {
+        $('.floating_form').hide();
     });
 });

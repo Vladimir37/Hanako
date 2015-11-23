@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917b7282-3c98-40c9-9c36-3d9ad3e27400" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/source/data/css/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/source/data/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/source/data/css/jquery-ui.structure.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/dashboard.jade" afterPath="$PROJECT_DIR$/client/views/main/dashboard.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" afterPath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/main.js" afterPath="$PROJECT_DIR$/client/source/data/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/less/main.less" afterPath="$PROJECT_DIR$/client/source/data/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/mixins.jade" afterPath="$PROJECT_DIR$/client/views/basis/mixins.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/thread.jade" afterPath="$PROJECT_DIR$/client/views/main/thread.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hanako.iws" />
@@ -22,7 +28,9 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="Hanako" />
+    <favorites_list name="Hanako">
+      <favorite_root url="file://$PROJECT_DIR$/client/source/data/js/jquery-ui.min.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -36,31 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thread.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6206896">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6206896">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state vertical-scroll-proportion="-3.275862">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63908046">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            <state vertical-scroll-proportion="-3.310345">
+              <caret line="171" column="85" selection-start-line="171" selection-start-column="85" selection-end-line="171" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -69,18 +67,18 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.122807">
-              <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+            <state vertical-scroll-proportion="-3.4035087">
+              <caret line="192" column="22" selection-start-line="192" selection-start-column="22" selection-end-line="192" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/source/data/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.7737069">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -148,12 +146,12 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/assist/post_processing.js" />
         <option value="$PROJECT_DIR$/app/assist/control.js" />
-        <option value="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
-        <option value="$PROJECT_DIR$/client/views/main/dashboard.jade" />
-        <option value="$PROJECT_DIR$/client/views/main/thread.jade" />
         <option value="$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css" />
+        <option value="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
+        <option value="$PROJECT_DIR$/client/views/main/thread.jade" />
         <option value="$PROJECT_DIR$/client/views/basis/mixins.jade" />
         <option value="$PROJECT_DIR$/client/source/data/less/main.less" />
+        <option value="$PROJECT_DIR$/client/views/main/dashboard.jade" />
         <option value="$PROJECT_DIR$/client/source/data/js/main.js" />
       </list>
     </option>
@@ -404,24 +402,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -516,14 +496,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1440" height="817" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2977208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2977208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19661734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19943622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -853,30 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/basis/layout_boards.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5241379">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6206896">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/source/data/css/remodal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9719827">
@@ -901,42 +857,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6206896">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assist/post_processing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46336207">
-          <caret line="150" column="74" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/source/data/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.122807">
-          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.14439656">
+          <caret line="144" column="14" selection-start-line="144" selection-start-column="14" selection-end-line="144" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63908046">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        <state vertical-scroll-proportion="-3.310345">
+          <caret line="171" column="85" selection-start-line="171" selection-start-column="85" selection-end-line="171" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/basis/layout_boards.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26206896">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21839081">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.275862">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4035087">
+          <caret line="192" column="22" selection-start-line="192" selection-start-column="22" selection-end-line="192" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7737069">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding />
         </state>
       </provider>

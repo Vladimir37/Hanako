@@ -164,3 +164,23 @@ mixin boards_list_index(boards)
 mixin picture()
     section(data-remodal-id="picture").remodal
         img(alt="full_picture")#full_picture
+
+// floating posting form
+mixin floating_posting_form(image_permit)
+    article.floating_form
+        article.floating_form_panel
+            img(src="/src/img/main/cross.png" alt="close_window")#close_floating_form
+        article.floating_form_main
+            form(method="post" enctype="multipart/form-data")
+                input(type="hidden" name="title" placeholder="Title")
+                input(type="text" name="name" placeholder="Name")
+                br
+                textarea(name="text" placeholder="Post" required)#post_area
+                br
+                label Sage
+                    input(type="checkbox" name="sage" value="1")
+                br
+                - if(image_permit)
+                    input(type="file" name="image")
+                mixin captcha()
+                input(type="submit" value="Submit")

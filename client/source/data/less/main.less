@@ -18,12 +18,49 @@ a {
 h1 {
     text-align: center;
 }
+input[type="text"], input[type="password"], textarea {
+    margin: 2px;
+    box-shadow: none;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    outline: none;
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
 .content {
     width: 960px;
     margin: 0 auto;
-    .posting_form {
+    .posting_form, .floating_form_main {
         .frame;
+        text-align: center;
         display: none;
+        input[type="text"], textarea {
+            width: 450px;
+            padding: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 300px;
+            resize: none;
+        }
+        input[type="file"] {
+            margin: 15px;
+        }
+        input[type="checkbox"] {
+            vertical-align: middle;
+            width: 10px;
+        }
+        .captcha {
+            img {
+                border: 2px solid @purple;
+            }
+            input {
+                box-sizing: border-box;
+                width: 254px;
+            }
+        }
         &_open {
             .frame;
             text-align: center;
@@ -147,6 +184,34 @@ h1 {
                 &:hover {
                     color: black;
                 }
+            }
+        }
+    }
+    .floating_form {
+        width: 490px;
+        position: fixed;
+        display: none;
+        z-index: 1;
+        .floating_form_panel {
+            box-sizing: border-box;
+            width: 490px;
+            border: 2px solid @purple;
+            border-bottom: none;
+            text-align: right;
+            background: #e4e4bd;
+            img {
+                cursor: pointer;
+            }
+        }
+        .floating_form_main {
+            box-sizing: border-box;
+            display: block;
+            width: 490px;
+            border-radius: 0;
+            margin: 0;
+            background: #eeeec5;
+            textarea {
+                height: 100px;
             }
         }
     }
