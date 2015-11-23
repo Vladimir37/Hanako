@@ -51,9 +51,12 @@ mixin post(post, board, mod)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
             figure.post_image
+                a(href='/src/img/trd/' + board + '/' + post.thread + '/' + post.id + '.' + post.image target="_blank") Open in full size
+                br
                 a(href="#picture" data-addr=board + '/' + post.thread + '/' + post.id + '.' + post.image).picture_open
                     img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text!=post.text
+        div.clearfix
 
 // OP post
 mixin op_post(post, board, mod)
@@ -113,9 +116,12 @@ mixin op_post(post, board, mod)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
             figure.post_image
+                a(href='/src/img/trd/' + board + '/' + post.id + '/' + post.id + '.' + post.image target="_blank") Open in full size
+                br
                 a(href="#picture" data-addr=board + '/' + post.id + '/' + post.id + '.' + post.image).picture_open
                     img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text!=post.text
+        div.clearfix
 
 // form post/thread
 mixin posting_form(image_permit)

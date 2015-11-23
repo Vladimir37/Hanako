@@ -43,6 +43,7 @@ $(document).ready(function() {
             quote_text = document.selection.createRange().text;
         }
         if(quote_text) {
+            quote_text = quote_text.replace(/\n/g, '\n>');
             $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
         }
         return false;

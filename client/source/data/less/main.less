@@ -108,8 +108,18 @@ h1 {
                 font-size: 1.1em;
             }
         }
+        .post_image {
+            float: left;
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            a:first-child {
+                font-weight: normal;
+            }
+        }
         .post_text {
             white-space: pre-wrap;
+            padding-top: 15px;
             span {
                 &.message, &.roulette {
                     line-height: 3em;
@@ -150,4 +160,7 @@ h1 {
 }
 #full_picture {
     max-width: 100%;
+}
+.clearfix {
+    clear: both;
 }
