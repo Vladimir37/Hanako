@@ -2,6 +2,7 @@ extends ../basis/layout_boards
 
 block content
     h1 /#{board.addr}/ — #{board.data.name}
+    mixin picture()
     mixin posting_form(board.data.image_permit)
     section.dashboard
         - each thread, i in posts

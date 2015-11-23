@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917b7282-3c98-40c9-9c36-3d9ad3e27400" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/t_lock.png" afterPath="$PROJECT_DIR$/client/source/img/main/t_lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/t_sage.png" afterPath="$PROJECT_DIR$/client/source/img/main/t_sage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/control.js" afterPath="$PROJECT_DIR$/app/assist/control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/dashboard.jade" afterPath="$PROJECT_DIR$/client/views/main/dashboard.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" afterPath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/main.js" afterPath="$PROJECT_DIR$/client/source/data/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/less/main.less" afterPath="$PROJECT_DIR$/client/source/data/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/mixins.jade" afterPath="$PROJECT_DIR$/client/views/basis/mixins.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/thread.jade" afterPath="$PROJECT_DIR$/client/views/main/thread.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hanako.iws" />
@@ -42,8 +42,18 @@
       <file leaf-file-name="thread.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.4827585">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state vertical-scroll-proportion="-2.6206896">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6206896">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -52,8 +62,8 @@
       <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.75862">
-              <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+            <state vertical-scroll-proportion="-11.068966">
+              <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -62,18 +72,28 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4736843">
-              <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+            <state vertical-scroll-proportion="-6.140351">
+              <caret line="152" column="1" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="remodal-default-theme.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12643678">
+              <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source/data/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79525864">
-              <caret line="60" column="71" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="27" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -97,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configs/crypt_admin.json" />
         <option value="$PROJECT_DIR$/client/views/admin/panel.jade" />
         <option value="$PROJECT_DIR$/app/assist/captcha.js" />
         <option value="$PROJECT_DIR$/client/views/errors/eCaptcha.jade" />
@@ -131,7 +150,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/client/views/admin/boards.jade" />
         <option value="$PROJECT_DIR$/app/data/boards.json" />
-        <option value="$PROJECT_DIR$/client/views/main/dashboard.jade" />
         <option value="$PROJECT_DIR$/app/assist/boards_list.js" />
         <option value="$PROJECT_DIR$/client/views/main/index.jade" />
         <option value="$PROJECT_DIR$/app/assist/render.js" />
@@ -139,15 +157,17 @@
         <option value="$PROJECT_DIR$/configs/app.json" />
         <option value="$PROJECT_DIR$/client/source/data/css/materialize_reset.css" />
         <option value="$PROJECT_DIR$/client/source/data/css/materialize.css" />
-        <option value="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
         <option value="$PROJECT_DIR$/client/views/basis/layout.jade" />
-        <option value="$PROJECT_DIR$/client/views/main/thread.jade" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/assist/post_processing.js" />
         <option value="$PROJECT_DIR$/app/assist/control.js" />
-        <option value="$PROJECT_DIR$/client/source/data/less/main.less" />
+        <option value="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
+        <option value="$PROJECT_DIR$/client/views/main/dashboard.jade" />
+        <option value="$PROJECT_DIR$/client/views/main/thread.jade" />
         <option value="$PROJECT_DIR$/client/views/basis/mixins.jade" />
         <option value="$PROJECT_DIR$/client/source/data/js/main.js" />
+        <option value="$PROJECT_DIR$/client/source/data/less/main.less" />
+        <option value="$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css" />
       </list>
     </option>
   </component>
@@ -798,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assist/render.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -846,26 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/basis/layout_boards.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.275862">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/basis/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.586207">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.4827585">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -894,26 +890,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
+    <entry file="file://$PROJECT_DIR$/client/views/basis/layout_boards.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4736843">
-          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.5241379">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
+    <entry file="file://$PROJECT_DIR$/client/views/main/thread.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.75862">
-          <caret line="103" column="23" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+        <state vertical-scroll-proportion="-2.6206896">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/main/dashboard.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6206896">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/source/data/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79525864">
-          <caret line="60" column="71" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/basis/mixins.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.068966">
+          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/css/remodal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9719827">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.140351">
+          <caret line="152" column="1" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12643678">
+          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
           <folding />
         </state>
       </provider>

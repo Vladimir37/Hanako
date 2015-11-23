@@ -51,7 +51,8 @@ mixin post(post, board, mod)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
             figure.post_image
-                img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
+                a(href="#picture" data-addr=board + '/' + post.thread + '/' + post.id + '.' + post.image).picture_open
+                    img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text!=post.text
 
 // OP post
@@ -112,7 +113,8 @@ mixin op_post(post, board, mod)
                 img(src="/src/img/main/list.png").icon#admin_list
         - if(post.image)
             figure.post_image
-                img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
+                a(href="#picture" data-addr=board + '/' + post.id + '/' + post.id + '.' + post.image).picture_open
+                    img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
         article.post_text!=post.text
 
 // form post/thread
@@ -151,3 +153,8 @@ mixin boards_list_index(boards)
                 - each board, j in category
                     article.board_index
                         a(href="/" + board[0])=board[1]
+
+// modal window with picture
+mixin picture()
+    section(data-remodal-id="picture").remodal
+        img(alt="full_picture")#full_picture

@@ -60,4 +60,10 @@ $(document).ready(function() {
     $('input[name="sage"]').change(function() {
         $('input[name="sage"]').prop('checked', $(this).prop('checked'));
     });
+    //modal window with picture
+    $('[data-remodal-id="picture"]').remodal();
+    $('.picture_open').click(function() {
+        $('img#full_picture').attr('src', '/src/img/trd/' + $(this).data('addr'));
+        return true;
+    });
 });
