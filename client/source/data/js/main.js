@@ -47,6 +47,9 @@ $(document).ready(function() {
             $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
         }
         $('.floating_form').show();
+        var board = $(this).data('board');
+        var thread = $(this).data('thread');
+        $('.floating_form_main form').attr('action', '/' + board + '/' + 'trd' + '/' + thread);
         return false;
     });
     //sinchroniztion
@@ -72,5 +75,11 @@ $(document).ready(function() {
     $('.floating_form').draggable({containment: 'window', handle: '.floating_form_panel'});
     $('img#close_floating_form').click(function() {
         $('.floating_form').hide();
+    });
+    //modal ban window
+    $('[data-remodal-id="ban"]').remodal();
+    $('a.ban_button').click(function() {
+        $('#thread_ban').val($(this).data('post'));
+        return true;
     });
 });

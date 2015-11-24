@@ -24,11 +24,8 @@ mixin post(post, board, mod)
                         input(type="hidden" name="thread" value=post.id)
                         input(type="submit" value="Prevention")
                 - if(mod.status >=2)
-                    form(action="/admin/action" method="post")
-                        input(type="hidden" name="type" value=5)
-                        input(type="hidden" name="board" value=board)
-                        input(type="hidden" name="thread" value=post.id)
-                        input(type="submit" value="Ban author")
+                    a(href="#ban" data-post=post.id).ban_button
+                        input(type="button" value="Ban author")
                     form(action="/admin/action" method="post")
                         input(type="hidden" name="type" value=6)
                         input(type="hidden" name="board" value=board)
@@ -44,7 +41,7 @@ mixin post(post, board, mod)
             span.name=post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
-            a(href="#").id='#'+ post.id
+            a(href="#" data-board=board data-thread=post.thread).id='#'+ post.id
             - if(post.sage)
                 img(src="/src/img/main/t_sage.png" title="Sage").icon
             - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
@@ -80,11 +77,8 @@ mixin op_post(post, board, mod)
                         input(type="hidden" name="board" value=board)
                         input(type="hidden" name="thread" value=post.id)
                         input(type="submit" value="Delete thread")
-                    form(action="/admin/action" method="post")
-                        input(type="hidden" name="type" value=5)
-                        input(type="hidden" name="board" value=board)
-                        input(type="hidden" name="thread" value=post.id)
-                        input(type="submit" value="Ban author")
+                    a(href="#ban" data-post=post.id).ban_button
+                        input(type="button" value="Ban author")
                     form(action="/admin/action" method="post")
                         input(type="hidden" name="type" value=6)
                         input(type="hidden" name="board" value=board)
@@ -105,7 +99,7 @@ mixin op_post(post, board, mod)
             span.name=post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
-            a(href="#").id='#'+ post.id
+            a(href="#" data-board=board data-thread=post.id).id='#'+ post.id
             - if(post.sage)
                 img(src="/src/img/main/t_sage.png" title="Sage").icon
             - if(post.attached)
@@ -184,3 +178,16 @@ mixin floating_posting_form(image_permit)
                     input(type="file" name="image")
                 mixin captcha()
                 input(type="submit" value="Submit")
+
+// ban author window
+mixin ban_window(board)
+    section(data-remodal-id="ban").remodal
+        form(action="/admin/action" method="post")
+            input(type="hidden" name="type" value=5)
+            input(type="hidden" name="board" value=board)
+            input(type="hidden" name="thread")#thread_ban
+            input(type="text" name="reason" placeholder="Ban reason" required)
+            br
+            input(type="text" name="time" pattern='^[0-9]+$' placeholder="Ban days" required)
+            br
+            input(type="submit" value="Ban author")
