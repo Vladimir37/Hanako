@@ -148,7 +148,7 @@ function text_processing(text, roulette_permit) {
     .replace(/\*(.+?)\*/g, '<strong class="italic">$1</strong>')
     .replace(/_(.+?)_/g, '<em class="crossed">$1</em>')
     .replace(/%%(.+?)%%/g, '<i class="spoiler">$1</i>')
-    .replace(/(>>[0-9]+)/g, '<a class="post_link">$1</a>')
+    .replace(/>>([0-9]+)/g, '<a class="post_link" data-link="$1">>>$1</a>')
     .replace(/(^|\n)(>.+?)(\n|$)/gm, '$1<span class="quote">$2</span>$3');
     if(roulette_permit) {
         return processing_roulette(new_text);

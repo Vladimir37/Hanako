@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //variables
+    var quote_posts = {};
     //captcha reload
     function captcha_reload() {
         $.ajax({
@@ -67,7 +69,7 @@ $(document).ready(function() {
     });
     //modal window with picture
     $('[data-remodal-id="picture"]').remodal();
-    $('.picture_open').click(function() {
+    $('section.content').on('click', '.picture_open', function() {
         $('img#full_picture').attr('src', '/src/img/trd/' + $(this).data('addr'));
         return true;
     });
@@ -105,29 +107,92 @@ $(document).ready(function() {
     };
     //creating float quote post
     $('a.post_link').hover(function(event) {
-        var pos = position_detect(event);
-        var param_1, val_1, param_2, val_2;
-        if(pos.p_win.x < pos.size_win.width - pos.p_win.x) {
-            param_1 = 'left';
-            val_1 = pos.p_win.x;
+        var post_num = $(this).data('link');
+        if(!$('article[data-link="' + post_num + '"]').length) {
+            var pos = position_detect(event);
+            var param_1, val_1, param_2, val_2;
+            if (pos.p_win.x < pos.size_win.width - pos.p_win.x) {
+                param_1 = 'left';
+                val_1 = pos.p_win.x;
+            }
+            else {
+                param_1 = 'right';
+                val_1 = pos.size_win.width - pos.p_win.x;
+            }
+            if (pos.p_win.y < pos.size_win.height - pos.p_win.y) {
+                param_2 = 'top';
+                val_2 = pos.p_doc.y;
+            }
+            else {
+                param_2 = 'bottom';
+                val_2 = pos.size_doc.height - pos.p_doc.y;
+            }
+            $('<article class="post_quote" data-link="' + post_num + '">Loading post...</article>')
+                .appendTo('section.content')
+                .css(param_1, val_1)
+                .css(param_2, val_2);
+            quote_post_login(post_num);
         }
         else {
-            param_1 = 'right';
-            val_1 = pos.size_win.width - pos.p_win.x;
+            $('article[data-link="' + post_num + '"]').show();
         }
-        if(pos.p_win.y < pos.size_win.height - pos.p_win.y) {
-            param_2 = 'top';
-            val_2 = pos.p_doc.y;
-        }
-        else {
-            param_2 = 'bottom';
-            val_2 = pos.size_doc.height - pos.p_doc.y;
-        }
-        $('<article class="post_quote">TEST</article>')
-            .appendTo('section.content')
-            .css(param_1, val_1)
-            .css(param_2, val_2);
     }, function() {
-        //
+        var post_num = $(this).data('link');
+        quote_posts[post_num] = setTimeout(hidden_quote(post_num), 2000);
     });
+    //hidding quote post
+    function hidden_quote(post_num) {
+        return function() {
+            $('article[data-link="' + post_num + '"]').hide();
+        }
+    };
+    //do not hide hover post
+    $('section.content').on('mouseover', 'article.post_quote', function() {
+        var post_num = $(this).data('link');
+        clearTimeout(quote_posts[post_num]);
+    });
+    $('section.content').on('mouseout', 'article.post_quote',function() {
+        var post_num = $(this).data('link');
+        quote_posts[post_num] = setTimeout(hidden_quote(post_num), 2000);
+    });
+    //loading quote post
+    function quote_post_login(num) {
+        if($('article.post, article.op_post').is('[data-num="' + num + '"]')) {
+            //in page
+            function need_post(text) {
+                return $('article[data-num="' + num + '"] ' + text).text();
+            };
+            function need_post_attr(text, atr) {
+                return $('article[data-num="' + num + '"] ' + text).attr(atr);
+            };
+            //var need_post = $('article[data-num="' + num + '"]');
+            var quote_pict = '';
+            if($('article[data-num="' + num + '"] figure.post_image').length) {
+                quote_pict = '<figure class="post_image">' +
+                    '<a href="' + need_post_attr('figure.post_image a[target="_blank"]', 'href') + '" target="_blank">Open full image</a>' +
+                    '<a class="picture_open" href="#picture" data-addr="' + need_post_attr('figure.post_image a:last-child', 'data-addr') + '">' +
+                    '<img alt="small-image" src="' + need_post_attr('figure.post_image img', 'src') + '">' +
+                    '</a>' +
+                    '</figure>';
+            }
+            $('article.post_quote[data-link="' + num + '"]').html(
+                '<article class="post_data">' +
+                '<span class=title">' + need_post('article.post_data span.title') + '</span>' +
+                '<span class=name">' + need_post('article.post_data span.name') + '</span>' +
+                '<span class=trip">' + need_post('article.post_data span.trip') + '</span>' +
+                '<span class=date">' + need_post('article.post_data span.date') + '</span>' +
+                '<a class="id" data-board="' + need_post_attr('a.id', 'data-board') + '" data-thread="' + need_post_attr('a.id', 'data-thread') + '">' +
+                need_post('a.id') +
+                '</a>' +
+                '</article>' +
+                quote_pict +
+                '<article class="post_text">' + need_post('article.post_text') + '</article>' +
+                '<article class="clearfix"></article>'
+            );
+        }
+        else {
+            //ajax query
+            console.log('NE NAYDENO');
+        }
+    };
 });

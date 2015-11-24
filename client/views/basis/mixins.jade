@@ -8,7 +8,7 @@ mixin captcha()
 
 // post
 mixin post(post, board, mod)
-    article.post
+    article.post(data-num=post.id)
         - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
                 article.post_num='Post ' + post.id
@@ -51,13 +51,13 @@ mixin post(post, board, mod)
                 a(href='/src/img/trd/' + board + '/' + post.thread + '/' + post.id + '.' + post.image target="_blank") Open in full size
                 br
                 a(href="#picture" data-addr=board + '/' + post.thread + '/' + post.id + '.' + post.image).picture_open
-                    img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200")
+                    img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200" alt="small-image")
         article.post_text!=post.text
         div.clearfix
 
 // OP post
 mixin op_post(post, board, mod)
-    article.op_post
+    article.op_post(data-num=post.id)
         - if(mod && mod.boards == null || mod && mod.boards.indexOf(board) != -1)
             article.admin_action
                 article.post_num='Post ' + post.id
@@ -113,7 +113,7 @@ mixin op_post(post, board, mod)
                 a(href='/src/img/trd/' + board + '/' + post.id + '/' + post.id + '.' + post.image target="_blank") Open in full size
                 br
                 a(href="#picture" data-addr=board + '/' + post.id + '/' + post.id + '.' + post.image).picture_open
-                    img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200")
+                    img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200" alt="small-image")
         article.post_text!=post.text
         div.clearfix
 
