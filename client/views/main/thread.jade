@@ -3,7 +3,8 @@ extends ../basis/layout_boards
 block content
     h1 /#{boards_data[0]}/ — #{boards_data[1]}
     mixin picture()
-    mixin ban_window(boards_data[0])
+    - if(mod)
+        mixin ban_window(boards_data[0])
     mixin floating_posting_form(boards_data[2])
     mixin posting_form(boards_data[2])
     section.thread

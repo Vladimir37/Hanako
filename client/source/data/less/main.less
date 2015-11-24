@@ -9,6 +9,7 @@
 }
 body {
     background: @yellow;
+    position: relative;
 }
 a {
     color: @purple;
@@ -32,6 +33,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .content {
     width: 960px;
     margin: 0 auto;
+    .post_quote {
+        .frame;
+        position: absolute;
+        z-index: 1;
+    }
     .posting_form, .floating_form_main {
         .frame;
         text-align: center;
@@ -191,7 +197,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
         width: 490px;
         position: fixed;
         display: none;
-        z-index: 1;
+        z-index: 10;
         .floating_form_panel {
             box-sizing: border-box;
             width: 490px;

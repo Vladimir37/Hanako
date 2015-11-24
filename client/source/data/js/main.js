@@ -82,4 +82,52 @@ $(document).ready(function() {
         $('#thread_ban').val($(this).data('post'));
         return true;
     });
+    //cursor position
+    function position_detect(event) {
+        var result = {};
+        result.size_win = {
+            width: $(window).width(),
+            height: $(window).height()
+        };
+        result.size_doc = {
+            width: $(document).width(),
+            height: $(document).height()
+        };
+        result.p_doc = {
+            x: event.pageX,
+            y: event.pageY
+        };
+        result.p_win = {
+            x: event.clientX,
+            y: event.clientY
+        };
+        return result;
+    };
+    //creating float quote post
+    $('a.post_link').hover(function(event) {
+        var pos = position_detect(event);
+        var param_1, val_1, param_2, val_2;
+        if(pos.p_win.x < pos.size_win.width - pos.p_win.x) {
+            param_1 = 'left';
+            val_1 = pos.p_win.x;
+        }
+        else {
+            param_1 = 'right';
+            val_1 = pos.size_win.width - pos.p_win.x;
+        }
+        if(pos.p_win.y < pos.size_win.height - pos.p_win.y) {
+            param_2 = 'top';
+            val_2 = pos.p_doc.y;
+        }
+        else {
+            param_2 = 'bottom';
+            val_2 = pos.size_doc.height - pos.p_doc.y;
+        }
+        $('<article class="post_quote">TEST</article>')
+            .appendTo('section.content')
+            .css(param_1, val_1)
+            .css(param_2, val_2);
+    }, function() {
+        //
+    });
 });
