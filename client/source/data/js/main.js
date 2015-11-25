@@ -34,7 +34,7 @@ $(document).ready(function() {
         $(this).next('.posting_form').slideToggle();
     });
     //posting - answer
-    $('a.id').click(function() {
+    $('section.content').on('click', 'a.id', function() {
         $('textarea#post_area').val($('textarea#post_area').val() + '>>' + $(this).text().slice(1));
         var quote_text;
         //select quote text
@@ -106,7 +106,7 @@ $(document).ready(function() {
         return result;
     };
     //creating float quote post
-    $('a.post_link').hover(function(event) {
+    $('section.content').on('mouseover', 'a.post_link', function(event) {
         var post_num = $(this).data('link');
         if(!$('article[data-link="' + post_num + '"]').length) {
             var pos = position_detect(event);
@@ -136,7 +136,8 @@ $(document).ready(function() {
         else {
             $('article[data-link="' + post_num + '"]').show();
         }
-    }, function() {
+    });
+    $('section.content').on('mouseout', 'a.post_link', function() {
         var post_num = $(this).data('link');
         quote_posts[post_num] = setTimeout(hidden_quote(post_num), 2000);
     });
@@ -160,27 +161,27 @@ $(document).ready(function() {
         if($('article.post, article.op_post').is('[data-num="' + num + '"]')) {
             //in page
             function need_post(text) {
-                return $('article[data-num="' + num + '"] ' + text).text();
+                return $('article[data-num="' + num + '"] ' + text).html();
             };
             function need_post_attr(text, atr) {
                 return $('article[data-num="' + num + '"] ' + text).attr(atr);
             };
-            //var need_post = $('article[data-num="' + num + '"]');
             var quote_pict = '';
             if($('article[data-num="' + num + '"] figure.post_image').length) {
                 quote_pict = '<figure class="post_image">' +
                     '<a href="' + need_post_attr('figure.post_image a[target="_blank"]', 'href') + '" target="_blank">Open full image</a>' +
-                    '<a class="picture_open" href="#picture" data-addr="' + need_post_attr('figure.post_image a:last-child', 'data-addr') + '">' +
+                    '<a class="picture_open" href="#picture" data-addr="' + need_post_attr('figure.post_image a[href="#picture"]', 'data-addr') + '">' +
+                    '<br>' +
                     '<img alt="small-image" src="' + need_post_attr('figure.post_image img', 'src') + '">' +
                     '</a>' +
                     '</figure>';
             }
             $('article.post_quote[data-link="' + num + '"]').html(
                 '<article class="post_data">' +
-                '<span class=title">' + need_post('article.post_data span.title') + '</span>' +
-                '<span class=name">' + need_post('article.post_data span.name') + '</span>' +
-                '<span class=trip">' + need_post('article.post_data span.trip') + '</span>' +
-                '<span class=date">' + need_post('article.post_data span.date') + '</span>' +
+                '<span class="title">' + need_post('article.post_data span.title') + '</span>' +
+                '<span class="name">' + need_post('article.post_data span.name') + '</span>' +
+                '<span class="trip">' + need_post('article.post_data span.trip') + '</span>' +
+                '<span class="date">' + need_post('article.post_data span.date') + '</span>' +
                 '<a class="id" data-board="' + need_post_attr('a.id', 'data-board') + '" data-thread="' + need_post_attr('a.id', 'data-thread') + '">' +
                 need_post('a.id') +
                 '</a>' +
