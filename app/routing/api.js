@@ -22,4 +22,7 @@ router.get('/dashboard', api.dashboard);
 //thread
 router.get('/thread', api.thread);
 
+//one post
+router.get('/post', api.post);
+
 module.exports = router;
