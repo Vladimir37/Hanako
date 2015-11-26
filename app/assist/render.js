@@ -6,6 +6,7 @@ var fo = require('./file_operation');
 var errors = require('../routing/errors');
 var structure = require('./structure');
 var stack = require('./stack');
+var api_action = require('./api');
 
 //render jade file
 function render_jade(name) {
@@ -105,31 +106,53 @@ function admin(req, res, next) {
 };
 
 //render dashboard
-function dashboard(req, res, next, board, board_data, page) {
-    page = page || 0;
-    var need_pages =
+function dashboard(req, res, next, data_obj, api) {
+    data_obj.page = data_obj.page || 0;
     Promise.all([
-        structure.preview(stack.thread(board, page), board),
-        structure.count(stack.thread(board, page), board)
+        structure.preview(stack.thread(data_obj.board, data_obj.page), data_obj.board),
+        structure.count(stack.thread(data_obj.board, data_obj.page), data_obj.board)
     ]).then(function(all_posts_arr) {
         var variables = {
             posts: all_posts_arr[0],
             count: all_posts_arr[1],
             board: {
-                addr: board,
-                data: board_data
+                addr: data_obj.board,
+                data: data_obj.board_data
             }
         };
-        res.render('main/dashboard', variables);
+        if(api) {
+            variables.posts.forEach(function(thread) {
+                thread[1].ip = 0;
+                thread[0].forEach(function(post) {
+                    post.ip = 0;
+                });
+            });
+            api_action.returning(res, variables, 0);
+        }
+        else {
+            res.render('main/dashboard', variables);
+        }
     }).catch(function(err) {
         console.log(err);
-        errors.e500(req, res, next);
+        if(api) {
+            api_action.returning(res, 'Server error', 2);
+        }
+        else {
+            errors.e500(req, res, next);
+        }
     });
 };
 
-function thread(req, res, next, boards_data) {
-    var board = req.params.name;
-    var thread_num = req.params.num;
+function thread(req, res, next, boards_data, api) {
+    var board, thread_num;
+    if(api) {
+        board = req.query_data.board;
+        thread_num = req.query_data.num;
+    }
+    else {
+        board = req.params.name;
+        thread_num = req.params.num;
+    }
     db.boards[board].findAll({
         where: {
             $or: {
@@ -141,18 +164,38 @@ function thread(req, res, next, boards_data) {
         if(thread.length && structure.checking(thread)) {
             var op_post = thread[0];
             var posts = thread.slice(1);
-            res.render('main/thread', {
+            var variables = {
                 posts: posts,
                 op_post: op_post,
                 boards_data: boards_data
-            });
+            };
+            if(api) {
+                variables.op_post.ip = 0;
+                variables.posts.forEach(function(post) {
+                    post.ip = 0;
+                });
+                api_action.returning(res, variables, 0);
+            }
+            else {
+                res.render('main/thread', variables);
+            }
         }
         else {
-            errors.e404(req, res, next);
+            if(api) {
+                api_action.returning(res, 'Not found', 1);
+            }
+            else {
+                errors.e404(req, res, next);
+            }
         }
     }, function(err) {
         console.log(err);
-        errors.e500(req, res, next);
+        if(api) {
+            api_action.returning(res, 'Server error', 2);
+        }
+        else {
+            errors.e500(req, res, next);
+        }
     });
 };
 

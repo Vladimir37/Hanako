@@ -10,6 +10,7 @@ var threads = require('./routing/threads');
 var admin = require('./routing/admin');
 var ban = require('./routing/ban');
 var report = require('./routing/report');
+var api = require('./routing/api');
 
 var app = express();
 
@@ -23,6 +24,8 @@ app.use(bodyParser());
 
 //favicon
 app.use(favicon('client/source/img/main/favicon.ico'));
+
+app.use('/api', api);
 
 //admin's panel
 app.use('/admin', admin);
