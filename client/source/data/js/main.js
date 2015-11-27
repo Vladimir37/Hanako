@@ -1,6 +1,19 @@
 $(document).ready(function() {
     //variables
     var quote_posts = {};
+    var post_submit_reaction = [
+        'Message sent successfully',
+        'Captcha incorrect',
+        'The message contains a word from the spam list',
+        'You are banned',
+        'Thread is closed',
+        'The thread does not exist',
+        'Server error',
+        'Image too large',
+        'Incorrect file type',
+        'Need a image',
+        'You write too fast'
+    ];
     //toaster options
     toastr.options = {
         "closeButton": false,
@@ -301,11 +314,11 @@ $(document).ready(function() {
                 contentType: false,
                 type: 'POST',
                 data: formData,
-                success: function(msg){
-                    console.log(msg);
+                success: function(status){
+                    toastr["success"](post_submit_reaction[status]);
                 },
-                error: function(obj, asd, err) {
-                    console.log('error');
+                error: function() {
+                    toastr["success"](post_submit_reaction[6]);
                 }
             });
         }
