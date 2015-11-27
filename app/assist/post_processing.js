@@ -142,11 +142,11 @@ function posts_count(board, thread) {
 
 function text_processing(text, roulette_permit) {
     var new_text = text.replace(/</g, '&lt;')
-    .replace(/\(/g, '&#040;')
-    .replace(/\)/g, '&#041;')
+    .replace(/(http:.+?)( |\n|$)/gm, '<a href="$1">$1</a>$2')
+    .replace(/(https:.+?)( |\n|$)/gm, '<a href="$1">$1</a>$2')
     .replace(/\*\*(.+?)\*\*/g, '<b class="bold">$1</b>')
     .replace(/\*(.+?)\*/g, '<strong class="italic">$1</strong>')
-    .replace(/_(.+?)_/g, '<em class="crossed">$1</em>')
+    .replace(/__(.+?)__/g, '<em class="crossed">$1</em>')
     .replace(/%%(.+?)%%/g, '<i class="spoiler">$1</i>')
     .replace(/>>([0-9]+)/g, '<a class="post_link" data-link="$1">>>$1</a>')
     .replace(/(^|\n)(>.+?)(\n|$)/gm, '$1<span class="quote">$2</span>$3');

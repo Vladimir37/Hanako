@@ -105,38 +105,60 @@ $(document).ready(function() {
         };
         return result;
     };
+    //delete style obj
+    var delete_style = {
+        left: 'inherit',
+        right: 'inherit',
+        top: 'inherit',
+        bottom: 'inherit'
+    };
     //creating float quote post
     $('section.content').on('mouseover', 'a.post_link', function(event) {
         var post_num = $(this).data('link');
         if(!$('article[data-link="' + post_num + '"]').length) {
-            var pos = position_detect(event);
-            var param_1, val_1, param_2, val_2;
-            if (pos.p_win.x < pos.size_win.width - pos.p_win.x) {
-                param_1 = 'left';
-                val_1 = pos.p_win.x;
-            }
-            else {
-                param_1 = 'right';
-                val_1 = pos.size_win.width - pos.p_win.x;
-            }
-            if (pos.p_win.y < pos.size_win.height - pos.p_win.y) {
-                param_2 = 'top';
-                val_2 = pos.p_doc.y;
-            }
-            else {
-                param_2 = 'bottom';
-                val_2 = pos.size_doc.height - pos.p_doc.y;
-            }
+            var params = position_detect_obj(event);
             $('<article class="post_quote" data-link="' + post_num + '">Loading post...</article>')
                 .appendTo('section.content')
-                .css(param_1, val_1)
-                .css(param_2, val_2);
+                .css(params.param_1, params.val_1)
+                .css(params.param_2, params.val_2);
             quote_post_login(post_num);
         }
         else {
-            $('article[data-link="' + post_num + '"]').show();
+            var params = position_detect_obj(event);
+            $('article[data-link="' + post_num + '"]')
+                .css(delete_style)
+                .css(params.param_1, params.val_1)
+                .css(params.param_2, params.val_2)
+                .show();
         }
     });
+    //position detect
+    function position_detect_obj(event) {
+        var pos = position_detect(event);
+        var param_1, val_1, param_2, val_2;
+        if (pos.p_win.x < pos.size_win.width - pos.p_win.x) {
+            param_1 = 'left';
+            val_1 = pos.p_win.x;
+        }
+        else {
+            param_1 = 'right';
+            val_1 = pos.size_win.width - pos.p_win.x;
+        }
+        if (pos.p_win.y < pos.size_win.height - pos.p_win.y) {
+            param_2 = 'top';
+            val_2 = pos.p_doc.y;
+        }
+        else {
+            param_2 = 'bottom';
+            val_2 = pos.size_doc.height - pos.p_doc.y;
+        }
+        return {
+            param_1: param_1,
+            val_1: val_1,
+            param_2: param_2,
+            val_2: val_2
+        };
+    };
     $('section.content').on('mouseout', 'a.post_link', function() {
         var post_num = $(this).data('link');
         quote_posts[post_num] = setTimeout(hidden_quote(post_num), 2000);
@@ -193,7 +215,44 @@ $(document).ready(function() {
         }
         else {
             //ajax query
-            console.log('NE NAYDENO');
+            var board = document.location.pathname.split('/')[1];
+            var data = {
+                board: board,
+                num: num
+            };
+            $.get('/api/post', data, function(result) {
+                var post = JSON.parse(result);
+                if(post.status == 0) {
+                    var quote_pict = '';
+                    if(post.body.image) {
+                        var thread = post.body.thread || post.body.id;
+                        quote_pict = '<figure class="post_image">' +
+                            '<a href="/src/img/trd/' + board + '/' + thread + '/' + post.body.id + '.' + post.body.image + '" target="_blank">Open full image</a>' +
+                            '<a class="picture_open" href="#picture" data-addr="' + board + '/' + thread + '/' + post.body.id + '.' + post.body.image + '">' +
+                            '<br>' +
+                            '<img alt="small-image" src="/small/' + board + '/' + thread + '/' + post.body.id + '.' + post.body.image + '?tn=200">' +
+                            '</a>' +
+                            '</figure>';
+                    }
+                    $('article.post_quote[data-link="' + num + '"]').html(
+                        '<article class="post_data">' +
+                        '<span class="title">' + post.body.title + '</span>' +
+                        '<span class="name">' + post.body.name + '</span>' +
+                        '<span class="trip">' + post.body.trip + '</span>' +
+                        '<span class="date">' + post.body.createdAt.toLocaleString() + '</span>' +
+                        '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +
+                        post.body.id +
+                        '</a>' +
+                        '</article>' +
+                        quote_pict +
+                        '<article class="post_text">' + post.body.text + '</article>' +
+                        '<article class="clearfix"></article>'
+                    );
+                }
+                else {
+                    $('article.post_quote[data-link="' + num + '"]').html('Post not found');
+                }
+            });
         }
     };
 });
