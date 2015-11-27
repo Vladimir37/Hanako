@@ -1,6 +1,24 @@
 $(document).ready(function() {
     //variables
     var quote_posts = {};
+    //toaster options
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "300",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
     //captcha reload
     function captcha_reload() {
         $.ajax({
@@ -255,4 +273,41 @@ $(document).ready(function() {
             });
         }
     };
+    //submit any form
+    var globalVars = {unloaded:false};
+    $(window).bind('beforeunload', function(){
+        globalVars.unloaded = true;
+    });
+    $('.submit_but').click(function() {
+        var need_form = $(this).parent('form');
+        var addr = need_form.attr('action') || document.location.pathname;
+        var data = {
+            title: need_form.find('input[name="title"]').val(),
+            name: need_form.find('input[name="name"]').val(),
+            text: need_form.find('textarea[name="text"]').val(),
+            sage: need_form.find('input[name="sage"]').val(),
+            image: need_form.find('input[name="image"]').val(),
+            c_key: need_form.find('input[name="c_key"]').val(),
+            c_value: need_form.find('input[name="c_value"]').val()
+        };
+        var formData = new FormData(need_form.get(0));
+        if(!need_form.find('[name="c_value"]').val()){
+            toastr["success"]("Enter the number from the image!");
+        }
+        else {
+            $.ajax({
+                url: addr,
+                processData: false,
+                contentType: false,
+                type: 'POST',
+                data: formData,
+                success: function(msg){
+                    console.log(msg);
+                },
+                error: function(obj, asd, err) {
+                    console.log('error');
+                }
+            });
+        }
+    });
 });

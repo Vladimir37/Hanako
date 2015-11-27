@@ -135,7 +135,7 @@ mixin posting_form(image_permit)
                 input(type="file" name="image")
                 br
             mixin captcha()
-            input(type="submit" value="Submit")
+            input(type="button" value="Submit").submit_but
 
 // boards list with category
 mixin boards_list(boards)
@@ -177,7 +177,7 @@ mixin floating_posting_form(image_permit)
                 - if(image_permit)
                     input(type="file" name="image")
                 mixin captcha()
-                input(type="submit" value="Submit")
+                input(type="button" value="Submit").submit_but
 
 // ban author window
 mixin ban_window(board)
