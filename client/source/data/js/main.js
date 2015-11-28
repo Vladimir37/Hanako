@@ -14,6 +14,12 @@ $(document).ready(function() {
         'Need a image',
         'You write too fast'
     ];
+    var load_posts_reaction = [
+        'Error loading new posts',
+        'No new posts',
+        ' new posts',
+        'Thread not found'
+    ];
     //toaster options
     toastr.options = {
         "closeButton": false,
@@ -32,6 +38,7 @@ $(document).ready(function() {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     };
+    var board = document.location.pathname.split('/')[1];
     //captcha reload
     function captcha_reload() {
         $.ajax({
@@ -81,7 +88,6 @@ $(document).ready(function() {
             $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
         }
         $('.floating_form').show();
-        var board = $(this).data('board');
         var thread = $(this).data('thread');
         $('.floating_form_main form').attr('action', '/' + board + '/' + 'trd' + '/' + thread);
         return false;
@@ -247,7 +253,6 @@ $(document).ready(function() {
         }
         else {
             //ajax query
-            var board = document.location.pathname.split('/')[1];
             var data = {
                 board: board,
                 num: num
@@ -323,5 +328,68 @@ $(document).ready(function() {
             var form = $(this).parents('form');
             form.find('input[type="button"]').click();
         }
+    });
+    //load new posts
+    function new_posts_load() {
+        var thread = document.location.pathname.split('/')[3];
+        var posts_num = $('.post').length;
+        $.ajax({
+            url: '/api/thread',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                board: board,
+                num: thread
+            },
+            success: function(post_data){
+                var status = post_data.status;
+                post_data = post_data.body;
+                if(status != 0) {
+                    toastr["success"](load_posts_reaction[3]);
+                }
+                else if(post_data.posts.length <= posts_num) {
+                    toastr["success"](load_posts_reaction[1]);
+                }
+                else {
+                    var new_posts = 0;
+                    for(var i = posts_num; i < post_data.posts.length; i++) {
+                        new_posts++;
+                        var quote_pict = '';
+                        if(post_data.posts[i].image) {
+                            var thread = post_data.posts[i].thread || post_data.posts[i].id;
+                            quote_pict = '<figure class="post_image">' +
+                                '<a href="/src/img/trd/' + board + '/' + thread + '/' + post_data.posts[i].id + '.' + post_data.posts[i].image + '" target="_blank">Open full image</a>' +
+                                '<a class="picture_open" href="#picture" data-addr="' + board + '/' + thread + '/' + post_data.posts[i].id + '.' + post_data.posts[i].image + '">' +
+                                '<br>' +
+                                '<img alt="small-image" src="/small/' + board + '/' + thread + '/' + post_data.posts[i].id + '.' + post_data.posts[i].image + '?tn=200">' +
+                                '</a>' +
+                                '</figure>';
+                        }
+                        $('<article class="post" data-num="' + post_data.posts[i].id + '">').html(
+                            '<article class="post_data">' +
+                            '<span class="title">' + post_data.posts[i].title + '</span>' +
+                            '<span class="name">' + post_data.posts[i].name + '</span>' +
+                            '<span class="trip">' + post_data.posts[i].trip + '</span>' +
+                            '<span class="date">' + post_data.posts[i].createdAt.toLocaleString() + '</span>' +
+                            '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +
+                            post_data.posts[i].id +
+                            '</a>' +
+                            '</article>' +
+                            quote_pict +
+                            '<article class="post_text">' + post_data.posts[i].text + '</article>' +
+                            '<article class="clearfix"></article>'
+                        ).appendTo('section.thread');
+                        toastr["success"](new_posts + load_posts_reaction[2]);
+                    }
+                }
+            },
+            error: function() {
+                toastr["success"](load_posts_reaction[0]);
+            }
+        });
+    };
+    //click to refresh
+    $('img#refresh').click(function() {
+        new_posts_load();
     });
 });
