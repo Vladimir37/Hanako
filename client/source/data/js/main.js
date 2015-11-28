@@ -41,6 +41,7 @@ $(document).ready(function() {
             success: function (key) {
                 $("img[alt='captcha']").attr({src: '/testing?key=' + key});
                 $("input[name='c_key']").val(key);
+                $("input[name='c_value']").val('');
             },
             error: function (err) {
                 //console.log(err);
@@ -287,22 +288,9 @@ $(document).ready(function() {
         }
     };
     //submit any form
-    var globalVars = {unloaded:false};
-    $(window).bind('beforeunload', function(){
-        globalVars.unloaded = true;
-    });
     $('.submit_but').click(function() {
         var need_form = $(this).parent('form');
         var addr = need_form.attr('action') || document.location.pathname;
-        var data = {
-            title: need_form.find('input[name="title"]').val(),
-            name: need_form.find('input[name="name"]').val(),
-            text: need_form.find('textarea[name="text"]').val(),
-            sage: need_form.find('input[name="sage"]').val(),
-            image: need_form.find('input[name="image"]').val(),
-            c_key: need_form.find('input[name="c_key"]').val(),
-            c_value: need_form.find('input[name="c_value"]').val()
-        };
         var formData = new FormData(need_form.get(0));
         if(!need_form.find('[name="c_value"]').val()){
             toastr["success"]("Enter the number from the image!");
@@ -316,11 +304,24 @@ $(document).ready(function() {
                 data: formData,
                 success: function(status){
                     toastr["success"](post_submit_reaction[status]);
+                    if(status == 0 && document.location.pathname.indexOf('trd') == -1) {
+                        document.location.pathname = addr;
+                    }
+                    captcha_reload();
                 },
                 error: function() {
                     toastr["success"](post_submit_reaction[6]);
+                    captcha_reload();
                 }
             });
+        }
+    });
+    //submiting form
+    $('[name="c_value"]').keypress(function(event) {
+        var keyCode = event.keyCode || event.charCode;
+        if(keyCode == 13) {
+            var form = $(this).parents('form');
+            form.find('input[type="button"]').click();
         }
     });
 });
