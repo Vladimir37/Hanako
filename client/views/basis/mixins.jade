@@ -4,7 +4,7 @@ mixin captcha()
         img(alt="captcha")
         input(type="hidden" name="c_key" value="Not")
         br
-        input(type="text" name="c_value" placeholder="Captcha" required)
+        input(type="text" name="c_value" placeholder="Captcha" autocomplete="off" required)
 
 // post
 mixin post(post, board, mod)

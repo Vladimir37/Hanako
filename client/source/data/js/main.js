@@ -74,7 +74,7 @@ $(document).ready(function() {
     });
     //posting - answer
     $('section.content').on('click', 'a.id', function() {
-        $('textarea#post_area').val($('textarea#post_area').val() + '>>' + $(this).text().slice(1));
+        $('textarea#post_area').val($('textarea#post_area').val() + '>>' + $(this).text().slice(1) + '\n');
         var quote_text;
         //select quote text
         if (window.getSelection) {
@@ -85,7 +85,7 @@ $(document).ready(function() {
         }
         if(quote_text) {
             quote_text = quote_text.replace(/\n/g, '\n>');
-            $('textarea#post_area').val($('textarea#post_area').val() + '\n>' + quote_text);
+            $('textarea#post_area').val($('textarea#post_area').val() + '>' + quote_text + '\n');
         }
         $('.floating_form').show();
         var thread = $(this).data('thread');
@@ -276,7 +276,7 @@ $(document).ready(function() {
                         '<span class="title">' + post.body.title + '</span>' +
                         '<span class="name">' + post.body.name + '</span>' +
                         '<span class="trip">' + post.body.trip + '</span>' +
-                        '<span class="date">' + post.body.createdAt.toLocaleString() + '</span>' +
+                        '<span class="date">' + post.body.createdAt.toUTCString().slice(0, -4) + '</span>' +
                         '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +
                         post.body.id +
                         '</a>' +
@@ -311,6 +311,11 @@ $(document).ready(function() {
                     toastr["success"](post_submit_reaction[status]);
                     if(status == 0 && document.location.pathname.indexOf('trd') == -1) {
                         document.location.pathname = addr;
+                    }
+                    else {
+                        $('textarea[name="text"], input[name="c_value"]').val('');
+                        $('.floating_form').hide();
+                        new_posts_load();
                     }
                     captcha_reload();
                 },
@@ -365,12 +370,13 @@ $(document).ready(function() {
                                 '</a>' +
                                 '</figure>';
                         }
+                        var date_post = new Date(post_data.posts[i].createdAt);
                         $('<article class="post" data-num="' + post_data.posts[i].id + '">').html(
                             '<article class="post_data">' +
                             '<span class="title">' + post_data.posts[i].title + '</span>' +
                             '<span class="name">' + post_data.posts[i].name + '</span>' +
                             '<span class="trip">' + post_data.posts[i].trip + '</span>' +
-                            '<span class="date">' + post_data.posts[i].createdAt.toLocaleString() + '</span>' +
+                            '<span class="date">' + date_post.toUTCString().slice(0, -4) + '</span>' +
                             '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +
                             post_data.posts[i].id +
                             '</a>' +
@@ -379,8 +385,8 @@ $(document).ready(function() {
                             '<article class="post_text">' + post_data.posts[i].text + '</article>' +
                             '<article class="clearfix"></article>'
                         ).appendTo('section.thread');
-                        toastr["success"](new_posts + load_posts_reaction[2]);
                     }
+                    toastr["success"](new_posts + load_posts_reaction[2]);
                 }
             },
             error: function() {
