@@ -11,7 +11,7 @@ block content
                     input(type="hidden" name="board" value=i)
                     input(type="submit" value="Add")
             - each word, j in board
-                div=word
+                div.spam_word=word
                     form(method="post")
                         input(type="hidden" name="word" value=word)
                         input(type="hidden" name="board" value=i)

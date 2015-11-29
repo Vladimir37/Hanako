@@ -398,4 +398,14 @@ $(document).ready(function() {
     $('img#refresh').click(function() {
         new_posts_load();
     });
+    //selecting boards for admin
+    $('.add_admin_form input[type="checkbox"]').change(function() {
+        console.log($(this).is(':checked'));
+        if($(this).is(':checked')) {
+            $('.add_admin_form select[name="boards"]').attr('disabled', true);
+        }
+        else {
+            $('.add_admin_form select[name="boards"]').attr('disabled', false);
+        }
+    });
 });

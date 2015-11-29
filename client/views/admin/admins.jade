@@ -3,9 +3,9 @@ extends ../basis/layout
 block content
     h1 Admins menu
     h2 Total admins: #{count}
-    section.admin_list
+    section.admin_list_all
         h3 Add admin
-        article.add_form
+        article.add_admin_form
             form(method="post")
                 input(type="text" name="name" placeholder="Name/login" required)
                 br

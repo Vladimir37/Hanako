@@ -22,6 +22,24 @@ h1 {
     font-weight: bold;
     line-height: 4em;
 }
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2em;
+}
+h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2em;
+}
+h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
 .board_name {
     line-height: 1;
 }
@@ -250,6 +268,42 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
         background: @yellow;
         max-width: 800px;
         z-index: 1;
+    }
+    table {
+        border-collapse: collapse;
+        th, td {
+            padding: 4px;
+            border: 1px solid black;
+        }
+        th {
+            font-weight: bold;
+        }
+    }
+    .a_add_board, .a_board {
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 10px;
+        label {
+            padding: 2px;
+            border: 1px solid black;
+            margin: 4px;
+            line-height: 1.8em;
+        }
+    }
+    .s_board {
+        .spam_word {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 3px;
+            padding: 0 3px;
+            form {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .add_admin_form {
+        margin-bottom: 15px;
     }
 }
 .boards_list_layout {
