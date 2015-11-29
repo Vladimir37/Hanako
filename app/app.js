@@ -11,6 +11,10 @@ var admin = require('./routing/admin');
 var ban = require('./routing/ban');
 var report = require('./routing/report');
 var api = require('./routing/api');
+var unban = require('./assist/unban');
+
+//checking bans and unbanning
+setInterval(unban, 86400000);
 
 var app = express();
 
