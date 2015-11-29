@@ -1,7 +1,7 @@
 extends ../basis/layout_boards
 
 block content
-    h1 /#{boards_data[0]}/ — #{boards_data[1]}
+    h1.board_name /#{boards_data[0]}/ — #{boards_data[1]}
     mixin picture()
     - if(mod)
         mixin ban_window(boards_data[0])
