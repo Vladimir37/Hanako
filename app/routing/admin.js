@@ -21,6 +21,8 @@ router.get('/bans', status(2), render.ban);
 router.get('/boards', status(3), render.boards);
 //creating and deleting admins
 router.get('/admins', status(3), render.admin);
+//exit
+router.get('/exit', control.exit);
 
 //POST requests
 

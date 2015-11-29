@@ -2,3 +2,18 @@ extends ../basis/layout
 
 block content
     h1 Admin panel
+    - if(modStatus >= 1)
+        a(href="/admin/spam")
+            article.admin_panel_action Spam-list
+    - if(modStatus >= 2)
+        a(href="/admin/bans")
+            article.admin_panel_action Bans
+    - if(modStatus >= 3)
+        a(href="/admin/boards")
+            article.admin_panel_action Boards
+        a(href="/admin/admins")
+            article.admin_panel_action Admins
+    a(href="/admin/reports")
+        article.admin_panel_action Reports
+    a(href="/admin/exit")
+        article.admin_panel_action Exit

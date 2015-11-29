@@ -25,6 +25,7 @@ function checking(need_status) {
                 if(moderator && name_arr[1] == req.ip && need_status <= moderator.status) {
                     res.modId = moderator.id;
                     res.modStatus = moderator.status;
+                    res.locals.modStatus = moderator.status;
                     next();
                 }
                 else {

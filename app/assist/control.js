@@ -517,6 +517,12 @@ function actions(req, res, next) {
     });
 };
 
+//deleting admin cookie
+function admin_exit(req, res, next) {
+    res.clearCookie('hanako_admin');
+    res.redirect('/');
+};
+
 exports.report = report;
 exports.spam = spam;
 exports.ban = ban;
@@ -524,3 +530,4 @@ exports.boards = boards;
 exports.admin = admin;
 exports.posting = posting;
 exports.actions = actions;
+exports.exit = admin_exit;
