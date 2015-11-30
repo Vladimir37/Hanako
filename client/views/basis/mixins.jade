@@ -38,7 +38,7 @@ mixin post(post, board, mod)
                         input(type="submit" value="Delete posts and threads of the author")
         article.post_data
             span.title=post.title
-            span.name=post.name
+            span.name!=post.admin ? '<span class="mod">##MOD##</span>' : post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
             a(href="#" data-board=board data-thread=post.thread).id='#'+ post.id
@@ -96,7 +96,7 @@ mixin op_post(post, board, mod)
                         input(type="submit" value="Prevention")
         article.post_data
             span.title=post.title
-            span.name=post.name
+            span.name!=post.admin ? '<span class="mod">##MOD##</span>' : post.name
             span.trip=post.trip
             span.date=post.createdAt.toUTCString().slice(0, -4)
             a(href="#" data-board=board data-thread=post.id).id='#'+ post.id

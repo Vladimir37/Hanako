@@ -271,12 +271,14 @@ $(document).ready(function() {
                             '</a>' +
                             '</figure>';
                     }
+                    var create_date = new Date(post.body.createdAt);
+                    var name = post.body.admin ? '<span class="mod">##MOD##</span>' : post.body.name;
                     $('article.post_quote[data-link="' + num + '"]').html(
                         '<article class="post_data">' +
                         '<span class="title">' + post.body.title + '</span>' +
-                        '<span class="name">' + post.body.name + '</span>' +
+                        '<span class="name">' + name + '</span>' +
                         '<span class="trip">' + post.body.trip + '</span>' +
-                        '<span class="date">' + post.body.createdAt.toUTCString().slice(0, -4) + '</span>' +
+                        '<span class="date">' + create_date.toUTCString().slice(0, -4) + '</span>' +
                         '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +
                         post.body.id +
                         '</a>' +
@@ -371,10 +373,11 @@ $(document).ready(function() {
                                 '</figure>';
                         }
                         var date_post = new Date(post_data.posts[i].createdAt);
+                        var name = post_data.posts[i].admin ? '<span class="mod">##MOD##</span>' : post_data.posts[i].name;
                         $('<article class="post" data-num="' + post_data.posts[i].id + '">').html(
                             '<article class="post_data">' +
                             '<span class="title">' + post_data.posts[i].title + '</span>' +
-                            '<span class="name">' + post_data.posts[i].name + '</span>' +
+                            '<span class="name">' + name + '</span>' +
                             '<span class="trip">' + post_data.posts[i].trip + '</span>' +
                             '<span class="date">' + date_post.toUTCString().slice(0, -4) + '</span>' +
                             '<a class="id" data-board="' + board + '" data-thread="' + thread + '">#' +

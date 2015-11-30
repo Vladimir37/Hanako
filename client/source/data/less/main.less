@@ -54,6 +54,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     border: solid 1px #707070;
     box-shadow: 0 0 5px 1px #969696;
 }
+input[type="submit"], input[type="button"] {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #9C27B0;
+    padding: 1px 5px 1px 5px;
+    text-decoration: none;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+    background: #852396;
+}
 .content {
     width: 960px;
     margin: 0 auto;
@@ -84,6 +98,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
             input {
                 box-sizing: border-box;
                 width: 254px;
+                margin-bottom: 10px;
             }
         }
         &_open {
@@ -154,6 +169,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
                 }
                 &.name {
                     font-style: italic;
+                    .mod {
+                        color: #000088;
+                    }
                 }
                 &.trip {
                     color: green;
