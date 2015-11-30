@@ -314,7 +314,7 @@ $(document).ready(function() {
                     if(status == 0 && document.location.pathname.indexOf('trd') == -1) {
                         document.location.pathname = addr;
                     }
-                    else {
+                    else if(status == 0){
                         $('textarea[name="text"], input[name="c_value"]').val('');
                         $('.floating_form').hide();
                         new_posts_load();

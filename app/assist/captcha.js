@@ -23,7 +23,11 @@ function key_generate() {
 
 //encrypt/decrypt object generate
 function crypt_generate() {
-    return new Crypt(crypt_config);
+    var captcha_obj = {
+        secret: crypt_config.secret + new Date().getHours(),
+        iterations: crypt_config.iterations
+    };
+    return new Crypt(captcha_obj);
 };
 
 //render captcha image
