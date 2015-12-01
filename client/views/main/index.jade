@@ -1,6 +1,9 @@
 extends ../basis/layout
 
 block content
-    h1 Main
+    article.full_title
+        img(src="/src/img/main/logo/logo.png" alt="logo_img")
+        img(src="/src/img/main/logo/text.png" alt="logo_text")
+    img(src="/src/img/main/arts/index.png" alt="hanako_art")#index_art
     //- All boards
     mixin boards_list_index(boards_list)

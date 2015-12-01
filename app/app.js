@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(bodyParser());
 
 //favicon
-app.use(favicon('client/source/img/main/favicon.ico'));
+app.use(favicon('client/source/img/main/logo/favicon.ico'));
 
 app.use('/api', api);
 
