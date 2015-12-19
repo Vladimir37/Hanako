@@ -128,7 +128,7 @@ function ban(req, res, next) {
 
 //operation with boards for admins
 function boards(req, res, next) {
-    var board_name = req.body.name;
+    var board_name = req.body.name.toLowerCase();
     var bumplimit = req.body.bump;
     var pages = req.body.pages;
     var threads = req.body.threads;
