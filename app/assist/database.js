@@ -6,6 +6,7 @@ var boards = require('../data/boards');
 var sequelize = new Sequelize(db_config.database, db_config.login, db_config.pass, {
     dialect: db_config.dialect,
     port: db_config.port,
+    storage: db_config.storage,
     logging: false
 });
 

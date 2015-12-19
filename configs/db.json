@@ -2,6 +2,7 @@
   "login": "root",
   "pass": "node_db",
   "database": "hanako",
-  "dialect": "mysql",
+  "dialect": "sqlite",
+  "storage": "app/db_storage/hanako_db.sqlite",
   "port": 3306
 }

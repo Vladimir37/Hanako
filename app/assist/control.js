@@ -325,7 +325,9 @@ function posting(req, res, next) {
         }).then(function (result) {
             //create thread
             if (!thread) {
-                fs.mkdir('client/source/img/trd/' + board + '/' + result[0].id);
+                fs.mkdir('client/source/img/trd/' + board + '/' + result[0].id, function(err) {
+                    if(err) console.log(err);
+                });
                 stack.new(board, +result[0].id);
             }
             //create post
