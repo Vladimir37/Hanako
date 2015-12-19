@@ -1,1 +1,1 @@
-This directory for sqlite.
+This directory for temporary files.

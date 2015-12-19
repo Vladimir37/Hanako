@@ -11,7 +11,7 @@ function trip(string, permit) {
     if(start == -1 || !permit) {
         return {
             name: string,
-            trip: null
+            trip: ''
         };
     }
     else {
@@ -52,7 +52,7 @@ function spam(text, board) {
     });
 };
 
-//chicking ban
+//checking ban
 function ban(ip, board) {
     return new Promise(function(resolve, reject) {
         db.bans.findOne({

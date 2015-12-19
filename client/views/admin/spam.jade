@@ -4,7 +4,7 @@ block content
     h1 Spam-list
     - each board, i in spam
         section.s_board
-            h3=i
+            h3.spam_header=i
             article.single_form
                 form(method="post")
                     input(type="text" name="word" required)

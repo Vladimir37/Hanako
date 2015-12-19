@@ -99,9 +99,9 @@
         "bumplimit": "4",
         "pages": "10",
         "thread_in_page": "10",
-        "size": 2,
+        "size": "2",
         "hidden": true,
-        "image_require": true,
+        "image_require": false,
         "roulette": true
     },
     "k": {
