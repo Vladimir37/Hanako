@@ -28,7 +28,7 @@ block content
             input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value="500" required)
             input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value="10" required)
             br
-            input(type="text" name="threads" pattern="^[0-9]+$" placeholder="Threads in page" value="10" required)
+            input(type="text" name="threads" pattern="^[0-9]+$" placeholder="Threads on page" value="10" required)
             input(type="text" name="max_size" pattern="^[0-9]+$" placeholder="Max image size in mb" value="2" required)
             br
             input(type="submit" value="Add")
@@ -65,7 +65,7 @@ block content
                         input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value=board.bumplimit required)
                         input(type="text" name="pages" pattern="^[0-9]+$" placeholder="Max pages" value=board.pages required)
                         br
-                        input(type="text" name="threads" pattern="^[0-9]+$" placeholder="Threads in page" value=board.thread_in_page required)
+                        input(type="text" name="threads" pattern="^[0-9]+$" placeholder="Threads on page" value=board.thread_in_page required)
                         input(type="text" name="max_size" pattern="^[0-9]+$" placeholder="Max image size in mb" value=board.size required)
                         br
                         input(type="submit" value="Edit")
