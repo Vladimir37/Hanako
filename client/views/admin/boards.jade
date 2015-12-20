@@ -11,18 +11,18 @@ block content
             input(type="text" name="public_name" placeholder="Public name" required)
             input(type="text" name="username" placeholder="Default username" required)
             br
-            label Permit image
+            label Allow images
                 input(type="checkbox" value="true" name="image" checked)
-            label Permit tripcode
+            label Allow tripcodes
                 input(type="checkbox" value="true" name="tripcode" checked)
-            label Require tripcode
+            label Required tripcodes
                 input(type="checkbox" value="true" name="tripcode_require")
             br
             label Hidden
                 input(type="checkbox" value="true" name="hidden")
-            label Require image to OP-post
+            label Required image in OP-post
                 input(type="checkbox" value="true" name="image_require" checked)
-            label Permit roulette
+            label Allow roulette
                 input(type="checkbox" value="true" name="roulette" checked)
             br
             input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value="500" required)
@@ -48,18 +48,18 @@ block content
                         input(type="text" name="public_name" placeholder="Public name" value=board.name required)
                         input(type="text" name="username" placeholder="Default username" value=board.default_username required)
                         br
-                        label Permit image
+                        label Allow images
                             input(type="checkbox" value="true" name="image" checked=board.image_permit)
-                        label Permit tripcode
+                        label Allow tripcodes
                            input(type="checkbox" value="true" name="tripcode" checked=board.trip_permit)
-                        label Require tripcode
+                        label Required tripcodes
                             input(type="checkbox" value="true" name="tripcode_require" checked=board.trip_required)
                         br
                         label Hidden
                             input(type="checkbox" value="true" name="hidden" checked=board.hidden)
-                        label Require image to OP-post
+                        label Required image to OP-post
                             input(type="checkbox" value="true" name="image_require" checked=board.image_require)
-                        label Permit roulette
+                        label Allow roulette
                             input(type="checkbox" value="true" name="roulette" checked=board.roulette)
                         br
                         input(type="text" name="bump" pattern="^[0-9]+$" placeholder="Bumplimit" value=board.bumplimit required)
