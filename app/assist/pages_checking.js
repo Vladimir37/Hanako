@@ -19,8 +19,6 @@ function dashboard(req, res, next) {
             board_name = req.params.name;
             page_num = req.params.num;
         }
-        //console.log(board_name);
-        //console.log(page_num);
         if(page_num) {
             if(
                 boards[board_name]
@@ -30,7 +28,7 @@ function dashboard(req, res, next) {
                 var data_obj = {
                     board: board_name,
                     board_data: boards[board_name],
-                    page:page_num
+                    page: page_num
                 };
                 render.dashboard(req, res, next, data_obj, api);
             }

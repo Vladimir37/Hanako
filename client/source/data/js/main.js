@@ -43,7 +43,7 @@ $(document).ready(function() {
     function captcha_reload() {
         $.ajax({
             url: '/testing/new',
-            type: 'post',
+            type: 'get',
             dataType: 'text',
             success: function (key) {
                 $("img[alt='captcha']").attr({src: '/testing?key=' + key});
