@@ -68,6 +68,21 @@ $(document).ready(function() {
     $('img[alt="captcha"]').click(function() {
         captcha_reload();
     });
+    //creating answer links
+    function create_answers() {
+        var all_links = $('.post_link');
+        for(var i = 0; i < all_links.length; i++) {
+            var this_post = $(all_links[i]).closest('.post, .op_post').data('num');
+            var target_post = $(all_links[i]).text().slice(2);
+            var has_already = $('.post[data-num="' + target_post + '"] .post_answ, .op_post[data-num="' + target_post + '"] .post_answ')
+                .text()
+                .indexOf('>>' + this_post);
+            if(has_already == -1) {
+                $('<a class="post_link" data-link="' + this_post + '"> >>' + this_post + '</a>')
+                    .appendTo('.post[data-num="' + target_post + '"] .post_answ, .op_post[data-num="' + target_post + '"] .post_answ');
+            }
+        }
+    };
     //admin menu
     $('img#admin_list').click(function() {
         $(this).parent().prev('.admin_action').slideToggle();
@@ -395,6 +410,7 @@ $(document).ready(function() {
                         ).appendTo('section.thread');
                     }
                     toastr["success"](new_posts + load_posts_reaction[2]);
+                    create_answers();
                 }
             },
             error: function() {
@@ -443,4 +459,5 @@ $(document).ready(function() {
             toastr["success"](submitting_report[2]);
         }
     });
+    create_answers();
 });

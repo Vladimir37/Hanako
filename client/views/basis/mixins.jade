@@ -53,6 +53,7 @@ mixin post(post, board, mod)
                 a(href="#picture" data-addr=board + '/' + post.thread + '/' + post.id + '.' + post.image).picture_open
                     img(src="/small/" + board + "/" + post.thread + "/" + post.id + "." + post.image + "?tn=200" alt="small-image")
         article.post_text!=post.text
+        article.post_answ
         div.clearfix
 
 // OP post
@@ -115,6 +116,7 @@ mixin op_post(post, board, mod)
                 a(href="#picture" data-addr=board + '/' + post.id + '/' + post.id + '.' + post.image).picture_open
                     img(src="/small/" + board + "/" + post.id + "/" + post.id + "." + post.image + "?tn=200" alt="small-image")
         article.post_text!=post.text
+        article.post_answ
         div.clearfix
 
 // form post/thread
