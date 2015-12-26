@@ -20,6 +20,11 @@ $(document).ready(function() {
         ' new posts',
         'Thread not found'
     ];
+    var submitting_report = [
+        'Report was sent',
+        'Server error',
+        'Report is empty'
+    ];
     //toaster options
     toastr.options = {
         "closeButton": false,
@@ -409,6 +414,33 @@ $(document).ready(function() {
         }
         else {
             $('.add_admin_form select[name="boards"]').attr('disabled', false);
+        }
+    });
+    //report submit
+    $('#report_but').click(function() {
+        var form = $(this).parent();
+        var report_data = {};
+        report_data.board = form.children('[name="board"]').val();
+        report_data.thread = form.children('[name="thread"]').val();
+        report_data.text = form.children('[name="text"]').val();
+        if(report_data.text) {
+            $.ajax({
+                url: '/report',
+                type: 'POST',
+                data: report_data,
+                success: function (status) {
+                    toastr["success"](submitting_report[status]);
+                },
+                error: function () {
+                    toastr["success"](submitting_report[1]);
+                },
+                complete: function () {
+                    form.children('[name="text"]').val('');
+                }
+            });
+        }
+        else {
+            toastr["success"](submitting_report[2]);
         }
     });
 });
