@@ -17,6 +17,7 @@ block content
                 - for(var j = thread[0].length - 1; j >= 0; j--) {
                     mixin post(thread[0][j], board.addr, mod)
                 - }
+    a(href="/ban").see_bans Check my bans
     mixin posting_form(board.data.image_permit)
     article.dash_pages
         - for(var i = 0; i < board.data.pages; i++) {
