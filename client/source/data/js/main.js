@@ -77,7 +77,7 @@ $(document).ready(function() {
             var has_already = $('.post[data-num="' + target_post + '"] .post_answ, .op_post[data-num="' + target_post + '"] .post_answ')
                 .text()
                 .indexOf('>>' + this_post);
-            if(has_already == -1) {
+            if(has_already == -1 && this_post && target_post && this_post) {
                 $('<a class="post_link" data-link="' + this_post + '"> >>' + this_post + '</a>')
                     .appendTo('.post[data-num="' + target_post + '"] .post_answ, .op_post[data-num="' + target_post + '"] .post_answ');
             }
@@ -268,6 +268,7 @@ $(document).ready(function() {
                 '</article>' +
                 quote_pict +
                 '<article class="post_text">' + need_post('article.post_text') + '</article>' +
+                '<article class="post_answ">' + need_post('article.post_answ') + '</article>' +
                 '<article class="clearfix"></article>'
             );
         }
@@ -424,7 +425,6 @@ $(document).ready(function() {
     });
     //selecting boards for admin
     $('.add_admin_form input[type="checkbox"]').change(function() {
-        console.log($(this).is(':checked'));
         if($(this).is(':checked')) {
             $('.add_admin_form select[name="boards"]').attr('disabled', true);
         }
