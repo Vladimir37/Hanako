@@ -24,7 +24,7 @@ function status_common(req, res, next) {
                 res.locals.mod = {
                     id: moderator.id,
                     status: moderator.status,
-                    boards: JSON.parse(moderator.boards)
+                    boards: JSON.parse(moderator.boards || null)
                 };
                 res.modId = moderator.id;
                 next();
