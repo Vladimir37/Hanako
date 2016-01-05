@@ -159,7 +159,9 @@ function boards(req, res, next) {
     }
     fo.read('app/data/boards.json').then(function(boards) {
         if(!boards[board_name]) {
-            fs.mkdir('client/source/img/trd/' + board_name);
+            fs.mkdir('client/source/img/trd/' + board_name, function(err) {
+                console.log('Directory already exist');
+            });
         }
         boards[board_name] = board_data;
         fo.write('app/data/boards.json', boards);
@@ -250,7 +252,9 @@ function posting(req, res, next) {
         var image = files.image;
         var require_trip;
         if(image && image.size == 0) {
-            fs.unlink(image.path);
+            fs.unlink(image.path, function(err) {
+                if(err) console.log('Image not exist');
+            });
         }
         //captcha
         var c_key = fields.c_key;
@@ -351,7 +355,9 @@ function posting(req, res, next) {
                 fs.rename(
                     image.path,
                     'client/source/img/trd/' + board + '/' + need_thread + '/' + result[0].id + '.' + img
-                );
+                    , function(err) {
+                        if (err) console.log('Error saving image');
+                    });
                 db.boards[board].update({
                     image: img
                 }, {where: {
