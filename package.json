@@ -1,29 +1,34 @@
 {
-  "name": "Hanako",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node hanako.js"
-  },
-  "dependencies": {
-    "body-parser": "*",
-    "cookie-parser": "*",
-    "express": "*",
-    "formidable": "*",
-    "jade": "*",
-    "serve-favicon": "*",
-    "mysql": "*",
-    "pg": "*",
-    "pg-hstore": "*",
-    "sqlite3": "*",
-    "tedious": "*",
-    "sequelize": "*",
-    "thumb-express": "*",
-    "easy-encryption": "*",
-    "random-token": "*",
-    "node-captcha": "*",
-    "tripcode": "*",
-    "rimraf": "*",
-    "mime": "*"
-  }
+    "name": "Hanako",
+    "version": "1.0.2",
+    "license": "MIT License",
+    "main": "hanako.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Vladimir37/Hanako/"
+    },
+    "scripts": {
+        "start": "node hanako.js"
+    },
+    "dependencies": {
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "express": "*",
+        "formidable": "*",
+        "jade": "*",
+        "serve-favicon": "*",
+        "mysql": "*",
+        "pg": "*",
+        "pg-hstore": "*",
+        "sqlite3": "*",
+        "tedious": "*",
+        "sequelize": "*",
+        "thumb-express": "*",
+        "easy-encryption": "*",
+        "random-token": "*",
+        "node-captcha": "*",
+        "tripcode": "*",
+        "rimraf": "*",
+        "mime": "*"
+    }
 }
