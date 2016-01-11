@@ -5,6 +5,7 @@ function board_right(arr, board) {
     }
     else {
         if(typeof arr == 'string') {
+            arr = arr || '[]';
             arr = JSON.parse(arr);
         }
         try {
