@@ -1,0 +1,1 @@
+This is folder for images from boards.
