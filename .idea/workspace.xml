@@ -14,31 +14,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/ImageData.o" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/ImageData.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/cb-never-called-1.0.1.tgz" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/cb-never-called-1.0.1.tgz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/color.o" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/color.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/cross.png" afterPath="$PROJECT_DIR$/client/source/img/main/cross.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/dir-normalization.tar" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/dir-normalization.tar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/arts/e403.jpg" afterPath="$PROJECT_DIR$/client/source/img/main/arts/e403.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/arts/e404.jpg" afterPath="$PROJECT_DIR$/client/source/img/main/arts/e404.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/arts/e500.jpg" afterPath="$PROJECT_DIR$/client/source/img/main/arts/e500.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/example.png" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/example.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/logo/favicon.ico" afterPath="$PROJECT_DIR$/client/source/img/main/logo/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/tar/test/fixtures.tgz" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/tar/test/fixtures.tgz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/fixtures.tgz" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/fixtures.tgz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek/images/hoek.png" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek/images/hoek.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/arts/index.png" afterPath="$PROJECT_DIR$/client/source/img/main/arts/index.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/init.o" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/obj.target/canvas/src/init.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/list.png" afterPath="$PROJECT_DIR$/client/source/img/main/list.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/logo/logo.png" afterPath="$PROJECT_DIR$/client/source/img/main/logo/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/packed.tar.gz" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/packed.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/packed.tar" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/packed.tar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/refresh.png" afterPath="$PROJECT_DIR$/client/source/img/main/refresh.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/semver.browser.js.gz" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/semver.browser.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/semver.min.js.gz" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/semver.min.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/sort-arrow-sprite.png" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/sort-arrow-sprite.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/deps/sqlite-autoconf-3090100.tar.gz" afterPath="$PROJECT_DIR$/node_modules/sqlite3/deps/sqlite-autoconf-3090100.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/t_attach.png" afterPath="$PROJECT_DIR$/client/source/img/main/t_attach.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/t_lock.png" afterPath="$PROJECT_DIR$/client/source/img/main/t_lock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/t_sage.png" afterPath="$PROJECT_DIR$/client/source/img/main/t_sage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/img/main/logo/text.png" afterPath="$PROJECT_DIR$/client/source/img/main/logo/text.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/#1 de-escaping.js" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/#1 de-escaping.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/#1 escaping.js" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/#1 escaping.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/integration/#1 escaping.js" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/test/integration/#1 escaping.js" />
@@ -266,7 +253,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/isstream/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/isstream/.jshintrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tunnel-agent/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tunnel-agent/.jshintrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/bl/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/bl/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/.name" afterPath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/.npmignore" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/.npmignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/node_modules/ms/.npmignore" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/node_modules/ms/.npmignore" />
@@ -618,8 +604,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/node_modules/parseurl/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/node_modules/parseurl/HISTORY.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/HISTORY.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/node_modules/mime-db/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/mime-types/node_modules/mime-db/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Hanako.iml" afterPath="$PROJECT_DIR$/.idea/Hanako.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Hanako_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Hanako_node_modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Handshake.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Handshake.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/History.md" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/History.md" />
@@ -657,7 +641,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/src/ImageData.h" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/src/ImageData.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/.deps/Release/obj.target/canvas/src/ImageData.o.d" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/.deps/Release/obj.target/canvas/src/ImageData.o.d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/src/JPEGStream.h" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/src/JPEGStream.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENCE" afterPath="$PROJECT_DIR$/LICENCE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/LICENCE" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/LICENCE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend/LICENCE" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend/LICENCE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/node_modules/split/LICENCE" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/pgpass/node_modules/split/LICENCE" />
@@ -1280,8 +1263,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tripcode/node_modules/lodash.foreach/node_modules/lodash.forown/node_modules/lodash.keys/node_modules/lodash._shimkeys/README.md" afterPath="$PROJECT_DIR$/node_modules/tripcode/node_modules/lodash.foreach/node_modules/lodash.forown/node_modules/lodash.keys/node_modules/lodash._shimkeys/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tripcode/node_modules/lodash.foreach/node_modules/lodash.forown/node_modules/lodash.keys/node_modules/lodash.isobject/README.md" afterPath="$PROJECT_DIR$/node_modules/tripcode/node_modules/lodash.foreach/node_modules/lodash.forown/node_modules/lodash.keys/node_modules/lodash.isobject/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/README.old" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/README.old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/mods/README.txt" afterPath="$PROJECT_DIR$/client/source/mods/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/other/README.txt" afterPath="$PROJECT_DIR$/client/views/other/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/README" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/Readme.md" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/Readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/Readme.md" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/Readme.md" />
@@ -1386,9 +1367,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/math/add.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/math/add.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/additionalItems.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/additionalItems.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/additionalProperties.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/additionalProperties.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/admin.js" afterPath="$PROJECT_DIR$/app/routing/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/admin_crypt.js" afterPath="$PROJECT_DIR$/app/assist/admin_crypt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/admins.jade" afterPath="$PROJECT_DIR$/client/views/admin/admins.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/advanced.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/advanced.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/af.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/af.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/after.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/after.js" />
@@ -1407,10 +1385,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/any.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/any.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/anyOf.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/anyOf.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/integration/client/api-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/integration/client/api-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/api.js" afterPath="$PROJECT_DIR$/app/assist/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/api.js" afterPath="$PROJECT_DIR$/app/routing/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/app.json" afterPath="$PROJECT_DIR$/configs/app.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/reflect/apply.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/reflect/apply.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/reflect/apply.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/reflect/apply.js" />
@@ -1499,9 +1473,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/backflow.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/backflow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/test/balanced.js" afterPath="$PROJECT_DIR$/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/test/balanced.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/test/balanced.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/test/balanced.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/ban.jade" afterPath="$PROJECT_DIR$/client/views/main/ban.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/ban.js" afterPath="$PROJECT_DIR$/app/routing/ban.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/bans.jade" afterPath="$PROJECT_DIR$/client/views/admin/bans.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/to-pack/bar.txt" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/test/fixtures/to-pack/bar.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/base.css" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/associations/base.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/associations/base.js" />
@@ -1645,9 +1616,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/browser/bluebird.min.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/browser/bluebird.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/bn.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/bn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/bo.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/bo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/boards.jade" afterPath="$PROJECT_DIR$/client/views/admin/boards.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data/boards.json" afterPath="$PROJECT_DIR$/app/data/boards.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/boards_list.js" afterPath="$PROJECT_DIR$/app/assist/boards_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/iconv-lite/lib/bom-handling.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/iconv-lite/lib/bom-handling.js" />
@@ -1739,9 +1707,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/.deps/Release/obj.target/canvas.node.d" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/Release/.deps/Release/obj.target/canvas.node.d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/canvas.target.mk" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/build/canvas.target.mk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/capitalize.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/capitalize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/captcha.js" afterPath="$PROJECT_DIR$/app/assist/captcha.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/captcha.js" afterPath="$PROJECT_DIR$/node_modules/node-captcha/captcha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/captcha.json" afterPath="$PROJECT_DIR$/configs/captcha.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/captured_trace.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/captured_trace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/captured_trace.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/captured_trace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/case.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/case.js" />
@@ -1762,7 +1728,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/charsRightIndex.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/charsRightIndex.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/charset.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/charset.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/charsets.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/charsets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/checking_board.js" afterPath="$PROJECT_DIR$/app/assist/checking_board.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/chmod.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/chmod.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/chmod.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/chmod.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/chunk.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/chunk.js" />
@@ -1799,7 +1764,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/string/code-point-at.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/string/code-point-at.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/string/code-point-at.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/string/code-point-at.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/code.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/code.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/codes.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/codes.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/statuses/codes.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/statuses/codes.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/collation.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/collation.js" />
@@ -1887,7 +1851,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/context.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/context.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/context.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/context.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/lib/context2d.js" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/lib/context2d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/control.js" afterPath="$PROJECT_DIR$/app/assist/control.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/node_modules/nan/doc/converters.md" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/node_modules/nan/doc/converters.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/nan/doc/converters.md" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/nan/doc/converters.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tough-cookie/lib/cookie.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/tough-cookie/lib/cookie.js" />
@@ -1987,8 +1950,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/unit/connection-parameters/creation-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/unit/connection-parameters/creation-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/creator.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/creator.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tripcode/lib/crypt.js" afterPath="$PROJECT_DIR$/node_modules/tripcode/lib/crypt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/crypt_admin.json" afterPath="$PROJECT_DIR$/configs/crypt_admin.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/crypt_captcha.json" afterPath="$PROJECT_DIR$/configs/crypt_captcha.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/cs.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/cs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/ctf.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/ctf.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/man/man3ctype/ctio.3ctype" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/node_modules/ctype/man/man3ctype/ctio.3ctype" />
@@ -2006,7 +1967,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/test/dash.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/test/dash.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/minimist/test/dash.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/minimist/test/dash.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tripcode/node_modules/minimist/test/dash.js" afterPath="$PROJECT_DIR$/node_modules/tripcode/node_modules/minimist/test/dash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/dashboard.jade" afterPath="$PROJECT_DIR$/client/views/main/dashboard.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/data-type.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/data-type.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/data-types.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/data-types.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/mssql/data-types.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/mssql/data-types.js" />
@@ -2015,9 +1975,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/data-types.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/data-types.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/src/database.cc" afterPath="$PROJECT_DIR$/node_modules/sqlite3/src/database.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/src/database.h" afterPath="$PROJECT_DIR$/node_modules/sqlite3/src/database.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/database.js" afterPath="$PROJECT_DIR$/app/assist/database.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/date.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/db.json" afterPath="$PROJECT_DIR$/configs/db.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" />
@@ -2133,10 +2091,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/bl/node_modules/readable-stream/duplex.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/bl/node_modules/readable-stream/duplex.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/duplex.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/duplex.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/readable-stream/duplex.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/readable-stream/duplex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/errors/e403.jade" afterPath="$PROJECT_DIR$/client/views/errors/e403.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/errors/e404.jade" afterPath="$PROJECT_DIR$/client/views/errors/e404.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/errors/e449.jade" afterPath="$PROJECT_DIR$/client/views/errors/e449.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/errors/e500.jade" afterPath="$PROJECT_DIR$/client/views/errors/e500.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/each.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/each.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/each.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/each.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/collection/each.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/collection/each.js" />
@@ -2190,7 +2144,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/native/error-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/native/error-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/unit/connection/error-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/unit/connection/error-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/error.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/error.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/errors.js" afterPath="$PROJECT_DIR$/app/routing/errors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/errors.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/errors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/errors.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/errors.js" />
@@ -2513,7 +2466,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream/lib/file-writer.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream/lib/file-writer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/lib/file-writer.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/lib/file-writer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/formidable/lib/file.js" afterPath="$PROJECT_DIR$/node_modules/formidable/lib/file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/file_operation.js" afterPath="$PROJECT_DIR$/app/assist/file_operation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/fill.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/array/fill.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/array/fill.js" />
@@ -2692,7 +2644,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/semver/test/gtr.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/semver/test/gtr.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/guid-parser.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/guid-parser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/gulpfile.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanako.js" afterPath="$PROJECT_DIR$/hanako.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/util/handle_gyp_opts.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/util/handle_gyp_opts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/lib/har.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/lib/har.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/har.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/har.json" />
@@ -2779,7 +2730,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/wellknown/index.html" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/wellknown/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/examples/browser/index.html" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/examples/browser/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/index.jade" afterPath="$PROJECT_DIR$/client/views/main/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/wellknown/index.js.html" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov-report/wellknown/index.js.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/index.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/index.js" />
@@ -3280,13 +3230,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/array/join.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/array/join.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/array/join.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/array/join.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/lib/jpegstream.js" afterPath="$PROJECT_DIR$/node_modules/node-captcha/node_modules/canvas/lib/jpegstream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/jquery-ui.min.css" afterPath="$PROJECT_DIR$/client/source/data/css/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/client/source/data/js/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/jquery-ui.structure.min.css" afterPath="$PROJECT_DIR$/client/source/data/css/jquery-ui.structure.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/jquery.js" afterPath="$PROJECT_DIR$/client/source/data/js/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/modules/js.array.statics.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/modules/js.array.statics.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/modules/js.array.statics.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/modules/js.array.statics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/integration/client/json-type-parsing-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/integration/client/json-type-parsing-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" />
@@ -3322,15 +3267,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/data/packed/latest.json" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/data/packed/latest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/data/unpacked/latest.json" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/data/unpacked/latest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/layout.jade" afterPath="$PROJECT_DIR$/client/views/basis/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" afterPath="$PROJECT_DIR$/client/views/basis/layout_boards.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyClone.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyClone.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyReverse.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyReverse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyValue.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/lazyValue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/lb.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/lb.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov.info" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/coverage/lcov.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/node_modules/graceful-fs/legacy-streams.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/fstream/node_modules/graceful-fs/legacy-streams.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/less.js" afterPath="$PROJECT_DIR$/client/source/data/js/less.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/lexer.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/lexer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/library.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/library.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/client/library.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/client/library.js" />
@@ -3378,8 +3320,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/math/log2.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/math/log2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/math/log2.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/math/log2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/math/log2.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/math/log2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/login.jade" afterPath="$PROJECT_DIR$/client/views/admin/login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/login.js" afterPath="$PROJECT_DIR$/app/assist/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/login7-payload.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/login7-payload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/token/loginack-token-parser.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/token/loginack-token-parser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/node_modules/minimist/test/long.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/node_modules/minimist/test/long.js" />
@@ -3399,8 +3339,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/acorn/src/lval.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/acorn/src/lval.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn-globals/node_modules/acorn/src/lval.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn-globals/node_modules/acorn/src/lval.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/src/macros.h" afterPath="$PROJECT_DIR$/node_modules/sqlite3/src/macros.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/main.js" afterPath="$PROJECT_DIR$/client/source/data/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/less/main.less" afterPath="$PROJECT_DIR$/client/source/data/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/test/major-minor-patch.js" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/semver/test/major-minor-patch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/semver/test/major-minor-patch.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/semver/test/major-minor-patch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/semver/test/major-minor-patch.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/semver/test/major-minor-patch.js" />
@@ -3472,7 +3410,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/mergeData.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/mergeData.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/mergeDefaults.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/mergeDefaults.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/message-io.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/message-io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/messages.json" afterPath="$PROJECT_DIR$/configs/messages.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/metaMap.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/metaMap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/metadata-parser.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/metadata-parser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/method.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/bluebird/js/main/method.js" />
@@ -3499,14 +3436,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/fstream-ignore/node_modules/minimatch/minimatch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/minimum.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/minimum.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/misc.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/misc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/misc.xml" afterPath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/native/missing-native.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/native/missing-native.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin-block.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin-block.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin.js" afterPath="$PROJECT_DIR$/node_modules/jade/lib/nodes/mixin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/associations/mixin.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/associations/mixin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/utility/mixin.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/utility/mixin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/basis/mixins.jade" afterPath="$PROJECT_DIR$/client/views/basis/mixins.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/mk.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/locale/mk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/mkdirp.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/mkdirp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/mkdirp.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/mkdirp.js" />
@@ -3519,7 +3454,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/modArgs.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/modArgs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/model-manager.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/model-manager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/modules.xml" afterPath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/moment-timezone-utils.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/moment-timezone-utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/builds/moment-timezone-with-data-2010-2020.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment-timezone/builds/moment-timezone-with-data-2010-2020.js" />
@@ -3701,7 +3635,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/pack.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/pack.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/package.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/package.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/package.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/package.json" />
@@ -4078,10 +4011,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/padRight.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/padRight.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/page.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/page.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/pageTimings.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/pageTimings.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/page_title.js" afterPath="$PROJECT_DIR$/client/source/data/js/page_title.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/pages_checking.js" afterPath="$PROJECT_DIR$/app/assist/pages_checking.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/object/pairs.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/object/pairs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/panel.jade" afterPath="$PROJECT_DIR$/client/views/admin/panel.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/parameter-validator.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/parameter-validator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/parse-discard.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/test/parse-discard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/number/parse-float.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/number/parse-float.js" />
@@ -4180,7 +4110,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/populate-components.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/populate-components.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/helpers/possibleConstructorReturn.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/helpers/possibleConstructorReturn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/postData.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/postData.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/post_processing.js" afterPath="$PROJECT_DIR$/app/assist/post_processing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/math/pot.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/math/pot.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/examples/pow.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/examples/pow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/examples/pow.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/examples/pow.js" />
@@ -4341,7 +4270,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/supports-color/readme.md" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/chalk/node_modules/supports-color/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/path-is-absolute/readme.md" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rimraf/node_modules/glob/node_modules/path-is-absolute/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/readable-stream/node_modules/process-nextick-args/readme.md" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/readable-stream/node_modules/process-nextick-args/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/readme.txt" afterPath="$PROJECT_DIR$/tmp/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/realNames.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/realNames.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/rearg.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/rearg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/urls/rebase.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/urls/rebase.js" />
@@ -4374,14 +4302,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/rel.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/rel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/rel.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/rel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/release.js" afterPath="$PROJECT_DIR$/node_modules/jade/release.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css" afterPath="$PROJECT_DIR$/client/source/data/css/remodal-default-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/remodal.css" afterPath="$PROJECT_DIR$/client/source/data/css/remodal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/remodal.min.js" afterPath="$PROJECT_DIR$/client/source/data/js/remodal.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/remove-duplicate-media-queries.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/remove-duplicate-media-queries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/remove-duplicates.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/remove-duplicates.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/remove-unused.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/remove-unused.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/remove.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/array/remove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/render.js" afterPath="$PROJECT_DIR$/app/assist/render.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/reorder.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/reorder.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/reorderable.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/selectors/reorderable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/repeat.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/repeat.js" />
@@ -4392,15 +4316,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/symbol/replace.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/symbol/replace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/replace.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/replace.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/replaceHolders.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/replaceHolders.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/report.js" afterPath="$PROJECT_DIR$/app/routing/report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/reports.jade" afterPath="$PROJECT_DIR$/client/views/admin/reports.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/request.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/request.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/request.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/request.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/request.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/request.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/request.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/request.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/require.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/require.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/required.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/is-my-json-valid/test/json-schema-draft4/required.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/reset.css" afterPath="$PROJECT_DIR$/client/source/data/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/node_modules/buffer-writer/benchmark/resize-benchmark.js" afterPath="$PROJECT_DIR$/node_modules/pg/node_modules/buffer-writer/benchmark/resize-benchmark.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/response.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/response.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/response.json" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/lib/schemas/response.json" />
@@ -4605,8 +4526,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/utils/source-tracker.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/utils/source-tracker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/lib/sourcemap.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/lib/sourcemap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/uglify-js/lib/sourcemap.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/uglify-js/lib/sourcemap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/admin/spam.jade" afterPath="$PROJECT_DIR$/client/views/admin/spam.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data/spam.json" afterPath="$PROJECT_DIR$/app/data/spam.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/special-stored-procedure.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/special-stored-procedure.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/symbol/species.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/symbol/species.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/symbol/species.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/symbol/species.js" />
@@ -4633,7 +4552,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg/test/integration/client/ssl-tests.js" afterPath="$PROJECT_DIR$/node_modules/pg/test/integration/client/ssl-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/ssl_profiles.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/ssl_profiles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/token/sspi-token-parser.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/token/sspi-token-parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/stack.js" afterPath="$PROJECT_DIR$/app/assist/stack.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/startCase.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/string/startCase.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/string/starts-with.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/core-js/string/starts-with.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/string/starts-with.js" afterPath="$PROJECT_DIR$/node_modules/tedious/node_modules/babel-runtime/node_modules/core-js/fn/string/starts-with.js" />
@@ -4654,8 +4572,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn-globals/node_modules/acorn/src/loose/statement.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn-globals/node_modules/acorn/src/loose/statement.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn/src/statement.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn/src/statement.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn/src/loose/statement.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/acorn/src/loose/statement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/status.js" afterPath="$PROJECT_DIR$/app/assist/status.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/status_common.js" afterPath="$PROJECT_DIR$/app/assist/status_common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/node_modules/minimist/test/stop_early.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/node_modules/minimist/test/stop_early.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/minimist/test/stop_early.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/minimist/test/stop_early.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tripcode/node_modules/minimist/test/stop_early.js" afterPath="$PROJECT_DIR$/node_modules/tripcode/node_modules/minimist/test/stop_early.js" />
@@ -4695,7 +4611,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/json-stringify-safe/test/stringify_test.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/json-stringify-safe/test/stringify_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/stringstream/stringstream.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/stringstream/stringstream.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/strip-json-comments/strip-json-comments.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/rc/node_modules/strip-json-comments/strip-json-comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/structure.js" afterPath="$PROJECT_DIR$/app/assist/structure.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/node_modules/source-map/build/suffix-browser.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/node_modules/source-map/build/suffix-browser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/node_modules/source-map/build/suffix-source-map.jsm" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/node_modules/source-map/build/suffix-source-map.jsm" />
@@ -4819,7 +4734,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test3.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/testbinary.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/testbinary.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/test/testdata.json" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wkx/test/testdata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/testing.js" afterPath="$PROJECT_DIR$/app/routing/testing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/testpackage.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/lib/testpackage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/min/tests.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/moment/min/tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/text.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/text.js" />
@@ -4830,9 +4744,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/thenables.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/har-validator/node_modules/bluebird/js/main/thenables.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/tar/node_modules/block-stream/test/thorough.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/tar/node_modules/block-stream/test/thorough.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/block-stream/test/thorough.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/tar/node_modules/block-stream/test/thorough.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/main/thread.jade" afterPath="$PROJECT_DIR$/client/views/main/thread.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/src/threading.h" afterPath="$PROJECT_DIR$/node_modules/sqlite3/src/threading.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing/threads.js" afterPath="$PROJECT_DIR$/app/routing/threads.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/throttle.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/function/throttle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/chain/thru.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/chain/thru.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/thumb-express/thumb-express.js" afterPath="$PROJECT_DIR$/node_modules/thumb-express/thumb-express.js" />
@@ -4862,8 +4774,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/toPath.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/internal/toPath.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/lang/toPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/lang/toPlainObject.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/chain/toString.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/lodash/chain/toString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/css/toastr.min.css" afterPath="$PROJECT_DIR$/client/source/data/css/toastr.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/toastr.min.js" afterPath="$PROJECT_DIR$/client/source/data/js/toastr.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/token/token-stream-parser.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/token/token-stream-parser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/lib/token/token.js" afterPath="$PROJECT_DIR$/node_modules/tedious/lib/token/token.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/acorn/src/tokencontext.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/acorn/src/tokencontext.js" />
@@ -4952,7 +4862,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/umask_sync.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/mkdirp/test/umask_sync.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask_sync.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask_sync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assist/unban.js" afterPath="$PROJECT_DIR$/app/assist/unban.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/node_modules/concat-stream/node_modules/typedarray/test/server/undef_globals.js" afterPath="$PROJECT_DIR$/node_modules/sequelize/node_modules/wellknown/node_modules/concat-stream/node_modules/typedarray/test/server/undef_globals.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg-hstore/node_modules/underscore/underscore-min.js" afterPath="$PROJECT_DIR$/node_modules/pg-hstore/node_modules/underscore/underscore-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pg-hstore/node_modules/underscore/underscore-min.map" afterPath="$PROJECT_DIR$/node_modules/pg-hstore/node_modules/underscore/underscore-min.map" />
@@ -5061,7 +4970,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-huge.js" afterPath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-huge.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-large.js" afterPath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-large.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-small.js" afterPath="$PROJECT_DIR$/node_modules/tedious/benchmarks/query/varbinary-small.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/vcs.xml" afterPath="$PROJECT_DIR$/node_modules/easy-encryption/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/vendor-prefixes.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/clean-css/lib/properties/vendor-prefixes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/lib/verify.js" afterPath="$PROJECT_DIR$/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/http-signature/lib/verify.js" />
@@ -5174,11 +5082,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="status_common.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="status_common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assist/status_common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40880504">
-              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/source/img/trd/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06802721">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -5242,8 +5170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/assist/stack.js" />
-        <option value="$PROJECT_DIR$/app/routing/ban.js" />
         <option value="$PROJECT_DIR$/client/views/main/ban.jade" />
         <option value="$PROJECT_DIR$/app/routing/report.js" />
         <option value="$PROJECT_DIR$/configs/messages.json" />
@@ -5286,13 +5212,15 @@
         <option value="$PROJECT_DIR$/client/source/data/js/main.js" />
         <option value="$PROJECT_DIR$/app/assist/post_processing.js" />
         <option value="$PROJECT_DIR$/app/assist/admin_crypt.js" />
-        <option value="$PROJECT_DIR$/app/assist/status_common.js" />
         <option value="$PROJECT_DIR$/app/data/spam.json" />
         <option value="$PROJECT_DIR$/app/data/boards.json" />
         <option value="$PROJECT_DIR$/app/assist/control.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/hanako.js" />
         <option value="$PROJECT_DIR$/app/assist/checking_board.js" />
+        <option value="$PROJECT_DIR$/app/assist/status_common.js" />
+        <option value="$PROJECT_DIR$/client/source/img/trd/readme.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -5352,7 +5280,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -5371,90 +5298,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -5546,7 +5392,7 @@
     <frame x="-1" y="31" width="1442" height="821" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.73295456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -5556,13 +5402,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -5581,27 +5427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assist/boards_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41125542">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assist/unban.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/admin/bans.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.344828">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/basis/layout_boards.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42222223">
@@ -5925,7 +5750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5933,14 +5757,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11627907">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assist/status_common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40880504">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/mods/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/img/trd/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06802721">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
