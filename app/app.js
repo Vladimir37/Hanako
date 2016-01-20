@@ -24,7 +24,10 @@ app.set('views', __dirname +  '/../client/views');
 
 //POST request and cookies
 app.use(cookieParser());
-app.use(bodyParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 //favicon
 app.use(favicon('client/source/img/main/logo/favicon.ico'));
