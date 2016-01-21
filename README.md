@@ -1,5 +1,5 @@
 # Hanako
-Hanako - is a modernised and highly functional engine for anonymous forum (imageboard), which combines wide oppurtunities and capabilities of Wakaba and Kusaba along with easiness in configuration. It can be used "as is", and can also be modified to suit your needs, which is facilitated by the open source and commenting possibility of the code. Particularly worth mentioning is its high operational speed and fault tolerance.
+Hanako - is a modern and highly functional engine for anonymous forum (imageboard), which combines wide oppurtunities and capabilities of Wakaba and Kusaba along with easy configuration. It can be used "as is", and can also be modified to suit your needs, which is facilitated by the open source and commenting possibility of the code. Particularly worth mentioning is its high operational speed and fault tolerance.
 
 ## Features
 
