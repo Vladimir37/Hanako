@@ -8,6 +8,8 @@ Hanako - is a modern and highly functional engine for anonymous forum (imageboar
 * REST API
 * The choice of the DBMS (MySQL, PostgreSQL, MariaDB, MSSQL, sqlite)
 * Post markup
+* AJAX posting, quick reply and thread refresh
+* Answer map and previews
 * Easy customization
 * Fault tolerance
 * Detailed documentation
