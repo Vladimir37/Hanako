@@ -19,6 +19,7 @@ Hanako - is a modern and highly functional engine for anonymous forum (imageboar
 To work must be installed this:
 * Node.js (version >= 4.2.1)
 * SQL Database 
+* ImageMagick
 * Cairo (for render CAPTHA)
 
 ## Documentation
